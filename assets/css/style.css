@@ -33,3 +33,9 @@ h1 {
     transform: translateY(100px);
   }
 }
+
+@media (max-width: 767px) {
+  .move-down {
+    animation: moveDown 0.5s ease-in-out forwards;
+  }
+}
