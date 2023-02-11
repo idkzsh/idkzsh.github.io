@@ -29,12 +29,21 @@ h1 {
   width: 50%;
 }
 
-@media (max-width: 767px) {
+@media only screen and (max-width: 600px) {
+  body {
+    font-size: smaller;
+  }
+
   h1 {
     font-size: 50px;
   }
 
+  .cta-btn {
+    font-size: smaller;
+  }
+
   .move-down {
-    width: 80%;
+    width: 90%;
   }
 }
+
