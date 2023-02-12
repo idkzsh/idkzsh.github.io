@@ -33,8 +33,9 @@ h1 {
 
 .move-down {
   position: relative;
-  top: 40px; /* 20 pixels more */
+  top: 40px;
   max-width: 100%;
+  width: 100%;
 }
 
 @media (max-width: 600px) {
