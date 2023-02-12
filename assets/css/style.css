@@ -39,7 +39,7 @@ h1 {
 
 @media (max-width: 600px) {
   .move-down {
-    max-width: 90%;
+    max-width: 10%;
   }
   h1 {
       font-size: 50px;
