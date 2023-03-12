@@ -53,9 +53,9 @@ h1 {
 
 .title {
   text-align: left;
-  
+  font-weight: bold;
   width: 50%;
-  padding: 5px;
+  padding: 0px;
   font-size: 50px;
   /* border-radius: 100px; */
   margin-left: 300px;
@@ -66,7 +66,7 @@ h1 {
   font-weight: normal;
   
   width: 50%;
-  padding: 0px;
+  padding: -5px;
   font-size: 25px;
   /* border-radius: 100px; */
   margin-left: 375px;
@@ -158,8 +158,9 @@ a:hover {
 }
 
 .white {
-  margin-left: -5px;
+  margin-left: -3px;
   margin-right: -5px;
+  padding: 0px;
   color: #ffffff;
   display: inline;
 }
@@ -171,9 +172,10 @@ a:hover {
 }
 
 .z {
-  margin-right: -25px;
+  margin-right: -7px;
   color: #84eb0f;
   display: inline;
+  padding-right: 0px;
 }
 
 .strings {
