@@ -1,53 +1,188 @@
+/* This is a comment */
+
+
+/* @import url(https://cdn.jsdelivr.net/npm/firacode@6.2.0/distr/fira_code.css);
+
+@supports (font-variation-settings: normal) {
+  code { font-family: 'Fira Code VF', monospace; }
+} */
+
 body {
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-  background-color: #000000;
-  text-align: center;
+  margin-top: 200px;
+  margin-bottom: 200px;
+  font-family: "Fira Code Retina";
+  font-size: 10px;
+  background-color: #2b2c2c;
+}
+
+
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #646464;
+  z-index: 9999;
+  font-size: 15px;
+}
+
+nav ul {
+  list-style: none;
   margin: 0;
+  padding: 0;
+  display: flex; /* This makes the <ul> a flex container */
+  justify-content: flex-end; /* This aligns the items to the right */
+}
+
+nav li {
+  display: inline-block;
+  margin: 0 20px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #ffffff;
 }
 
 h1 {
-  color: rgb(255, 255, 255);
-  margin-top: 20px;
+  font-size: 24px;
+  font-weight: bold;
+  color: #ffffff;
+  text-align: center;
+}
+
+.title {
+  text-align: left;
+  margin: 0 auto;
+  width: 50%;
+  padding: 10px;
+  font-size: 40px;
+  border-radius: 100px;
+  margin-left: 500px;
+}
+
+.initializer {
+  text-align: left;
+  font-weight: normal;
+  margin: 0 auto;
+  width: 50%;
+  padding: 10px;
+  font-size: 15px;
+  border-radius: 100px;
+  margin-left: 575px;
+}
+
+.func-body {
+  text-align: left;
+  font-weight: normal;
+  margin: 0 auto;
+  width: 50%;
+  padding: 10px;
+  font-size: 15px;
+  border-radius: 100px;
+  margin-left: 660px;
+}
+
+hr {
+  border: none;
+  border-top: 3px solid rgb(250, 249, 249);
+  margin: 100px 0;
+}
+
+label {
+  display: block;
+}
+
+input[type="range"] {
+  width: 80%;
   margin-bottom: 10px;
-  font-size: 75px;
 }
 
-.cta-btn {
-  background-color: #333;
-  color: #FFF;
-  padding: 10px 10px;
-  border-radius: 5px;
-  text-decoration: none;
+input[type="checkbox"],
+input[type="radio"] {
   margin-right: 10px;
-  margin-left: 10px;
-  display: inline-block;
-  margin-bottom: 40px;
 }
 
-.cta-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 30px;
+textarea {
+  width: 80%;
+  margin-bottom: 10px;
 }
 
-.move-down {
-  position: relative;
-  top: 40px;
-  max-width: 100%;
-  width: 100%;
+p {
+  line-height: 1.5;
+  margin-bottom: 20px;
 }
 
-@media (max-width: 600px) {
-  .move-down {
-    max-width: 10%;
-  }
-  h1 {
-      font-size: 50px;
-  }
+a {
+  color: #00a3cc;
+  text-decoration: none;
+}
 
-  .cta-btn {
-      font-size: 12px;
-      padding: 5px 5px;
-  }
+a:hover {
+  text-decoration: underline;
+}
+
+.def {
+  color: #5eccff;
+  display: inline;
+  font-style: italic;
+}
+
+.init {
+  margin-right: -4px;
+  color: #5eccff;
+  display: inline;
+}
+
+.left-bracket {
+  margin-left: -5px;
+  margin-right: -5px;
+  color: #ffffff;
+  display: inline;
+}
+
+.arguments {
+  margin-left: -5px;
+  margin-right: -5px;
+  color: #ff891a;
+  display: inline;
+  font-style: italic;
+}
+
+.right-bracket {
+  margin-left: -5px;
+  margin-right: -5px;
+  color: #ffffff;
+  display: inline;
+}
+
+.white {
+  margin-left: -5px;
+  margin-right: -5px;
+  color: #ffffff;
+  display: inline;
+}
+
+.class {
+  color: #5eccff;
+  display: inline;
+  font-style: italic;
+}
+
+.z {
+  margin-right: -25px;
+  color: #84eb0f;
+  display: inline;
+}
+
+.strings {
+  margin-left: -5px;
+  margin-right: -5px;
+  color: #ffef5b;
+  display: inline;
+}
+
+.equals {
+  color: #c0026b;
+  display: inline;
 }
