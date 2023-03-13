@@ -8,12 +8,17 @@
 } */
 
 body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   margin-top: 150px;
   margin-bottom: 200px;
   font-family: "Fira Code";
   font-size: 10px;
   background-color: #232321;
 }
+
 
 
 nav {
@@ -53,44 +58,56 @@ h1 {
 
 .title {
   display: flex;
-  text-align: left;
+  justify-content: center;
+  align-items: center;
   font-weight: bold;
+  margin: 0 auto;
   width: 50%;
   padding: 10px;
-  font-size: 50px;
+  padding-bottom: 0px;
+  font-size: 40px;
+  margin-left: 150px;
   /* border-radius: 100px; */
-  margin-left: 300px;
+  /* margin-left: 300px; */
 }
 
 .initializer {
   display: flex;
-  text-align: left;
+  justify-content: center;
+  align-items: center;
+  /* text-align: center; */
   font-weight: normal;
-  
+  margin: 0 auto;
   width: 50%;
-  padding: 0px;
+  padding: 10px;
+  padding-bottom: 0px;
   font-size: 25px;
   /* border-radius: 100px; */
-  margin-left: 375px;
+  /* margin-left: 375px; */
   
 }
 
 .first-name {
   display: flex;
-  text-align: left;
+  justify-content: center;
+  align-items: center;
+  /* text-align: center; */
   font-weight: normal;
   margin: 0 auto;
   width: 50%;
   padding: 10px;
   padding-bottom: 0px;
+  margin-left: 412px;
   font-size: 25px;
   /* border-radius: 100px; */
-  margin-left: 460px;
+  /* margin-left: 460px; */
 }
 
 .last-name {
   display: flex;
-  text-align: left;
+  justify-content: center;
+  align-items: center;
+  /* text-align: center; */
   font-weight: normal;
   margin: 0 auto;
   width: 50%;
@@ -98,24 +115,30 @@ h1 {
   padding-bottom: 0px;
   font-size: 25px;
   /* border-radius: 100px; */
-  margin-left: 460px;
+  /* margin-left: 460px; */
 }
 
 .focus {
   display: flex;
-  text-align: left;
+  justify-content: center;
+  align-items: center;
+  /* text-align: center; */
   font-weight: normal;
-  margin: 10 auto;
+  margin: 0 auto;
   width: 50%;
   padding: 10px;
+  padding-bottom: 0px;
   font-size: 25px;
+  margin-left: 412px;
   /* border-radius: 100px; */
-  margin-left: 460px;
+  /* margin-left: 460px; */
 }
 
 .stack {
   display: flex;
+  justify-content: center;
   align-items: center;
+  /* align-items: center; */
   font-weight: normal;
   margin-top: 400px;
   margin: 0 auto;
@@ -128,7 +151,7 @@ h1 {
 
 .stack-header {
   display: flex;
-  text-align: left;
+  text-align: center;
   font-weight: normal;
   margin-top: 400px;
   margin: 10 auto;
@@ -136,7 +159,6 @@ h1 {
   padding: 0px;
   font-size: 25px;
   /* border-radius: 100px; */
-  margin-left: 300px;
 }
 
 hr {
@@ -180,12 +202,15 @@ a:hover {
 
 
 .my-tech-stack {
-  margin-right: 0px;
+  text-align: center;
+  margin-right: 10px;
   color: #84eb0f;
   display: inline;
+  font-weight: bold;
 }
 
 .init {
+  /* text-align: center; */
   margin-right: 0px;
   color: #5eccff;
   display: inline;
@@ -232,7 +257,6 @@ a:hover {
   margin-right: 0px;
   color: #84eb0f;
   display: inline;
-  padding-right: 0px;
 }
 
 .strings {
@@ -243,6 +267,8 @@ a:hover {
 }
 
 .equals {
+  padding-left: 5px;
+  padding-right: 5px;
   color: #c0026b;
   display: inline;
 }
@@ -250,7 +276,7 @@ a:hover {
 .typing {
   margin-left: 0px;
   margin-right: 0px;
-  color: #84eb0f;
+  color: #9b6ffb;
   display: inline;
   font-weight: bold;
 }
@@ -263,7 +289,7 @@ ul {
 
 ul li {
   list-style: none;
-  color: rgb(53, 193, 203);
+  color: rgb(255, 255, 255);
   font-weight: 100;
 }
 
@@ -279,3 +305,19 @@ ul li::before {
   top: 0.9em;
   position: relative;
 }
+/* 
+.title-bar {
+  align-items: center;
+  padding-top: 0px;
+  padding-left: 20px;
+  padding-bottom: 0px;
+  content: '';
+  display: block;
+  width: 50%;
+  height: 4px;
+  background-color: #1b5175;
+  margin: 6px 0px;
+  transition: 0.4s;
+  border-radius: 30px;
+  opacity: 40%;
+} */
