@@ -130,36 +130,36 @@ a:hover {
 }
 
 .init {
-  margin-right: -4px;
+  margin-right: 0px;
   color: #5eccff;
   display: inline;
 }
 
 .left-bracket {
-  margin-left: -5px;
-  margin-right: -5px;
+  margin-left: 0px;
+  margin-right: 0px;
   color: #ffffff;
   display: inline;
 }
 
 .arguments {
-  margin-left: -5px;
-  margin-right: -5px;
+  margin-left: 0px;
+  margin-right: 0px;
   color: #ff891a;
   display: inline;
   font-style: italic;
 }
 
 .right-bracket {
-  margin-left: -5px;
-  margin-right: -5px;
+  margin-left: 0px;
+  margin-right: 0px;
   color: #ffffff;
   display: inline;
 }
 
 .white {
-  margin-left: -3px;
-  margin-right: -5px;
+  margin-left: 0px;
+  margin-right: 0px;
   padding: 0px;
   color: #ffffff;
   display: inline;
@@ -172,15 +172,15 @@ a:hover {
 }
 
 .z {
-  margin-right: -7px;
+  margin-right: 0px;
   color: #84eb0f;
   display: inline;
   padding-right: 0px;
 }
 
 .strings {
-  margin-left: -5px;
-  margin-right: -5px;
+  margin-left: 0px;
+  margin-right: 0px;
   color: #ffef5b;
   display: inline;
 }
@@ -189,3 +189,13 @@ a:hover {
   color: #c0026b;
   display: inline;
 }
+
+.typing {
+  margin-left: 0px;
+  margin-right: 0px;
+  color: #84eb0f;
+  display: inline;
+  font-weight: bold;
+  caret: bold;
+}
+
