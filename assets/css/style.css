@@ -1,323 +1,45 @@
-/* This is a comment */
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;500;600;700&display=swap');
 
-
-/* @import url(https://cdn.jsdelivr.net/npm/firacode@6.2.0/distr/fira_code.css);
-
-@supports (font-variation-settings: normal) {
-  code { font-family: 'Fira Code VF', monospace; }
-} */
+:root {
+    --color-body: #b6cbce;
+    --color-heading: #eef3db;
+    --color-base: #033f47;
+    --color-base2: #022a30;
+    --color-brand: #e0f780;
+    --color-brand2: #deff58;
+    --sidbar-width: 240px;
+    --font-base: "Bai Jamjuree"
+}
 
 body {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin-top: 150px;
-  margin-bottom: 200px;
-  font-family: "Fira Code";
-  font-size: 10px;
-  background-color: #232321;
+  background-color: var(--color-base2);
+  color: var(var(--color-body));
+  font-family: var(--font-base), sans-serif;
 }
 
-
-
-nav {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  background-color: #646464;
-  z-index: 9999;
-  font-size: 15px;
-}
-
-nav ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  display: flex; /* This makes the <ul> a flex container */
-  justify-content: flex-end; /* This aligns the items to the right */
-}
-
-nav li {
-  display: inline-block;
-  margin: 0 20px;
-}
-
-nav a {
-  text-decoration: none;
-  color: #ffffff;
-}
-
-h1 {
-  font-size: 24px;
-  font-weight: bold;
-  color: #ffffff;
-  text-align: left;
-}
-
-.title {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-weight: bold;
-  margin: 0 auto;
-  width: 50%;
-  padding: 10px;
-  padding-bottom: 0px;
-  font-size: 40px;
-  margin-left: 150px;
-  /* border-radius: 100px; */
-  /* margin-left: 300px; */
-}
-
-.initializer {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  /* text-align: center; */
-  font-weight: normal;
-  margin: 0 auto;
-  width: 50%;
-  padding: 10px;
-  padding-bottom: 0px;
-  font-size: 25px;
-  /* border-radius: 100px; */
-  /* margin-left: 375px; */
-  
-}
-
-.first-name {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  /* text-align: center; */
-  font-weight: normal;
-  margin: 0 auto;
-  width: 50%;
-  padding: 10px;
-  padding-bottom: 0px;
-  margin-left: 412px;
-  font-size: 25px;
-  /* border-radius: 100px; */
-  /* margin-left: 460px; */
-}
-
-.last-name {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  /* text-align: center; */
-  font-weight: normal;
-  margin: 0 auto;
-  width: 50%;
-  padding: 10px;
-  padding-bottom: 0px;
-  font-size: 25px;
-  /* border-radius: 100px; */
-  /* margin-left: 460px; */
-}
-
-.focus {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  /* text-align: center; */
-  font-weight: normal;
-  margin: 0 auto;
-  width: 50%;
-  padding: 10px;
-  padding-bottom: 0px;
-  font-size: 25px;
-  margin-left: 412px;
-  /* border-radius: 100px; */
-  /* margin-left: 460px; */
-}
-
-.stack {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  /* align-items: center; */
-  font-weight: normal;
-  margin-top: 400px;
-  margin: 0 auto;
-  width: 50%;
-  padding: 0px;
-  font-size: 25px;
-  /* border-radius: 100px; */
-  /* margin-left: 350px; */
-}
-
-.stack-header {
-  display: flex;
-  text-align: center;
-  font-weight: normal;
-  margin-top: 400px;
-  margin: 10 auto;
-  width: 50%;
-  padding: 0px;
-  font-size: 25px;
-  /* border-radius: 100px; */
-}
-
-hr {
-  border: none;
-  border-top: 3px solid rgb(250, 249, 249);
-  margin: 100px 0;
-}
-
-label {
-  display: block;
-}
-
-input[type="range"] {
-  width: 80%;
-  margin-bottom: 10px;
-}
-
-input[type="checkbox"],
-input[type="radio"] {
-  margin-right: 10px;
-}
-
-textarea {
-  width: 80%;
-  margin-bottom: 10px;
-}
-
-p {
-  line-height: 1.5;
-  margin-bottom: 20px;
+h1,h2,h3,h4,h5,h6 {
+  color: var(--color-heading);
+  font-weight: 700;
 }
 
 a {
-  color: #00a3cc;
   text-decoration: none;
+  color: var(--color-body);
+  transition: all 0.4s ease;
 }
 
 a:hover {
-  text-decoration: underline;
+  color: var(--color-brand);
 }
 
-
-.my-tech-stack {
-  text-align: center;
-  margin-right: 10px;
-  color: #84eb0f;
-  display: inline;
-  font-weight: bold;
+img {
+  width: 100%;
 }
 
-.init {
-  /* text-align: center; */
-  margin-right: 0px;
-  color: #5eccff;
-  display: inline;
+/* NAVBAR */
+@media (max-width: 992px) {
+  .navbar {
+    min-height: 20vh;
+    width: var(--sidbar-width);
+  }
 }
-
-.left-bracket {
-  margin-left: 0px;
-  margin-right: 0px;
-  color: #ffffff;
-  display: inline;
-}
-
-.arguments {
-  margin-left: 0px;
-  margin-right: 0px;
-  color: #ff891a;
-  display: inline;
-  font-style: italic;
-}
-
-.right-bracket {
-  margin-left: 0px;
-  margin-right: 0px;
-  color: #ffffff;
-  display: inline;
-}
-
-.white {
-  margin-left: 0px;
-  margin-right: 0px;
-  padding: 0px;
-  color: #ffffff;
-  display: inline;
-}
-
-.class {
-  margin-right: 20px;
-  color: #5eccff;
-  display: inline;
-  font-style: italic;
-}
-
-.z {
-  margin-right: 0px;
-  color: #84eb0f;
-  display: inline;
-}
-
-.strings {
-  margin-left: 0px;
-  margin-right: 0px;
-  color: #ffef5b;
-  display: inline;
-}
-
-.equals {
-  padding-left: 5px;
-  padding-right: 5px;
-  color: #c0026b;
-  display: inline;
-}
-
-.typing {
-  margin-left: 0px;
-  margin-right: 0px;
-  color: #9b6ffb;
-  display: inline;
-  font-weight: bold;
-}
-
-ul {
-  display: block;
-  margin: auto;
-  padding-top: 10px;
-}
-
-ul li {
-  list-style: none;
-  color: rgb(255, 255, 255);
-  font-weight: 100;
-}
-
-ul li::before {
-  content: "";
-  border-color: transparent #9b6ffb;
-  border-style: solid;
-  border-width: 0.35em 0 0.35em 0.45em;
-  display: block;
-  height: 0;
-  width: 0;
-  left: -1em;
-  top: 0.9em;
-  position: relative;
-}
-/* 
-.title-bar {
-  align-items: center;
-  padding-top: 0px;
-  padding-left: 20px;
-  padding-bottom: 0px;
-  content: '';
-  display: block;
-  width: 50%;
-  height: 4px;
-  background-color: #1b5175;
-  margin: 6px 0px;
-  transition: 0.4s;
-  border-radius: 30px;
-  opacity: 40%;
-} */
