@@ -37,10 +37,15 @@ img {
 }
 
 /* NAVBAR */
-@media (max-width: 992px) {
-  .navbar {
-    min-height: 20vh;
-    min-width: 80vw;
-    width: var(--sidbar-width);
+
+
+@media (max-width: 768px) {
+  .navbar-nav {
+    margin-top: 5rem;
+  }
+  
+  .navbar-nav .nav-link {
+    margin-right: 0;
+    margin-bottom: 5rem;
   }
 }
