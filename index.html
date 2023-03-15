@@ -10,6 +10,11 @@
   <link rel="stylesheet" href="./assets/css/aos.css">
   <link rel="stylesheet" href="./assets/css/line-awesome.min.css">
   <link rel="stylesheet" href="./assets/css/style.css">
+
+  <script src="./assets/js/bootstrap.bundle.min.js"></script>
+  <script src="./assets/js/aos.js"></script>
+  <script src="./assets/js/main.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
 </head>
 
 <body>
@@ -55,7 +60,7 @@
 
 
     <!-- HOME -->
-    <section id="home">
+    <section id="#home">
         <div id="container1">
           <div class="row">
             <h1>
@@ -66,11 +71,12 @@
           </div>
           <div class="row">
             <h2 class="h2">
-              <p class="class"><em>def</em></p>
+              <p class="class"><em>def&nbsp;</em></p>
               <p class="class">__init__</p>
               <p class="left-bracket">(</p>
               <p class="arguments"><em>self</em></p>
               <p class="right-bracket">)</p>
+              <p class="colon">:</p>
             </h2>
           </div>
           <div class="row">
@@ -80,16 +86,37 @@
               <p class="equals">=</p>
               <p class="string">'Zach'</p><br>
               <p class="arguments"><em>self</em></p>
-              <p class="right-bracket">last_name</p>
+              <p class="right-bracket">.last_name</p>
               <p class="equals">=</p>
-              <p class="string">'Wong'</p>
+              <p class="string">'Wong'</p><br>
+              <p class="arguments"><em>self</em></p>
+              <p class="right-bracket">.focus</p>
+              <p class="equals">=</p>
+              <p class="typing"></p>
+
+            
             </h2>
           </div>
         </div>
         
-
+        
+              
     </section>
     <!-- /HOME -->
+
+
+    <script>
+      var typed = new Typed(".typing", {
+          strings: ["code", "build", "create", "solve"],
+          typeSpeed: 40,
+          backSpeed: 40,
+          loop: true
+      })
+    </script>
+
+    <!-- ABOUT -->
+    
+    <!-- /ABOUT -->
 
 
   </div>
@@ -97,10 +124,8 @@
   <!-- /CONTENT WRAPPER -->
 
 
-  <script src="./assets/js/bootstrap.bundle.min.js"></script>
-  <script src="./assets/js/aos.js"></script>
-  <script src="./assets/js/main.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+
+
   
 </body>
 
