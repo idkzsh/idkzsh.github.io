@@ -1,10 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;500;600;700&display=swap');
 
 :root {
-    --color-body: #b6cbce;
+    --color-body: #69dff1;
     --color-heading: #eef3db;
-    --color-base: #033f47;
-    --color-base2: #022a30;
+    --color-base: #000000;
+    --color-base2: #000000;
     --color-brand: #e0f780;
     --color-brand2: #deff58;
     --sidbar-width: 240px;
@@ -22,6 +22,10 @@ h1,h2,h3,h4,h5,h6 {
   font-weight: 700;
 }
 
+.row h1, .row p {
+  display: inline;
+}
+
 a {
   text-decoration: none;
   color: var(--color-body);
@@ -36,16 +40,102 @@ img {
   width: 100%;
 }
 
-/* NAVBAR */
+
+/* .full-height {
+  min-height: 100vh;
+  height: 100%;
+} */
+
+/* NAVBAR MOBILE*/
 
 
 @media (max-width: 768px) {
   .navbar-nav {
     margin-top: 5rem;
-  }
+}
   
-  .navbar-nav .nav-link {
-    margin-right: 0;
-    margin-bottom: 5rem;
+.navbar {
+  background-color: var(--color-base2);
+}
+
+.navbar-nav .nav-link {
+  margin-right: 0;
+  margin-bottom: 3rem;
   }
+  /* CONTENT WRAPPER */
+  #content-wrapper {
+    display: flex;
+    justify-content: left;
+    margin-top: 200px;
+    margin-left: 50px;
+  }
+
+  .h2 {
+    margin-left: 20px;
+  }
+
+  .h2-a {
+    margin-left: 40px;
+  }
+}
+
+.navbar-nav .nav-link:hover {
+  color: var(--color-brand)
+}
+
+/* NAVBAR DESKTOP */
+
+@media (min-width: 769px) {
+  .navbar-nav {
+    margin-top: 0rem;
+
+  }
+
+  .navbar-nav .nav-link {
+    margin-right: 3rem;
+    padding:0rem;
+    }
+
+  #content-wrapper {
+    display: flex;
+    justify-content: center;
+    margin-top: 200px;
+    margin-right:50px
+  }
+
+  .h2 {
+    margin-left: 20px;
+  }
+
+  .h2-a {
+    margin-left: 40px;
+  }
+}
+
+.class {
+  color: #69dff1
+}
+
+.z {
+  color: #8ef330
+}
+
+.arguments {
+  color: #fa8e00
+}
+
+.left-bracket {
+  color: white;
+}
+
+.right-bracket {
+  color: white;
+}
+
+.equals {
+  color: rgb(197, 15, 115);
+}
+
+.string {
+  color: rgb(245, 219, 74);
 }
