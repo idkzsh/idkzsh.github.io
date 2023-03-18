@@ -38,6 +38,7 @@ html {
 }
 
 .logo {
+  
   font-size: 1.85rem;
   color: white;
   font-family: 'Bai Jamjuree', sans-serif;
@@ -200,6 +201,7 @@ html {
   display: grid;
   text-align: center;
   gap: 20px;
+  padding-top: 20px;
   /* position: relative; */
   /* grid-auto-flow: column; */
   grid-template-columns: repeat(3, 1fr);
@@ -256,16 +258,14 @@ html {
   color: white;
 }
 
-.arrows {
-  z-index: 2;
-}
-
 .arrow {
-  position: absolute;
+  align-items: center;
+  justify-content: center;
   left: 50%;
   right: 50%; 
   transform: translate(-50%, -50%);
-  z-index: 2;
+  margin-left: 67%;
+  
 }
 
 .arrow span {
