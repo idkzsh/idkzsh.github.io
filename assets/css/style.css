@@ -212,7 +212,11 @@ html {
   grid-column-end: 1;
 } */
 
-
+.heroku {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
 
 .typed-cursor {
   color: black;
@@ -266,6 +270,10 @@ html {
   transform: translate(-50%, -50%);
   margin-left: 67%;
   
+}
+
+.arrow.active {
+  display: none;
 }
 
 .arrow span {
