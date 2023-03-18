@@ -5,128 +5,128 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>93z</title>
-  <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
-  <link rel="stylesheet" href="./assets/css/aos.css">
-  <link rel="stylesheet" href="./assets/css/line-awesome.min.css">
-  <link rel="stylesheet" href="./assets/css/style.css">
-
-  <script src="./assets/js/bootstrap.bundle.min.js"></script>
-  <script src="./assets/js/aos.js"></script>
-  <script src="./assets/js/main.js"></script>
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script src="assets/js/app.js" defer></script>
   <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <title>Document</title>
 </head>
 
 <body>
 
   <!-- NAVBAR -->
-  <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
-    <div class="container flex">
-      <a class="navbar-brand mb-lg-4" href="#">
-        <span class="h3 fw-bold">93z</span>
-      </a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <m <ul class="navbar-nav ms-auto flex text-center">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#home">home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#about">about</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#projects">projects</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#experience">experience</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#contact">contact</a>
-          </li>
-
-
-          </ul>
-      </div>
-    </div>
-  </nav>
-  <!-- /NAVBAR -->
-
-  <!-- CONTENT WRAPPER -->
-
-  <div id="content-wrapper">
-
-
-    <!-- HOME -->
-    <section id="#home">
-        <div id="container1">
-          <div class="row">
-            <h1>
-              <p class="class"><em>class</em> </p>
-              <p class="z">93z</p>
-              <p class="colon">:</p>
-            </h1>
-          </div>
-          <div class="row">
-            <h2 class="h2">
-              <p class="class"><em>def&nbsp;</em></p>
-              <p class="class">__init__</p>
-              <p class="left-bracket">(</p>
-              <p class="arguments"><em>self</em></p>
-              <p class="right-bracket">)</p>
-              <p class="colon">:</p>
-            </h2>
-          </div>
-          <div class="row">
-            <h2 class="h2-a">
-              <p class="arguments"><em>self</em></p>
-              <p class="right-bracket">.first_name</p>
-              <p class="equals">=</p>
-              <p class="string">'Zach'</p><br>
-              <p class="arguments"><em>self</em></p>
-              <p class="right-bracket">.last_name</p>
-              <p class="equals">=</p>
-              <p class="string">'Wong'</p><br>
-              <p class="arguments"><em>self</em></p>
-              <p class="right-bracket">.focus</p>
-              <p class="equals">=</p>
-              <p class="typing"></p>
-
-            
-            </h2>
-          </div>
+  <header>
+    <div class="nav-container">
+      <nav>
+        <div class="logo-wrap">
+          <a href="#" class="logo">93z</a>
         </div>
-        
-        
-              
-    </section>
-    <!-- /HOME -->
+        <ul class="nav-ul">
+          <li class="nav-li"><a href="#" class="nav-a">home</a></li>
+          <li class="nav-li"><a href="#about-me" class="nav-a">about</a></li>
+          <li class="nav-li"><a href="#" class="nav-a">experience</a></li>
+          <li class="nav-li"><a href="#" class="nav-a">projects</a></li>
+          <li class="nav-li"><a href="#" class="nav-a">contact</a></li>
+        </ul>
+        <div class="hamburger">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+      </nav>
+    </div>
+  </header>
 
-
-    <script>
-      var typed = new Typed(".typing", {
+  <!-- hero -->
+  <section class="heroku">
+    <div class="container">
+      <div class="intro">
+        <div class="h1">
+          <span class="class"><em>class</em> </span>
+          <span class="z">93z</span>
+        </div>
+        <div class="func">
+          <span class="class"><em>def&nbsp;</em></span>
+          <span class="class">__init__</span>
+          <span class="left-bracket">(</span>
+          <span class="arguments"><em>self</em></span>
+          <span class="right-bracket">)</span>
+          <span class="colon">:</span>
+        </div>
+        <div class="body">
+          <span class="arguments"><em>self</em></span>
+          <span class="right-bracket">.first_name</span>
+          <span class="equals">=</span>
+          <span class="string">'Zach'</span><br>
+          <span class="arguments"><em>self</em></span>
+          <span class="right-bracket">.last_name</span>
+          <span class="equals">=</span>
+          <span class="string">'Wong'</span><br>
+          <span class="arguments"><em>self</em></span>
+          <span class="right-bracket">.focus</span>
+          <span class="equals">=</span>
+          <span class="typing"></span>
+        </div>
+      </div>
+      <script>
+        var typed = new Typed(".typing", {
           strings: ["code", "build", "create", "solve"],
           typeSpeed: 40,
           backSpeed: 40,
           loop: true
-      })
-    </script>
+        })
+      </script>
+    </div>
 
-    <!-- ABOUT -->
-    
-    <!-- /ABOUT -->
+    <div class="arrows">
+      <a href="#about-me">
+        <div class="arrow-container">
+          <div class="arrow">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+      </a>
+    </div>
 
 
-  </div>
+    <div class="intro-container">
+      <div class="about-me" id="about-me">
+        <h1 class="headings">
+          about me
+        </h1>
+        <p>Hi, my name's Zach. I'm an aspiring full stack developer and Part-Time student at the <a
+            href="https://www.bcit.ca/">British
+            Columbia Institute of Technology.</a> I'll be completing my <a
+            href="https://www.bcit.ca/programs/computer-systems-diploma-part-time-5500pdiplt/">CST
+            Diploma</a> within the next 2 years. I have a passion for front-end web and mobile development
+          and design,
+          and I also like to know what's going on in the back-end to get the full scope of my work.
+        </p>
+        <br>
+        <p>I'm also quite interested in AI and keep a close eye on new tech innovations.</p>
+        <br>
 
-  <!-- /CONTENT WRAPPER -->
+        <h1 class="headings-alt">
+          tech stack
+        </h1>
+        <div class="cards">
+          <div class="python"><img src="assets/images/pylogo.png" alt=""></div>
+          <div class="js"><img src="assets/images/js.png" alt=""></div>
+          <div class="java"><img src="assets/images/java.png" alt=""></div>
+          <div class="html"><img src="assets/images/html5.png" alt=""></div>
+          <div class="css"><img src="assets/images/css.png" alt=""></div>
+          <div class="django"><img src="assets/images/django.png" alt=""></div>
+        </div>
+      </div>
+    </div>
+
+
+  </section>
 
 
 
-
-  
 </body>
 
 </html>
