@@ -14,7 +14,7 @@ li {
 }
 
 img {
-  width: 70%;
+  width: 60%;
 }
 
 a {
@@ -29,6 +29,10 @@ header {
 
 html {
   scroll-behavior: smooth;
+}
+
+button {
+  background: transparent;
 }
 
 .logo-wrap {
@@ -207,10 +211,212 @@ html {
   grid-template-columns: repeat(3, 1fr);
 }
 
-/* .python {
-  grid-column-start: 1;
-  grid-column-end: 1;
-} */
+.python:hover {
+  animation: rotate 0.7s ease-in-out both;
+  
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg) translate3d(0,0,0);
+  }
+  25% {
+    transform: rotate(13deg) translate3d(0,0,0);
+  }
+  50% {
+    transform: rotate(-10deg) translate3d(0,0,0);
+  }
+  75% {
+    transform: rotate(8deg) translate3d(0,0,0);
+  }
+  100% {
+    transform: rotate(0deg) translate3d(0,0,0);
+  }
+}
+
+.java:hover {
+  animation: rotate 0.7s ease-in-out both;
+  
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg) translate3d(0,0,0);
+  }
+  25% {
+    transform: rotate(13deg) translate3d(0,0,0);
+  }
+  50% {
+    transform: rotate(-10deg) translate3d(0,0,0);
+  }
+  75% {
+    transform: rotate(8deg) translate3d(0,0,0);
+  }
+  100% {
+    transform: rotate(0deg) translate3d(0,0,0);
+  }
+}
+
+.js:hover {
+  animation: rotate 0.7s ease-in-out both;
+  
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg) translate3d(0,0,0);
+  }
+  25% {
+    transform: rotate(13deg) translate3d(0,0,0);
+  }
+  50% {
+    transform: rotate(-10deg) translate3d(0,0,0);
+  }
+  75% {
+    transform: rotate(8deg) translate3d(0,0,0);
+  }
+  100% {
+    transform: rotate(0deg) translate3d(0,0,0);
+  }
+}
+
+.html:hover {
+  animation: rotate 0.7s ease-in-out both;
+  
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg) translate3d(0,0,0);
+  }
+  25% {
+    transform: rotate(13deg) translate3d(0,0,0);
+  }
+  50% {
+    transform: rotate(-10deg) translate3d(0,0,0);
+  }
+  75% {
+    transform: rotate(8deg) translate3d(0,0,0);
+  }
+  100% {
+    transform: rotate(0deg) translate3d(0,0,0);
+  }
+}
+
+.django:hover {
+  animation: rotate 0.7s ease-in-out both;
+  
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg) translate3d(0,0,0);
+  }
+  25% {
+    transform: rotate(13deg) translate3d(0,0,0);
+  }
+  50% {
+    transform: rotate(-10deg) translate3d(0,0,0);
+  }
+  75% {
+    transform: rotate(8deg) translate3d(0,0,0);
+  }
+  100% {
+    transform: rotate(0deg) translate3d(0,0,0);
+  }
+}
+
+.css:hover {
+  animation: rotate 0.7s ease-in-out both;
+  
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg) translate3d(0,0,0);
+  }
+  25% {
+    transform: rotate(13deg) translate3d(0,0,0);
+  }
+  50% {
+    transform: rotate(-10deg) translate3d(0,0,0);
+  }
+  75% {
+    transform: rotate(8deg) translate3d(0,0,0);
+  }
+  100% {
+    transform: rotate(0deg) translate3d(0,0,0);
+  }
+}
+
+.swift:hover {
+  animation: rotate 0.7s ease-in-out both;
+  
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg) translate3d(0,0,0);
+  }
+  25% {
+    transform: rotate(13deg) translate3d(0,0,0);
+  }
+  50% {
+    transform: rotate(-10deg) translate3d(0,0,0);
+  }
+  75% {
+    transform: rotate(8deg) translate3d(0,0,0);
+  }
+  100% {
+    transform: rotate(0deg) translate3d(0,0,0);
+  }
+}
+
+.sql:hover {
+  animation: rotate 0.7s ease-in-out both;
+  
+}
+
+.c:hover {
+  animation: rotate 0.7s ease-in-out both;
+  
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg) translate3d(0,0,0);
+  }
+  25% {
+    transform: rotate(13deg) translate3d(0,0,0);
+  }
+  50% {
+    transform: rotate(-10deg) translate3d(0,0,0);
+  }
+  75% {
+    transform: rotate(8deg) translate3d(0,0,0);
+  }
+  100% {
+    transform: rotate(0deg) translate3d(0,0,0);
+  }
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg) translate3d(0,0,0);
+  }
+  25% {
+    transform: rotate(13deg) translate3d(0,0,0);
+  }
+  50% {
+    transform: rotate(-10deg) translate3d(0,0,0);
+  }
+  75% {
+    transform: rotate(8deg) translate3d(0,0,0);
+  }
+  100% {
+    transform: rotate(0deg) translate3d(0,0,0);
+  }
+}
 
 .heroku {
   display: flex;
