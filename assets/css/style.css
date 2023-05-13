@@ -110,9 +110,9 @@ h2 {
 }
 
 h3 {
-    margin: auto;
+    /* margin: auto; */
     
-    font-size: 20px;
+    font-size: 15px;
     
 }
 
@@ -285,7 +285,7 @@ hr.separator {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 8px;  
+  gap: 4px;  
   width: 1000px;
   margin:auto
 }
@@ -299,10 +299,10 @@ hr.separator {
   border-radius: 10px;
   cursor: crosshair;
   display: flex;
-  height: 260px;
+  height: 130px;
   flex-direction: column;
   position: relative;
-  width: 300px;  
+  width: 150px;  
 }
 
 .card:hover::before {
@@ -354,7 +354,7 @@ hr.separator {
 
 .icons {
   color: rgb(206, 206, 207);
-  font-size: 100px;
+  /* font-size: 20px; */
 }
 
 .contact-icon {
@@ -369,13 +369,13 @@ i {
 .card-image {
   align-items: center;
   display: flex;
-  height: 140px;
+  height: 100px;
   justify-content: center;
   overflow: hidden;
 }
 
 .card-image > i {
-  font-size: 6em;
+  font-size: 3em;
   opacity: 0.25;
 }
 
@@ -392,18 +392,19 @@ i {
   text-align: center;
   display: flex;
   gap: 10px;
+  font-size: .5em;
 }
 
 .card-info > i {  
-  font-size: 1em;
-  height: 20px;
-  line-height: 20px;
+  font-size: .5em;
+  height: 10px;
+  line-height: 10px;
   width: 100%;
 }
 
 .card-info-title {
-  font-size: 1.1em;
-  line-height: 20px;
+  font-size: .5em;
+  line-height: 5px;
   width: 100%;
   text-align: center;
 }
