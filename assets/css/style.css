@@ -1,6 +1,7 @@
 :root {
   --bg-color: rgb(20, 20, 20);
   --card-color: rgb(23, 23, 23);
+  --turq-color: rgb(4, 170, 109);
 }
 
 html {
@@ -80,15 +81,17 @@ header {
   font: weight 4px;
   transition: 0.4s;
   height: 26px;
+  border-radius: 8px;
 }
 
 /* Change the color of links on hover */
 .links a:hover {
-  background-color:#04AA6D;
+  background-color: var(--turq-color);
   color: #f5f5f5;
   opacity: 30%;
   height: 26px;
   z-index: 10;
+  border-radius: 8px;
 }
 
 /* Add a color to the active/current link */
@@ -123,7 +126,7 @@ ol {
 .headings {
   display: inline-block;
   margin-left: 400px;
-  color:#04AA6D
+  color: var(--turq-color);
 }
 
 .intro {
@@ -158,16 +161,20 @@ ol {
 .icon-bar a {
   display: flex; /* Make the links appear below each other instead of side-by-side */
   justify-content: center;
-  padding: 30px; /* Add some padding */
-  transition: all 0.3s ease; /* Add transition for hover effects */
-  color: white; 
+  padding: 30px; 
+  transition: all 0.3s ease; 
+  color: var(--bg-color); 
   font-size: 20px; /* Increased font-size */
+  border-radius: 8px;
+
 }
 
 .icon-bar a:hover {
-  background-color: #04AA6D; /* Add a hover color */
-  
+  background-color: var(--turq-color);
+  color: var(--turq-color);
+  border-radius: 8px;
   opacity: 30%;
+
 }
 
 hr.vert {
@@ -251,8 +258,8 @@ hr.separator {
   display: flex;
   width: 20px;
   height: 20px;
-  border-bottom: 5px solid #20d39d;
-  border-right: 5px solid #03ac82;
+  border-bottom: 10px solid #20d39d;
+  border-right: 10px solid #03ac82;
   transform: rotate(45deg);
   margin: -10px;
   animation: scroll 2s infinite;
