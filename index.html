@@ -2,108 +2,75 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="assets/css/style.css">
-  <script src="assets/js/app.js" defer></script>
-  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
-  <link href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <title>Document</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=h2.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.css" integrity="sha512-Z0kTB03S7BU+JFU0nw9mjSBcRnZm2Bvm0tzOX9/OuOuz01XQfOpa0w/N9u6Jf2f1OAdegdIPWZ9nIZZ+keEvBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/solid.css" integrity="sha512-mJH2UCb8EplzC+Yw56CdWqGt6sazPKhJHpyNnT3Au6lx5tueCa/VhBe2yIQZQcjKVelo6U5foei5lhsmWOA+tg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <script src="assets/js/app.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <title>zzz</title>
+
 </head>
 
 <body>
+    <header>
 
-  <!-- NAVBAR -->
-  <header>
-    <div class="nav-container">
-      <nav>
-        <div class="logo-wrap">
-          <a href="#" class="logo">93z</a>
-        </div>
-        <ul class="nav-ul">
-          <li class="nav-li"><a href="#" class="nav-a">home</a></li>
-          <li class="nav-li"><a href="#about-me" class="nav-a">about</a></li>
-          <li class="nav-li"><a href="#" class="nav-a">experience</a></li>
-          <li class="nav-li"><a href="#" class="nav-a">projects</a></li>
-          <li class="nav-li"><a href="#" class="nav-a">contact</a></li>
-        </ul>
-        <div class="hamburger">
-          <span class="bar"></span>
-          <span class="bar"></span>
-          <span class="bar"></span>
-        </div>
-      </nav>
-    </div>
-  </header>
+        <nav class="topnav">
+            <div class="logo">
+                <img src="assets/images/logo.png" alt="" class="top-logo">
+            </div>
+            <div class="links">
+                <a class="active" href="#">home</a>
+                <a href="#about-me">about</a>
+                <a href="#experience">experience</a>
+                <a href="#projects">projects</a>
+                <a href="#contact">contact</a>
+            </div>
 
+        </nav>
+    </header>
 
-  <!-- <div class="3d">
-    <div class="box">
-      <span><i>93z</i></span>
-    </div>
-  </div> -->
-
-  <!-- hero -->
-  <div class="heroku">
     <div class="container">
-      <div class="intro">
-        <div class="h1">
-          <span class="class"><em>class</em> </span>
-          <span class="z">93z</span>
+        <div class="eye"><img src="assets/images/eye-logo-full-dark.png"></div>
+        <div class="intro-container">
+            <h1>Zach Wong</h1>
+            <h2 class="typing"></h2>
+
         </div>
-        <div class="func">
-          <span class="class"><em>def&nbsp;</em></span>
-          <span class="class">__init__</span>
-          <span class="left-bracket">(</span>
-          <span class="arguments"><em>self</em></span>
-          <span class="right-bracket">)</span>
-          <span class="colon">:</span>
-        </div>
-        <div class="body">
-          <span class="arguments"><em>self</em></span>
-          <span class="right-bracket">.first_name</span>
-          <span class="equals">=</span>
-          <span class="string">'Zach'</span><br>
-          <span class="arguments"><em>self</em></span>
-          <span class="right-bracket">.last_name</span>
-          <span class="equals">=</span>
-          <span class="string">'Wong'</span><br>
-          <span class="arguments"><em>self</em></span>
-          <span class="right-bracket">.focus</span>
-          <span class="equals">=</span>
-          <span class="typing"></span>
-        </div>
-      </div>
-      <script>
-        var typed = new Typed(".typing", {
-          strings: ["code", "build", "create", "solve"],
-          typeSpeed: 40,
-          backSpeed: 40,
-          loop: true
-        })
-      </script>
+        <script>
+            var typed = new Typed(".typing", {
+                strings: ["developer", "building", "creating", "solutions"],
+                typeSpeed: 45,
+                backSpeed: 30,
+                loop: true
+            })
+        </script>
     </div>
 
     <div class="arrows">
-      <a href="#about-me">
-        <div class="arrow-container">
-          <div class="arrow">
-            <span></span>
-            <span></span>
-            <span></span>
-          </div>
-        </div>
-      </a>
+        <a href="#about-me">
+            <div class="arrow-container">
+                <div class="arrow">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </a>
     </div>
 
 
-    <div class="intro-container">
-      <div class="about-me" id="about-me">
+
+    <div class="about-me" id="about-me">
+        
         <h1 class="headings">
-          about me
+          about me 
         </h1>
-        <p>Hi, my name's Zach. I'm an aspiring full stack developer and Part-Time student at the <a
+        <hr class="separator">
+        <p class="bout-me">Hi, my name's Zach. I'm an aspiring full stack developer and Part-Time student at the <a
             href="https://www.bcit.ca/">British
             Columbia Institute of Technology.</a> I'll be completing my <a
             href="https://www.bcit.ca/programs/computer-systems-diploma-part-time-5500pdiplt/">CST
@@ -112,37 +79,176 @@
           and I also like to know what's going on in the back-end to get the full scope of my work.
         </p>
         <br>
-        <p>I'm also quite interested in AI and keep a close eye on new tech innovations.</p>
+        <p class="bout-me">I'm also quite interested in AI and keep a close eye on new tech innovations.</p>
         <br>
 
-        <h1 class="headings-alt">
+        <h2 class="headings">
           tech stack
         </h1>
-        <div class="cards">
-          <div class="python"><img src="assets/images/pylogo.png" alt=""></div>
-          <div class="java"><img src="assets/images/java.png" alt=""></div>
-          <div class="js"><img src="assets/images/js.png" alt=""></div>
-          
-          <div class="html"><img src="assets/images/html5.png" alt=""></div>
-          <div class="django"><img src="assets/images/django.png" alt=""></div>
-          <div class="css"><img src="assets/images/css.png" alt=""></div>
-          
-          <div class="swift"><img src="assets/images/swift.png" alt=""></div>
-          <div class="sql"><img src="assets/images/postgres.png" alt=""></div>
-          <div class="c"><img src="assets/images/c.png" alt=""></div>
-          
+        <hr class="separator">
+    <div id="cards">
+        <div class="card">
+            <div class="card-content">
+                <div class="card-image">
+                    <i class="fa-brands fa-python icons"></i>
+                </div>
+                <div class="card-info-wrapper">
+                    <div class="card-info">
+
+                        <div class="card-info-title">
+                            <h3>Python</h3>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
+        <div class="card">
+            <div class="card-content">
+                <div class="card-image">
+                    <i class="fa-brands fa-java icons"></i>
+                </div>
+                <div class="card-info-wrapper">
+                    <div class="card-info">
+
+                        <div class="card-info-title">
+                            <h3>Java</h3>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-content">
+                <div class="card-image">
+                    <i class="fa-brands fa-square-js icons"></i>
+                </div>
+                <div class="card-info-wrapper">
+                    <div class="card-info">
+                        
+                        <div class="card-info-title">
+                            <h3>Javascript</h3>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-content">
+                <div class="card-image">
+                    <i class="fa-brands fa-html5 icons"></i>
+                </div>
+                <div class="card-info-wrapper">
+                    <div class="card-info">
+                       
+                        <div class="card-info-title">
+                            <h3>HTML</h3>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-content">
+                <div class="card-image">
+                    <i class="fa-brands fa-css3-alt icons"></i>
+                </div>
+                <div class="card-info-wrapper">
+                    <div class="card-info">
+                        
+                        <div class="card-info-title">
+                            <h3>CSS</h3>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-content">
+                <div class="card-image">
+                    <i class="fa-brands fa-swift icons"></i>
+                </div>
+                <div class="card-info-wrapper">
+                    <div class="card-info">
+                       
+                        <div class="card-info-title">
+                            <h3>Swift</h3>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-content">
+                <div class="card-image">
+                    <i class="fa-solid fa-c icons"></i>
+                </div>
+                <div class="card-info-wrapper">
+                    <div class="card-info">
+                        
+                        <div class="card-info-title">
+                            <h3>C</h3>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-content">
+                <div class="card-image">
+                    <i class="fa-solid fa-droplet"></i>
+                </div>
+                <div class="card-info-wrapper">
+                    <div class="card-info">
+                        
+                        <div class="card-info-title">
+                            <h3>Django</h3>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-content">
+                <div class="card-image">
+                    <i class="fa-solid fa-database"></i>
+                </div>
+                <div class="card-info-wrapper">
+                    <div class="card-info">
+                        
+                        <div class="card-info-title">
+                            <h3>SQL</h3>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+    <div class="contact" id="contact">
+        <i class="fa-solid fa-message contact-icon"></i>
     </div>
 
-    <div class="experience-container">
-      <h1 class="headings">
-        experience
-      </h1>
+
+    <div class="icon-bar">
+        <a class="active" href="https://github.com/zzz-idk" target="_blank"><i class="fa-brands fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/zach-flentge-wong/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+        <a href="https://twitter.com/93z_prevail" target="_blank"><i class="fa-brands fa-square-twitter"></i></a>
+        <a href="https://www.instagram.com/93z.prevail/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+        <a href="https://linktr.ee/93.z" target="_blank"><i class="fa-solid fa-tree"></i></a>
     </div>
-  </div>
-
-
+    <div class="vert-bar">
+        <hr class="vert">
+    </div>
 
 </body>
 
