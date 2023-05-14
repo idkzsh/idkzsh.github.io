@@ -22,11 +22,11 @@ optionOne.addEventListener('click', function() {
 
 
 optionTwo.addEventListener('click', function() {
-  slider.style.transform = 'translateY(-60.5%)';
+  slider.style.transform = 'translateY(-500px)';
 });
 
 optionTri.addEventListener('click', function() {
-  slider.style.transform = 'translateY(-120.9%)';
+  slider.style.transform = 'translateY(-1000px)';
 });
 
 // const hamburger = document.querySelector('.hamburger')

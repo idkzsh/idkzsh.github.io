@@ -404,8 +404,8 @@ hr.separator {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 4px;  
-  width: 1000px;
+  gap: 20px;  
+  width: 500px;
   margin:auto;
   overflow: hidden;
 }
@@ -423,6 +423,8 @@ hr.separator {
   flex-direction: column;
   position: relative;
   width: 450px;  
+  
+  
 }
 
 .slideshow {
@@ -450,7 +452,7 @@ hr.separator {
 .slides {
   display: flex;
   justify-content: center;
-  
+  gap: 20px;
   /* overflow: hidden; */
   height: 90vh;
   transition: all 0.3s;
@@ -499,6 +501,7 @@ hr.separator {
   flex-grow: 1;
   inset: 1px;
   padding: 10px;
+  
   position: absolute;
   z-index: 2;
 }
@@ -507,6 +510,10 @@ hr.separator {
 .icons {
   color: rgb(206, 206, 207);
   /* font-size: 20px; */
+}
+
+.big-icons {
+  font-size: 50px;
 }
 
 .contact-icon {
@@ -577,10 +584,7 @@ i {
   margin: 10px;
 }
 
-.big-card-image > i {
-  font-size: 3em;
-  opacity: 0.25;
-}
+
 
 .big-card-info-wrapper {
   /* align-items: center; */
@@ -598,6 +602,7 @@ i {
   /* display: flex; */
   /* gap: 2px; */
   font-size: 1em;
+  
 }
 
 .big-card-info > i {  
