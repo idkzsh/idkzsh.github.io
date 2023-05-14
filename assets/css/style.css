@@ -456,16 +456,6 @@ hr.separator {
   transition: all 0.3s;
 }
 
-.option-1 {
-  
-}
-.option-2 {
-  
-}
-.option-3 {
-  
-}
-
 .big-card:hover::before {
   opacity: 1;
 }
