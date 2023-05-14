@@ -9,6 +9,26 @@ document.getElementById("cards").onmousemove = e => {
     };
   }
 
+const slider = document.querySelector('.slides');
+const optionOne = document.querySelector('.option-1');
+const optionTwo = document.querySelector('.option-2');
+const optionTri = document.querySelector('.option-3');
+
+var sectionIndex = 0;
+
+optionOne.addEventListener('click', function() {
+  slider.style.transform = 'translateY(0%)';
+});
+
+
+optionTwo.addEventListener('click', function() {
+  slider.style.transform = 'translateY(-60.5%)';
+});
+
+optionTri.addEventListener('click', function() {
+  slider.style.transform = 'translateY(-120.9%)';
+});
+
 // const hamburger = document.querySelector('.hamburger')
 // const navUl = document.querySelector('.nav-ul')
 // const arrow = document.querySelector('.arrow')

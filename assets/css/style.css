@@ -94,6 +94,8 @@ header {
   border-radius: 8px;
 }
 
+
+
 /* Add a color to the active/current link */
 /* .links a.active {
   
@@ -404,7 +406,8 @@ hr.separator {
   justify-content: center;
   gap: 4px;  
   width: 1000px;
-  margin:auto
+  margin:auto;
+  overflow: hidden;
 }
 
 #big-cards:hover > .big-card::after {
@@ -427,6 +430,8 @@ hr.separator {
   justify-content: center;
   gap: 20px;
   margin-top: 50px;
+  height: 500px;
+  overflow: hidden;
 }
 
 .slide-nav {
@@ -436,13 +441,29 @@ hr.separator {
   width: 40vh;
   line-height: 50px;
   text-align: center;
+  overflow: hidden;
   /* padding: 50px 0px 50px 0px; */
 }
 
+
+
 .slides {
-  display: inline;
+  display: flex;
   justify-content: center;
-  padding-top: 50px;
+  
+  /* overflow: hidden; */
+  height: 90vh;
+  transition: all 0.3s;
+}
+
+.option-1 {
+  
+}
+.option-2 {
+  
+}
+.option-3 {
+  
 }
 
 .big-card:hover::before {
@@ -557,11 +578,13 @@ i {
 }
 
 .big-card-image {
-  align-items: center;
-  display: flex;
-  height: 100px;
-  justify-content: center;
+  
+  display:inline-block;
+  text-align: center;
+  height: 60px;
+  justify-content: space-around;
   overflow: hidden;
+  margin: 10px;
 }
 
 .big-card-image > i {
@@ -570,7 +593,7 @@ i {
 }
 
 .big-card-info-wrapper {
-  align-items: center;
+  /* align-items: center; */
   display: flex;
   flex-grow: 1;
   
@@ -580,28 +603,23 @@ i {
 .big-card-info {
   width: 100%;
   text-align: center;
-  display: flex;
-  gap: 10px;
-  font-size: .5em;
+  /* justify-content: center; */
+  /* height: 50px; */
+  /* display: flex; */
+  /* gap: 2px; */
+  font-size: 1em;
 }
 
 .big-card-info > i {  
-  font-size: .5em;
+  font-size: 5em;
   height: 10px;
-  line-height: 10px;
+  line-height: 1px;
   width: 100%;
-}
-
-.big-card-info-title {
-  font-size: .5em;
-  line-height: 5px;
-  width: 100%;
-  text-align: center;
 }
 
 .big-card-info-title > h4 {
   color: rgba(255, 255, 255, 0.5);
-  font-size: 0.85em;
+  font-size: 1em;
   margin-top: 8px;
 }
 
