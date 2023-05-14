@@ -273,15 +273,19 @@ hr.separator {
 }
 
 .arrows {
-  margin: 10px 0px 100px 845px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  /* margin: 10px 0px 100px 845px; */
   z-index: -1;
-  width:10%;
+  width:100%;
   /* border-radius: 5px; */
 }
 
 .arrow {
-  align-items: center;
-  justify-content: center;
+  /* align-items: center;
+  justify-content: center; */
   left: 50%;
   right: 50%; 
   transform: translate(-50%, -50%);
