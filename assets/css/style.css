@@ -84,7 +84,7 @@ li {
   margin-top: 0px;
   margin-bottom: 0px;
   /* background: hsla(0, 0%, 9%, 0.85); */
-  backdrop-filter: blur(8px) !important;
+  backdrop-filter: blur(8px);
 }
 
 
@@ -239,12 +239,10 @@ hr.vert {
 }
 
 hr.big-vert {
-  
-  
   width: .1px;
   height: 400px;
   margin-right: 100px;
-  
+
 }
 
 
@@ -776,6 +774,10 @@ i {
 
 
  @media (max-width: 35em) {
+  
+  header {
+    backdrop-filter: none;
+  }
 
   .experience-wrapper {
     display: flex;
@@ -821,6 +823,10 @@ i {
   .top-logo {
     display: none;
   }
+/* 
+  header {
+    backdrop-filter: blur(8px);
+  } */
 
   .links {
     position: absolute;
@@ -833,10 +839,9 @@ i {
     justify-content: center;
     align-items: center;
     /* padding: min(0vh, 10rem) 5em; */
-    
     transform: translateX(100%);
     transition: transform 350ms ease; 
-    
+    /* opacity: 90%; */
   }
 
   .links a {
