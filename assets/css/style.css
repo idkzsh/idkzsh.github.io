@@ -9,6 +9,8 @@ html {
 }
 
 body {
+    display: flex;
+    flex-direction: column;
     margin: 0;
     margin-bottom: 50px;
     background-color: var(--bg-color);
@@ -22,16 +24,17 @@ body {
     font-family:ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;
     font-feature-settings:normal;
     overflow-x: hidden;
+    align-items: center;
 }
 
 header {
-  /* display: inline; */
-  
   width: 100%;
   top: 0;
   position: fixed;
-  background: hsla(0, 0%, 9%, 0.85);
-  z-index: 4;
+  /* background: hsla(0, 0%, 9%, 0.85); */
+  /* opacity: 90%; */
+  backdrop-filter: blur(8px);
+  z-index: 200;
 }
 
 .top-logo{
@@ -80,22 +83,24 @@ li {
   /* margin-top: 0px; */
   margin-top: 0px;
   margin-bottom: 0px;
-  background: hsla(0, 0%, 0%, 0.85);
-
+  /* background: hsla(0, 0%, 9%, 0.85); */
+  backdrop-filter: blur(8px) !important;
 }
 
-@supports (backdrop-filter: blur(1rem)) {
+
+
+/* @supports (backdrop-filter: blur(8px)) {
   header {
     background: hsla(0, 0%, 13%, 0.1);
-    backdrop-filter: blur(1rem);
+    backdrop-filter: blur(8px);
   }
 
 
   .links {
-    background: hsla(0, 0%, 13%, 0.1);
-    backdrop-filter: blur(1rem);
+    background: hsla(0, 0%, 1%, 0.1);
+    backdrop-filter: blur(10px);
   }
-}
+} */
 
 /* Style the links inside the navigation bar */
 .links a {
@@ -135,10 +140,11 @@ h1 {
     margin: 0;
     /* text-align: center; */
     font-size: 60px;
+    /* width: 5%; */
 }
 
 h2 {
-    display: inline;
+    /* display: inline; */
     font-size: 30px;
 }
 
@@ -161,33 +167,35 @@ ol {
 }
 
 .headings {
-  display: inline-block;
-  margin-left: 400px;
+  display: flex;
+  
+  
   color: var(--turq-color);
 }
 
 .intro {
-    margin: 10px 620px;
+    /* margin: 10px 620px; */
     font-size: 15px;
 }
 
 .bout-me {
-    margin: 0px 400px;
+    /* margin: 0px 400px; */
     font-size: 15px;
 }
 
 .sleep {
   text-align: center;
-
+  width: 100%;
 }
 
 .sleep-logo {
-  width: 5%;
+  width: 20%;
 }
 
 .icon-bar {
   position: fixed;
   bottom: 0;
+  left: 0;
   height: 415px;
   width: 90px; /* Set a specific width */
   /* background-color: #555;  */
@@ -223,6 +231,7 @@ ol {
 hr.vert {
   position: fixed;
   bottom: 0;
+  left: 0;
   width: .1px;
   height: 100px;
   margin: 10px 94px;
@@ -241,11 +250,14 @@ hr.big-vert {
 
 
 hr.separator {
-  margin-left: 10px;
-  display: inline-block;
-  width: 400px;
+  /* margin-left: 10px; */
+  display: block;
+  
+  width: 20%;
+  height: 1%;
   border: 1.5px solid grey;
   border-radius: 8px;
+  /* margin: 50px 0px 0px 0px; */
 }
 
 .container {
@@ -260,7 +272,7 @@ hr.separator {
 
 .intro-container {
   
-  margin-left: 50px;
+  /* margin-left: 50px; */
   font-size: 60px;
   text-align: center;
 }
@@ -273,20 +285,50 @@ hr.separator {
   margin-right: 0px;
 }
 
+.typed-js {
+  
+  display: flex;
+  justify-content: center;
+  height: 100px;
+}
+
+.typed-cursor {
+  padding-top: 30px;
+}
+
 .typing {
   color:#04AA6D;
   font-size: 50px;
 }
 
+.about-me-wrapper {
+  display: flex;
+  /* align-items: center;
+  text-align: center; */
+  justify-content: center;
+  width: 60%;
+}
+
 .about-me {
   padding-top: 100px;
-  display: inline-block;
+  display: flex;
+  flex-wrap: wrap;
+  /* text-align: center; */
   margin-bottom: 200px;
+  /* justify-content: center; */
+  width: 100%;
+}
+
+.experience-wrapper {
+  width: 60%;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .experience {
   padding-top: 80px;
   height: 95vh;
+  width: 100%;
 }
 
 .projects {
@@ -475,7 +517,7 @@ hr.separator {
   width: 40vh;
   line-height: 50px;
   text-align: center;
-  overflow: hidden;
+  /* overflow: hidden; */
   /* padding: 50px 0px 50px 0px; */
 }
 
@@ -702,6 +744,10 @@ i {
 
 
 @media (min-width: 35em) and (max-width: 65em) {
+  .top-logo{
+    width: 80%;
+  }
+  
   .links a {
 
     float: right;
@@ -716,10 +762,61 @@ i {
     border-radius: 8px;
 
   }
+
+  .vert-bar {
+    display: none;
+  }
+
+  .icon-bar {
+    display: none;
+  }
+
+  
 }
 
 
  @media (max-width: 35em) {
+
+  .experience-wrapper {
+    display: flex;
+    flex-direction: column;
+    /* align-items: center;
+    text-align: center; */
+    justify-content: center;
+    width: 90%;
+  }
+  
+  .about-me-wrapper {
+    display: flex;
+    /* align-items: center;
+    text-align: center; */
+    justify-content: center;
+    width: 90%;
+  }
+
+  .sleep-logo {
+    width: 40%;
+  }
+
+  .container {
+    justify-content: center;
+    height: 40vh;
+    margin-top: 200px;
+    margin-bottom: 200px;
+  }
+
+  .vert-bar {
+    display: none;
+  }
+
+  .icon-bar {
+    display: none;
+  }
+
+  .container{
+    width: 100%;
+    flex-wrap: wrap;
+  }
 
   .top-logo {
     display: none;
@@ -736,9 +833,10 @@ i {
     justify-content: center;
     align-items: center;
     /* padding: min(0vh, 10rem) 5em; */
-
+    
     transform: translateX(100%);
     transition: transform 350ms ease; 
+    
   }
 
   .links a {
@@ -804,7 +902,7 @@ i {
   }
 
   .card {
-    width: 100%;
+    width: 40%;
 
   }
  }
