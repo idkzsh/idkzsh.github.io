@@ -30,7 +30,7 @@ optionTri.addEventListener('click', function() {
 });
 
 // const hamburger = document.querySelector('.hamburger')
-// const navUl = document.querySelector('.nav-ul')
+// const navUl = document.querySelector('.links')
 // const arrow = document.querySelector('.arrow')
 
 // hamburger.addEventListener('click', function() {
@@ -39,7 +39,24 @@ optionTri.addEventListener('click', function() {
 //     arrow.classList.toggle('active')
 // }) 
 
-// document.querySelector('.nav-a').forEach(n => n.addEventListener('click', function() {
+// document.querySelector('.links-a').forEach(n => n.addEventListener('click', function() {
 //     hamburger.classList.remove('active');
 //     navUl.classList.toggle('active');
 // }))
+
+const primaryNav = document.querySelector('.links')
+const hamburger = document.querySelector('.hamburger')
+
+
+hamburger.addEventListener('click', () => {
+    hamburger.classList.toggle('active')
+    const visibility = primaryNav.getAttribute('data-visible')
+
+    if (visibility === "false") {
+      primaryNav.setAttribute("data-visible", true);
+      hamburger.setAttribute("aria-expanded",true);
+    } else {
+      primaryNav.setAttribute("data-visible", false);
+      hamburger.setAttribute("aria-expanded", false);
+    }
+}) 

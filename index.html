@@ -21,19 +21,18 @@
 
 <body>
     <header>
-
+        <div class="logo">
+            <img src="assets/images/logo.png" alt="" class="top-logo">
+        </div>
         <nav class="topnav">
-            <div class="logo">
-                <img src="assets/images/logo.png" alt="" class="top-logo">
-            </div>
-            <div class="links">
-                <a class="active" href="#">home</a>
-                <a href="#about-me">about</a>
-                <a href="#experience">experience</a>
-                <a href="#projects">projects</a>
-                <a href="#contact">contact</a>
-            </div>
-            <div class="hamburger">
+            <ul class="links" id="primary-nav" data-visible="false">
+                <li><a href="#"><span>home</span></a></li>
+                <li><a href="#about-me"><span>about</span></a></li>
+                <li><a href="#experience"><span>experience</span></a></li>
+                <li><a href="#projects"><span>projects</span></a></li>
+                <li><a href="#contact"><span>contact</span></a></li>
+            </ul>
+            <div class="hamburger" aria-controls="nav-menu" aria-expanded="false">
                 <span class="bar"></span>
                 <span class="bar"></span>
                 <span class="bar"></span>
