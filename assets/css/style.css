@@ -59,24 +59,15 @@ li {
   /* margin-top: 0px; */
   margin-top: 0px;
   margin-bottom: 0px;
-  /* background: hsla(0, 0%, 9%, 0.85); */
-  backdrop-filter: blur(8px);
+  
+  background: hsla(0, 0%, 1%, 0.5); 
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(8px);
 }
 
 
 
-/* @supports (backdrop-filter: blur(8px)) {
-  header {
-    background: hsla(0, 0%, 13%, 0.1);
-    backdrop-filter: blur(8px);
-  }
 
-
-  .links {
-    background: hsla(0, 0%, 1%, 0.1);
-    backdrop-filter: blur(10px);
-  }
-} */
 
 
 .links a {
@@ -767,8 +758,12 @@ i {
   }
 
   header {
-    backdrop-filter: none;
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    height: 5vh;
   }
+
+  /* @supports () */
 
   .experience-wrapper {
     display: flex;
@@ -807,6 +802,8 @@ i {
   .container {
     width: 100%;
     flex-wrap: wrap;
+    margin-top: 70px;
+    margin-bottom: 230px;
   }
 
   .top-logo {
@@ -825,6 +822,7 @@ i {
     align-items: center;
     transform: translateX(100%);
     transition: transform 350ms ease;
+
   }
 
   .links a {
@@ -855,7 +853,7 @@ i {
     cursor: pointer;
     display: block;
     position: absolute;
-    top: 1em;
+    top: 0;
     transform: translateY(25%);
     right: 1.5em;
 
