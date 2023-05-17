@@ -37,6 +37,10 @@ header {
   z-index: 200;
 }
 
+footer {
+  height: 0px;
+}
+
 .top-logo {
   width: 90px;
 }
@@ -314,6 +318,7 @@ hr.stack-separator {
   display: flex;
   width: 60%;
   flex-direction: column;
+  margin-bottom: 100px;
 }
 
 .projects {
@@ -330,7 +335,7 @@ hr.stack-separator {
 }
 
 .contact {
-  margin-top: 200px;
+  margin-top: 30px;
   text-align: center;
 }
 
@@ -806,6 +811,33 @@ i {
 
 
 
+@media (min-width: 85em) and (max-width: 94.3em) {
+  footer {
+    height: 0px;
+  }
+  
+  .projects-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    margin-bottom: 450px;
+    }
+}
+
+@media (min-width: 65em) and (max-width: 85em) {
+  footer {
+    height: 0px;
+  }
+  
+  .projects-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    margin-bottom: 450px;
+    }
+}
 
 @media (min-width: 35em) and (max-width: 65em) {
   
@@ -855,7 +887,7 @@ i {
   flex-direction: column;
   justify-content: center;
   width: 90%;
-  height: 430vh;
+  margin-bottom: 450px;
   }
 
   .experience-wrapper {
@@ -938,7 +970,7 @@ i {
     flex-direction: column;
     justify-content: center;
     width: 90%;
-    height: 95vh;
+    margin-bottom: 1480px;
   }
 
   .experience-wrapper {
