@@ -20,29 +20,11 @@ document.getElementById("cards").onmousemove = e => {
     };
   }
 
-const slider = document.querySelector('.slides');
-const optionOne = document.querySelector('.option-1');
-const optionTwo = document.querySelector('.option-2');
-const optionTri = document.querySelector('.option-3');
-
-var sectionIndex = 0;
-
-optionOne.addEventListener('click', function() {
-  slider.style.transform = 'translateY(0%)';
-});
-
-optionTwo.addEventListener('click', function() {
-  slider.style.transform = 'translateY(-500px)';
-});
-
-optionTri.addEventListener('click', function() {
-  slider.style.transform = 'translateY(-1000px)';
-});
 
 
-const primaryNav = document.querySelector('.links')
+
+const primaryNav = document.querySelector('.mobile-nav')
 const hamburger = document.querySelector('.hamburger')
-
 
 hamburger.addEventListener('click', () => {
     hamburger.classList.toggle('active')
@@ -56,3 +38,45 @@ hamburger.addEventListener('click', () => {
       hamburger.setAttribute("aria-expanded", false);
     }
 }) 
+
+primaryNav.addEventListener('click', function() {
+  primaryNav.setAttribute("data-visible", false);
+  hamburger.setAttribute("aria-expanded", false);
+  hamburger.classList.toggle('active')
+});
+
+
+const slider = document.querySelector('.slides');
+const optionOne = document.querySelector('.option-1');
+const optionTwo = document.querySelector('.option-2');
+const optionTri = document.querySelector('.option-3');
+
+const bestBuy = document.querySelector('.best-buy');
+const cadDrives = document.querySelector('.cad-drives');
+const bcit = document.querySelector('.bcit');
+
+var sectionIndex = 0;
+
+optionOne.addEventListener('click', function() {
+  slider.style.transform = 'translateY(0%)';
+});
+
+optionTwo.addEventListener('click', function() {
+  slider.style.transform = 'translateY(-400px)';
+});
+
+optionTri.addEventListener('click', function() {
+  slider.style.transform = 'translateY(-800px)';
+});
+
+bestBuy.addEventListener('click', function() {
+  slider.style.transform = 'translateY(0%)';
+});
+
+cadDrives.addEventListener('click', function() {
+  slider.style.transform = 'translateY(-400px)';
+});
+
+bcit.addEventListener('click', function() {
+  slider.style.transform = 'translateY(-800px)';
+});

@@ -4,522 +4,500 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=h2.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/css/style.css">
-    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.css"
-        integrity="sha512-Z0kTB03S7BU+JFU0nw9mjSBcRnZm2Bvm0tzOX9/OuOuz01XQfOpa0w/N9u6Jf2f1OAdegdIPWZ9nIZZ+keEvBw=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/solid.css"
-        integrity="sha512-mJH2UCb8EplzC+Yw56CdWqGt6sazPKhJHpyNnT3Au6lx5tueCa/VhBe2yIQZQcjKVelo6U5foei5lhsmWOA+tg=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" /> -->
-
     <script src="https://kit.fontawesome.com/fcf010ce1e.js" crossorigin="anonymous"></script>
     <script src="assets/js/app.js" defer></script>
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
     <link rel="icon" type="image/x-icon" href="assets/images/eye-logo-title.ico">
-
-    <title>zzz</title>
-
+    <title>Document</title>
 </head>
 
 <body>
     <header>
-        <div class="logo">
-            <img src="assets/images/zzz-logo.png" alt="" class="top-logo">
+        <div class="logo-wrapper">
+            <div class="logo">
+                <img class="top-logo" src="assets/images/zzz-logo.png">
+            </div>
+
         </div>
-        <nav class="topnav">
-            <ul class="links" id="primary-nav" data-visible="false">
+
+        <nav>
+            <ul class="navigation" data-visible="false">
                 <li><a href="#"><span>home</span></a></li>
                 <li><a href="#about-me"><span>about</span></a></li>
                 <li><a href="#experience"><span>experience</span></a></li>
                 <li><a href="#projects"><span>projects</span></a></li>
                 <li><a href="#contact"><span>contact</span></a></li>
             </ul>
+
+
+
+        </nav>
+    </header>
+    <main>
+        <div class="header-nav">
             <div class="hamburger" aria-controls="nav-menu" aria-expanded="false">
                 <span class="bar"></span>
                 <span class="bar"></span>
                 <span class="bar"></span>
             </div>
-        </nav>
-    </header>
-
-    <div class="container">
-        <div class="eye"><img src="assets/images/eye-logo-full-dark.png"></div>
-        <div class="intro-container">
-            <h1>Zach Wong</h1>
-
-            <div class="typed-js">
-                <h2 class="typing"></h2>
-                <script>
-                    var typed = new Typed(".typing", {
-                        strings: ["developer", "building", "creating", "solutions"],
-                        typeSpeed: 45,
-                        backSpeed: 30,
-                        loop: true
-                    })
-                </script>
-            </div>
+            <ul class="mobile-nav" data-visible="false">
+                <li><a href="#"><span>home</span></a></li>
+                <li><a href="#about-me"><span>about</span></a></li>
+                <li><a href="#experience"><span>experience</span></a></li>
+                <li><a href="#projects"><span>projects</span></a></li>
+                <li><a href="#contact"><span>contact</span></a></li>
+            </ul>
         </div>
-
-    </div>
-
-    <div class="arrows">
-        <a href="#about-me">
-            <div class="arrow-container">
-                <div class="arrow">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </div>
-            </div>
-        </a>
-    </div>
-
-
-    <div class="about-me-wrapper">
-        <div class="about-me" id="about-me">
-
-            <h1 class="headings">
-                about me
-            </h1>
-            <hr class="separator">
-            <p class="bout-me">Hi, my name's Zach. I'm an aspiring full stack developer and Part-Time student at the <a
-                    href="https://www.bcit.ca/">British
-                    Columbia Institute of Technology.</a> I'll be completing my <a
-                    href="https://www.bcit.ca/programs/computer-systems-diploma-part-time-5500pdiplt/">CST
-                    Diploma</a> within the next 2 years. I have a passion for front-end web and mobile development
-                and design,
-                and I also like to know what's going on in the back-end to get the full scope of my work. I'm also quite
-                interested in AI and keep a close eye on new tech innovations.
-            </p>
-            <br>
-            <p class="bout-me">I'm currently employed at Best Buy Canada as a Data/Information Management Specialist.
-            </p>
-            <br>
-            <div class="sleep">
-                <i class="fa-solid fa-robot big-icons"></i>
-            </div>
-            <h2 class="headings">
-                tech stack
-            </h2>
-            <hr class="stack-separator">
-            <div id="cards">
-                <div class="card">
-                    <div class="card-content">
-                        <div class="card-image">
-                            <i class="fa-brands fa-python icons"></i>
-                        </div>
-                        <div class="card-info-wrapper">
-                            <div class="card-info">
-
-                                <div class="card-info-title">
-                                    <h4>Python</h4>
-
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="card-content">
-                        <div class="card-image">
-                            <i class="fa-brands fa-java icons"></i>
-                        </div>
-                        <div class="card-info-wrapper">
-                            <div class="card-info">
-
-                                <div class="card-info-title">
-                                    <h4>Java</h4>
-
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="card-content">
-                        <div class="card-image">
-                            <i class="fa-brands fa-square-js icons"></i>
-                        </div>
-                        <div class="card-info-wrapper">
-                            <div class="card-info">
-
-                                <div class="card-info-title">
-                                    <h4>Javascript</h4>
-
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="card-content">
-                        <div class="card-image">
-                            <i class="fa-brands fa-html5 icons"></i>
-                        </div>
-                        <div class="card-info-wrapper">
-                            <div class="card-info">
-
-                                <div class="card-info-title">
-                                    <h4>HTML5</h4>
-
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="card-content">
-                        <div class="card-image">
-                            <i class="fa-brands fa-css3-alt icons"></i>
-                        </div>
-                        <div class="card-info-wrapper">
-                            <div class="card-info">
-
-                                <div class="card-info-title">
-                                    <h4>CSS3</h4>
-
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="card-content">
-                        <div class="card-image">
-                            <i class="fa-brands fa-swift icons"></i>
-                        </div>
-                        <div class="card-info-wrapper">
-                            <div class="card-info">
-
-                                <div class="card-info-title">
-                                    <h4>Swift</h4>
-
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="card-content">
-                        <div class="card-image">
-                            <i class="fa-solid fa-c icons"></i>
-                        </div>
-                        <div class="card-info-wrapper">
-                            <div class="card-info">
-
-                                <div class="card-info-title">
-                                    <h4>C</h4>
-
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="card-content">
-                        <div class="card-image">
-                            <i class="fa-solid fa-droplet"></i>
-                        </div>
-                        <div class="card-info-wrapper">
-                            <div class="card-info">
-
-                                <div class="card-info-title">
-                                    <h4>Django</h4>
-
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="card-content">
-                        <div class="card-image">
-                            <i class="fa-solid fa-database"></i>
-                        </div>
-                        <div class="card-info-wrapper">
-                            <div class="card-info">
-
-                                <div class="card-info-title">
-                                    <h4>SQL</h4>
-
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="card-content">
-                        <div class="card-image">
-                            <i class="fa-brands fa-git-alt"></i>
-                        </div>
-                        <div class="card-info-wrapper">
-                            <div class="card-info">
-
-                                <div class="card-info-title">
-                                    <h4>Git</h4>
-
-                                </div>
+        <div class="main-container">
+            <div class="container-wrapper">
+                <div class="container">
+                    <div class="eye"><img src="assets/images/eye-logo-full-dark.png"></div>
+                    <div class="intro-container">
+                        <h1 class="big-name">Zach Wong</h1>
+                        <div class="type-script">
+                            <div class="typed-js">
+                                <h2 class="typing"></h2>
+                                <script>
+                                    var typed = new Typed(".typing", {
+                                        strings: ["developer", "building", "creating", "solutions"],
+                                        typeSpeed: 45,
+                                        backSpeed: 30,
+                                        loop: true
+                                    })
+                                </script>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </div>
 
-
-    <div class="experience-wrapper">
-        <div class="experience" id="experience">
-            <div class="exp-sep">
-                <h1 class="headings">experience</h1>
-                <hr class="separator">
+            <div class="arrows">
+                <a href="#about-me">
+                    <div class="arrow-container">
+                        <div class="arrow">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                    </div>
+                </a>
             </div>
 
-            <div class="slideshow">
-                <div class="slide-nav">
+            <div class="about-me-wrapper">
+                <div class="about-me" id="about-me">
+                    <div class="about-me-sep">
+                        <h3 class="headings">
+                            about me
+                            </h1>
+                            <div class="box-separator">
+                                <hr class="about-separator">
+                            </div>
 
-                    <a href="#section-1">
-                        <div class="option-1">Best Buy Canada</div>
-                    </a>
-                    <a href="#section-2">
-                        <div class="option-2">Canada Drives</div>
-                    </a>
-                    <a href="#section-3">
-                        <div class="option-3">BCIT</div>
-                    </a>
+                    </div>
+                    <p class="bout-me">Hi, my name's Zach. I'm an aspiring full stack developer and Part-Time student at
+                        the <a href="https://www.bcit.ca/">British
+                            Columbia Institute of Technology.</a> I'll be completing my <a
+                            href="https://www.bcit.ca/programs/computer-systems-diploma-part-time-5500pdiplt/">CST
+                            Diploma</a> within the next 2 years. I have a passion for front-end web and mobile
+                        development
+                        and design,
+                        and I also like to know what's going on in the back-end to get the full scope of my work. I'm
+                        also quite
+                        interested in AI and keep a close eye on new tech innovations.
+                    </p>
+                    <div class="sleep">
+                        <i class="fa-solid fa-robot bigger-icon"></i>
+                    </div>
+                    <p class="bout-me">I'm currently employed at Best Buy Canada as a Data/Information Management
+                        Specialist.
+                    </p>
+                    <br>
+                    
+                </div>
+                <div class="tech-separator">
+                    <h3 class="headings">
+                        tech stack
+                        </h2>
+                        <div class="box-separator">
+                            <hr class="about-separator">
+                        </div>
+                </div>
+                <div id="cards">
+                    <div class="card">
+                        <div class="card-content">
+                            <div class="card-image">
+                                <i class="fa-brands fa-python icons"></i>
+                            </div>
+                            <div class="card-info-wrapper">
+                                <div class="card-info">
 
+                                    <div class="card-info-title">
+                                        <h4>Python</h4>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-content">
+                            <div class="card-image">
+                                <i class="fa-brands fa-java icons"></i>
+                            </div>
+                            <div class="card-info-wrapper">
+                                <div class="card-info">
+
+                                    <div class="card-info-title">
+                                        <h4>Java</h4>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-content">
+                            <div class="card-image">
+                                <i class="fa-brands fa-square-js icons"></i>
+                            </div>
+                            <div class="card-info-wrapper">
+                                <div class="card-info">
+
+                                    <div class="card-info-title">
+                                        <h4>Javascript</h4>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-content">
+                            <div class="card-image">
+                                <i class="fa-brands fa-html5 icons"></i>
+                            </div>
+                            <div class="card-info-wrapper">
+                                <div class="card-info">
+
+                                    <div class="card-info-title">
+                                        <h4>HTML5</h4>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-content">
+                            <div class="card-image">
+                                <i class="fa-brands fa-css3-alt icons"></i>
+                            </div>
+                            <div class="card-info-wrapper">
+                                <div class="card-info">
+
+                                    <div class="card-info-title">
+                                        <h4>CSS3</h4>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-content">
+                            <div class="card-image">
+                                <i class="fa-brands fa-swift icons"></i>
+                            </div>
+                            <div class="card-info-wrapper">
+                                <div class="card-info">
+
+                                    <div class="card-info-title">
+                                        <h4>Swift</h4>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-content">
+                            <div class="card-image">
+                                <i class="fa-solid fa-c icons"></i>
+                            </div>
+                            <div class="card-info-wrapper">
+                                <div class="card-info">
+
+                                    <div class="card-info-title">
+                                        <h4>C</h4>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-content">
+                            <div class="card-image">
+                                <i class="fa-solid fa-droplet"></i>
+                            </div>
+                            <div class="card-info-wrapper">
+                                <div class="card-info">
+
+                                    <div class="card-info-title">
+                                        <h4>Django</h4>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-content">
+                            <div class="card-image">
+                                <i class="fa-solid fa-database"></i>
+                            </div>
+                            <div class="card-info-wrapper">
+                                <div class="card-info">
+
+                                    <div class="card-info-title">
+                                        <h4>SQL</h4>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-content">
+                            <div class="card-image">
+                                <i class="fa-brands fa-git-alt"></i>
+                            </div>
+                            <div class="card-info-wrapper">
+                                <div class="card-info">
+
+                                    <div class="card-info-title">
+                                        <h4>Git</h4>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="experience-wrapper">
+                <div class="experience" id="experience">
+                    <div class="exp-sep">
+                        <h3 class="headings">experience</h3>
+                        <div class="box-separator">
+                            <hr class="about-separator">
+                        </div>
+                    </div>
+
+                    <div class="slideshow">
+                        <div class="link-separator">
+                            <div class="slide-nav">
+
+                                <a href="#section-1">
+                                    <div class="option-1"><i class="fas fa-tag big-icon"></i >Best Buy Canada</div>
+                                </a>
+                                <a href="#section-2">
+                                    <div class="option-2"><i class="fa-sharp fa-solid fa-car-side big-icon"></i> Canada Drives</div>
+                                </a>
+                                <a href="#section-3">
+                                    <div class="option-3"><i class="fa-solid fa-graduation-cap big-icon"></i> BCIT</div>
+                                </a>
+
+                            </div>
+                            <div class="mobile-slide-nav">
+
+                                <a href="#option-1">
+                                    <i class="fas fa-tag best-buy big-icon"></i>
+
+                                </a>
+                                <a href="#option-2">
+                                    <i class="fa-sharp fa-solid fa-car-side cad-drives big-icon"></i>
+
+                                </a>
+                                <a href="#section-3">
+                                    <i class="fa-solid fa-graduation-cap bcit big-icon"></i>
+                                </a>
+
+                            </div>
+
+                            <div class="vert-bar">
+                                <hr class="big-vert">
+                            </div>
+
+
+                        </div>
+
+
+                        <div class="slides-wrapper">
+                            <div class="slides">
+                                <div class="big-cards" id="section-0">
+                                    <div class="big-card">
+                                        <div class="big-card-content">
+                                            <div class="big-card-info-wrapper">
+                                                <div class="big-card-info">
+                                                    <h3>Best Buy Canada</h3>
+                                                    <div class="big-card-info-title">
+                                                        <i class="fas fa-tag big-icon"></i>
+                                                        <h4>Jan 2023 - Current</h4>
+                                                        <p class="employment">Data/Information Management Specialist</p>
+                                                        <div class="big-card-image">
+                                                            <i class="fa-solid fa-file-excel big-icon"></i>
+                                                        </div>
+                                                        <div class="big-card-image">
+                                                            <i class="fa-solid fa-file-word big-icon"></i>
+                                                        </div>
+                                                        <div class="big-card-image">
+                                                            <i class="fa-solid fa-database big-icon"></i>
+                                                        </div>
+                                                        <h4>Sept 2019 - Jan 2023</h4>
+                                                        <p class="employment">Logistics Associate/Trainer</p>
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="big-card">
+                                        <div class="big-card-content">
+                                            <div class="big-card-info-wrapper">
+                                                <div class="big-card-info">
+                                                    <div class="big-card-info-title">
+                                                        <h3>Canada Drives</h3>
+                                                        <i class="fa-sharp fa-solid fa-car-side big-icon"></i>
+                                                        <h4>2016 - 2019</h4>
+                                                        <p class="employment">Senior Credit Specialist</p>
+                                                        <div class="big-card-image">
+                                                            <i class="fa-solid fa-file-excel big-icon"></i>
+                                                        </div>
+                                                        <div class="big-card-image">
+                                                            <i class="fa-solid fa-file-word big-icon"></i>
+                                                        </div>
+                                                        <div class="big-card-image">
+                                                            <i class="fa-brands fa-salesforce big-icon"></i>
+                                                        </div>
+                                                        <div class="big-card-image">
+                                                            <i class="fa-brands fa-slack big-icon"></i>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="big-card">
+                                        <div class="big-card-content">
+                                            <div class="big-card-info-wrapper">
+                                                <div class="big-card-info">
+                                                    <div class="big-card-info-title">
+                                                        <h3>BCIT</h3>
+                                                        <i class="fa-solid fa-graduation-cap big-icon"></i>
+                                                        <h4>2021 - Current</h4>
+                                                        <p class="employment">CST - Computer Systems Diploma</p>
+                                                        <p class="employment">CSC - Computer Systems Certificate</p>
+                                                        <p class="employment">ASD - Applied Software Development
+                                                            Certificate</p>
+                                                        <p class="employment">ACIS - Applied Computer Information
+                                                            Systems
+                                                            Certificate
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+                <div class="projects-wrapper">
+                    <div class="projects" id="projects">
+                        <div class="proj-sep">
+                            <h1 class="headings">projects</h1>
+                            <div class="box-separator">
+                                <hr class="about-separator">
+                            </div>
+
+                        </div>
+
+                        <div id="med-cards">
+                            <div class="med-card">
+                                <div class="med-card-content">
+                                    <div class="med-card-image">
+                                        <i class="fa-solid fa-business-time"></i>
+                                    </div>
+                                    <div class="med-card-info-wrapper">
+                                        <div class="med-card-info">
+
+                                            <div class="med-card-info-title">
+                                                <h4>Coming Soon</h4>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+
+
+                        </div>
+                    </div>
+                </div>
+            
+    
+                <div class="contact" id="contact">
+                    <a href="mailto:zachflentgewong@gmail.com"><i class="fa-solid fa-envelope bigger-icon"></i></a>
+                </div>
+
+
+            <div class="desktop-icon">
+                <div class="icon-bar">
+                    <span><a class="active" href="https://github.com/zzz-idk" target="_blank"><i
+                                class="fa-brands fa-github"></i></a></span>
+                    <span>
+                        <a href="https://www.linkedin.com/in/zach-flentge-wong/" target="_blank"><i
+                                class="fa-brands fa-linkedin"></i></a>
+                    </span>
+                    <span><a href="https://discord.com/users/615693931509972993" target="_blank"><i
+                                class="fa-brands fa-discord"></i></a></span>
+                    <span><a href="https://www.instagram.com/93z.prevail/" target="_blank"><i
+                                class="fa-brands fa-instagram"></i></a></span>
+                    <span><a href="https://linktr.ee/93.z" target="_blank"><i class="fa-solid fa-tree"></i></a></span>
                 </div>
                 <div class="vert-bar">
-                    <hr class="big-vert">
+                    <hr class="vert">
                 </div>
-
-                <div class="slides-wrapper">
-                    <div class="slides">
-                        <div class="big-cards" id="section-0">
-                            <div class="big-card">
-                                <div class="big-card-content">
-                                    <div class="big-card-info-wrapper">
-                                        <div class="big-card-info">
-                                            <h3>Best Buy Canada</h3>
-                                            <div class="big-card-info-title">
-                                                <i class="fas fa-tag big-icons"></i>
-                                                <h4>Jan 2023 - Current</h4>
-                                                <p class="employment">Data/Information Management Specialist</p>
-                                                <div class="big-card-image">
-                                                    <i class="fa-solid fa-file-excel big-icons"></i>
-                                                </div>
-                                                <div class="big-card-image">
-                                                    <i class="fa-solid fa-file-word big-icons"></i>
-                                                </div>
-                                                <div class="big-card-image">
-                                                    <i class="fa-solid fa-database big-icons"></i>
-                                                </div>
-                                                <h4>Sept 2019 - Jan 2023</h4>
-                                                <p class="employment">Logistics Associate/Trainer</p>
-                                                <div class="big-card-image">
-                                                    <i class="fa-sharp fa-solid fa-forklift"></i>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="big-card">
-                                <div class="big-card-content">
-                                    <div class="big-card-info-wrapper">
-                                        <div class="big-card-info">
-                                            <div class="big-card-info-title">
-                                                <h3>Canada Drives</h3>
-                                                <i class="fa-sharp fa-solid fa-car-side big-icons"></i>
-                                                <h4>2016 - 2019</h4>
-                                                <p class="employment">Senior Credit Specialist</p>
-                                                <div class="big-card-image">
-                                                    <i class="fa-solid fa-file-excel big-icons"></i>
-                                                </div>
-                                                <div class="big-card-image">
-                                                    <i class="fa-solid fa-file-word big-icons"></i>
-                                                </div>
-                                                <div class="big-card-image">
-                                                    <i class="fa-brands fa-salesforce big-icons"></i>
-                                                </div>
-                                                <div class="big-card-image">
-                                                    <i class="fa-brands fa-slack big-icons"></i>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="big-card">
-                                <div class="big-card-content">
-                                    <div class="big-card-info-wrapper">
-                                        <div class="big-card-info">
-                                            <div class="big-card-info-title">
-                                                <h3>BCIT</h3>
-                                                <i class="fa-solid fa-graduation-cap big-icons"></i>
-                                                <h4>2021 - Current</h4>
-                                                <p class="employment">CST - Computer Systems Diploma</p>
-                                                <p class="employment">CSC - Computer Systems Certificate</p>
-                                                <p class="employment">ASD - Applied Software Development Certificate</p>
-                                                <p class="employment">ACIS - Applied Computer Information Systems
-                                                    Certificate
-                                                </p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+            </div>
+            <div class="mobile-icon">
+                <div class="mobile-icon-bar">
+                    <span><a class="active" href="https://github.com/zzz-idk" target="_blank"><i
+                                class="fa-brands fa-github"></i></a></span>
+                    <span>
+                        <a href="https://www.linkedin.com/in/zach-flentge-wong/" target="_blank"><i
+                                class="fa-brands fa-linkedin"></i></a>
+                    </span>
+                    <span><a href="https://discord.com/users/615693931509972993" target="_blank"><i
+                                class="fa-brands fa-discord"></i></a></span>
+                    <span><a href="https://www.instagram.com/93z.prevail/" target="_blank"><i
+                                class="fa-brands fa-instagram"></i></a></span>
+                    <span><a href="https://linktr.ee/93.z" target="_blank"><i class="fa-solid fa-tree"></i></a></span>
                 </div>
             </div>
         </div>
-    </div>
 
-    <div class="projects-wrapper">
-        <div class="projects" id="projects">
-            <div class="proj-separator">
-                <h1 class="headings">projects</h1>
-                <hr class="separator">
-            </div>
-
-            <div id="med-cards">
-                <div class="med-card">
-                    <div class="med-card-content">
-                        <div class="med-card-image">
-                            <i class="fa-brands fa-python icons"></i>
-                        </div>
-                        <div class="med-card-info-wrapper">
-                            <div class="med-ard-info">
-
-                                <div class="med-card-info-title">
-                                    <h4>Python</h4>
-
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="med-card">
-                    <div class="med-card-content">
-                        <div class="med-card-image">
-                            <i class="fa-brands fa-java icons"></i>
-                        </div>
-                        <div class="med-card-info-wrapper">
-                            <div class="med-card-info">
-
-                                <div class="med-card-info-title">
-                                    <h4>Java</h4>
-
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="med-card">
-                    <div class="med-card-content">
-                        <div class="med-card-image">
-                            <i class="fa-brands fa-square-js icons"></i>
-                        </div>
-                        <div class="med-card-info-wrapper">
-                            <div class="med-card-info">
-
-                                <div class="med-card-info-title">
-                                    <h4>Javascript</h4>
-
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="med-card">
-                    <div class="med-card-content">
-                        <div class="med-card-image">
-                            <i class="fa-brands fa-html5 icons"></i>
-                        </div>
-                        <div class="med-card-info-wrapper">
-                            <div class="med-card-info">
-
-                                <div class="med-card-info-title">
-                                    <h4>HTML5</h4>
-
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="med-card">
-                    <div class="med-card-content">
-                        <div class="med-card-image">
-                            <i class="fa-brands fa-css3-alt icons"></i>
-                        </div>
-                        <div class="med-card-info-wrapper">
-                            <div class="med-card-info">
-
-                                <div class="med-card-info-title">
-                                    <h4>CSS3</h4>
-
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="med-card">
-                    <div class="med-card-content">
-                        <div class="med-card-image">
-                            <i class="fa-brands fa-swift icons"></i>
-                        </div>
-                        <div class="med-card-info-wrapper">
-                            <div class="med-card-info">
-
-                                <div class="med-card-info-title">
-                                    <h4>Swift</h4>
-
-                                </div>  
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-
-            </div>
-        </div>
-    </div>
-    </div>
-    </div>
-    </div>
-    </div>
-    </div>
-    </div>
-
-    
-        <div class="contact" id="contact">
-            <a href="mailto:zachflentgewong@gmail.com"><i class="fa-solid fa-envelope big-icons"></i></a>
-        </div>
-
-
+    </main>
     <footer>
-        <div class="icon-bar">
-            <span><a class="active" href="https://github.com/zzz-idk" target="_blank"><i
-                        class="fa-brands fa-github"></i></a></span>
-            <span>
-                <a href="https://www.linkedin.com/in/zach-flentge-wong/" target="_blank"><i
-                        class="fa-brands fa-linkedin"></i></a>
-            </span>
-            <span><a href="https://twitter.com/93z_prevail" target="_blank"><i
-                        class="fa-brands fa-square-twitter"></i></a></span>
-            <span><a href="https://www.instagram.com/93z.prevail/" target="_blank"><i
-                        class="fa-brands fa-instagram"></i></a></span>
-            <span><a href="https://linktr.ee/93.z" target="_blank"><i class="fa-solid fa-tree"></i></a></span>
-        </div>
 
-
-        <div class="vert-bar">
-            <hr class="vert">
-        </div>
     </footer>
-
 </body>
 
 </html>
