@@ -4,6 +4,31 @@
   --turq-color: rgb(4, 170, 109);
 }
 
+
+@keyframes fade-down-straight {
+  0% {
+    opacity: 0;
+    transform: translateY(-90px) scale(0.9);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0px) scale(1);
+  }
+}
+
+@keyframes fade-up {
+  0% {
+    opacity: 0;
+    transform: translateY(90px) scale(1);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0px) scale(1);
+  }
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -46,6 +71,7 @@ header {
   z-index: 1500;
   position: fixed;
   width: 100%;
+  animation: fade-down-straight 2s;
 }
 
 
@@ -74,6 +100,7 @@ nav {
 
 .top-logo {
   max-width: 100%;
+  /* animation: fade-down 2s; */
 }
 
 .navigation {
@@ -137,6 +164,13 @@ main {
 }
 
 .container-wrapper {
+  opacity: 0; /* Initial state: element is transparent */
+  animation-name: fade-up;
+  animation-duration: 2s;
+  animation-timing-function: ease-in-out;
+  animation-delay: 1s; /* Delay before animation starts */
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards; /* Retains the final state */
   height: 72vh;
 }
 
@@ -159,6 +193,7 @@ margin-bottom: 0;
 padding: 20px;
 }
 
+
 .intro-container {
   display: flex;
   flex-direction: column;
@@ -178,7 +213,7 @@ padding: 20px;
 .typing {
   margin: 0;
   color: var(--turq-color);
-  padding-left: 12px;
+  padding-left: 40px;
 }
 
 .typed-cursor {
@@ -298,7 +333,7 @@ hr.about-separator {
   justify-content: center;
   /* width: 50%; */
   line-height: 50px;
-  text-align: center;
+  /* text-align: center; */
 }
 
 .mobile-slide-nav { 
@@ -349,6 +384,13 @@ hr.about-separator {
 }
 
 .icon-bar {
+  opacity: 0; /* Initial state: element is transparent */
+  animation-name: fade-up;
+  animation-duration: 2s;
+  animation-timing-function: ease-in-out;
+  animation-delay: 1s; /* Delay before animation starts */
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards; /* Retains the final state */
   height: 300px;
   display: flex;
   flex-direction: column;
@@ -376,7 +418,7 @@ hr.about-separator {
   background-color: var(--turq-color);
   color: var(--turq-color);
   border-radius: 8px;
-  opacity: 80%;
+  opacity: 30%;
   transform: translateY(-5px);
   border-radius: 50px; 
 }
@@ -388,7 +430,13 @@ hr.about-separator {
   width: .1px;
   height: 100px;
   /* margin: 10px 94px; */
-
+  opacity: 0; /* Initial state: element is transparent */
+  animation-name: fade-up;
+  animation-duration: 2s;
+  animation-timing-function: ease-in-out;
+  animation-delay: 1s; /* Delay before animation starts */
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards; /* Retains the final state */
 }
 
 i {
@@ -407,6 +455,13 @@ i {
 /* ARROWS-SECTIOn */
 
 .arrows {
+  opacity: 0; /* Initial state: element is transparent */
+  animation-name: fade-up;
+  animation-duration: 2s;
+  animation-timing-function: ease-in-out;
+  animation-delay: 1s; /* Delay before animation starts */
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards; /* Retains the final state */
   display: flex;
   justify-content: center;
   text-align: center;
@@ -804,6 +859,7 @@ i {
 }
 
 
+
 @media (min-width: 66em) and (max-width: 75.5em) {
   
   .desktop-icon {
@@ -843,7 +899,7 @@ i {
     background-color: var(--turq-color);
     color: var(--turq-color);
     border-radius: 8px;
-    opacity: 80%;
+    opacity: 30%;
     transform: translateY(-5px);
     border-radius: 50px; 
   }
@@ -873,6 +929,7 @@ i {
 
 @media (max-width: 66em) {
   
+
   .desktop-icon {
     display: none;
   }
@@ -910,12 +967,13 @@ i {
     background-color: var(--turq-color);
     color: var(--turq-color);
     border-radius: 8px;
-    opacity: 60%;
+    opacity: 30%;
     transform: translateY(-5px);
     border-radius: 50px; 
   }
 
   .hamburger {
+    
     z-index: 9999;
     width: 50px;
     cursor: pointer;
@@ -928,6 +986,7 @@ i {
   }
 
   .bar {
+    animation: fade-down-straight 2s;
     display: block;
     width: 30px;
     height: 3px;
@@ -956,8 +1015,11 @@ i {
   }
 
 
+  
+
 
   .mobile-nav {
+    
     position: fixed;
     z-index: 1000;
     inset: 0 0 0 50%;
@@ -1120,3 +1182,4 @@ i {
 
   
 }
+
