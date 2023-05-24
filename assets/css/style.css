@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap');
+
 :root {
   --bg-color: rgb(20, 20, 20);
   --card-color: rgb(23, 23, 23);
@@ -373,6 +375,28 @@ hr.about-separator {
 .contact {
   margin-top: 50px;
   margin-bottom: 50px;
+}
+
+.contact a {
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  transition: all .5s ease;
+  /* color: var(--bg-color);  */
+  /* font-size: 30px; */
+  border-radius: 50px; 
+  /* width: 100px; */
+  /* height: 50px; */
+}
+
+.contact a:hover {
+  /* width: 1px; */
+  background-color: var(--turq-color);
+  color: var(--turq-color);
+  border-radius: 8px;
+  opacity: 30%;
+  transform: translateY(-10px);
+  border-radius: 50px; 
 }
 
 .desktop-icon {
