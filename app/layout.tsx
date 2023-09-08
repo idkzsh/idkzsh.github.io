@@ -16,13 +16,13 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body>
-        <main className="min-h-screen bg-background flex flex-col items-center">
+      <body className="flex fixed w-full justify-center">
+        <main className="min-h-screen bg-background flex flex-col items-center w-full">
           <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
             <NavBar />
             <Spacer />
             {children}
-            <span className="flex w-full items-center justify-center text-xs">Powered by Vercel, Next.js and Supabase</span>
+            <span className="fixed bottom-[4.2rem] flex w-full items-center justify-center text-xs">Powered by Vercel, Next.js and Supabase</span>
             <Footer />
           </ThemeProvider>
         </main>
