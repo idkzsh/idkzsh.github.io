@@ -2,6 +2,7 @@ import NavBar from "@/components/NavBar";
 import "./globals.css";
 import { ThemeProvider } from "@/components/ThemeProvider";
 import Spacer from "@/components/Spacer";
+import Footer from "@/components/Footer";
 
 export const metadata = {
   title: "Create Next App",
@@ -21,6 +22,8 @@ export default function RootLayout({
             <NavBar />
             <Spacer />
             {children}
+            <span className="flex w-full items-center justify-center text-xs">Powered by Vercel, Next.js and Supabase</span>
+            <Footer />
           </ThemeProvider>
         </main>
       </body>
