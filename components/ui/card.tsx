@@ -7,7 +7,7 @@ interface Props {
 
 const Card = ({ icon, title }: Props) => {
   return (
-    <div className="text-2xl flex justify-evenly items-center w-[150px] h-[60px] bg-card rounded-lg">
+    <div className="text-2xl flex justify-center gap-2 items-center w-[150px] h-[60px] bg-card rounded-lg">
       {icon}
       <span className="text-base">{title}</span>
     </div>
