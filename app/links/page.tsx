@@ -3,16 +3,24 @@ import { FaLinkedin, FaGithub, FaDiscord } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 import { MdOutlineAlternateEmail } from "react-icons/md";
 import Link from "next/link";
+import Head from "next/head";
 
 export default function Links() {
   return (
     <>
-    <div className="gap-4 flex flex-col items-center justify-center w-[80vw] max-w-[800px] h-[70vh] mb-11">
+      <Head>
+        <title>idkz</title> {/* Set the page title here */}
+      </Head>
+      <div className="gap-4 flex flex-col items-center justify-center w-[80vw] max-w-[800px] h-[70vh] mb-11">
         <h2 className="flex justify-start min-w-[300px] w-[95%] ">LINKS</h2>
         <hr className="border-[0.5px] border-secondary min-w-[300px] w-[95%] " />
         <div className="flex gap-3 flex-wrap w-full justify-center">
           <Link href="mailto:zachflentgewong@gmail.com">
-            <LinkCard bg="bg-card-foreground" title="Email" icon={<MdOutlineAlternateEmail />} />
+            <LinkCard
+              bg="bg-card-foreground"
+              title="Email"
+              icon={<MdOutlineAlternateEmail />}
+            />
           </Link>
           <Link
             target="_blank"
