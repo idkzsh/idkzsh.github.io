@@ -11,7 +11,7 @@ export default function Tech() {
   return (
     <>
       <div className="gap-4 flex flex-col items-center justify-center w-[80vw] max-w-[800px] h-[800px] max-h-[80vh] mb-11">
-        <h2 className="flex justify-start min-w-[300px] w-[95%] ">TECH</h2>
+        <h2 className="flex justify-start min-w-[300px] w-[95%] text-sm">TECH</h2>
         <hr className="border-[0.5px] border-secondary min-w-[300px] w-[95%] " />
         <div className="flex gap-3 flex-wrap w-full justify-center">
           <TechCard

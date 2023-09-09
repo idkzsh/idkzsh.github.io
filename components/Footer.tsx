@@ -59,11 +59,21 @@ const Footer = () => {
             </div>
           )}
         </Link>
-        <div className="flex flex-col justify-center items-center">
-          <div className="text-xl">
-            <FaDiagramProject />
-          </div>
-        </div>
+        <Link href="/projects">
+          {path === "/projects" ? (
+            <div className="flex flex-col justify-center items-center">
+              <div className="text-3xl text-teal-600">
+                <FaDiagramProject />
+              </div>
+            </div>
+          ) : (
+            <div className="flex flex-col justify-center items-center">
+              <div className="text-xl">
+                <FaDiagramProject />
+              </div>
+            </div>
+          )}
+        </Link>
       </div>
     </div>
   );

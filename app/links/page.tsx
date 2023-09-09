@@ -1,18 +1,15 @@
 import LinkCard from "@/components/link-card";
-import { FaLinkedin, FaGithub, FaDiscord } from "react-icons/fa";
+import { FaLinkedin, FaGithub, FaDiscord, FaSpotify } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 import { MdOutlineAlternateEmail } from "react-icons/md";
 import Link from "next/link";
-import Head from "next/head";
+
 
 export default function Links() {
   return (
     <>
-      <Head>
-        <title>idkz</title> {/* Set the page title here */}
-      </Head>
       <div className="gap-4 flex flex-col items-center justify-center w-[80vw] max-w-[800px] h-[70vh] mb-11">
-        <h2 className="flex justify-start min-w-[300px] w-[95%] ">LINKS</h2>
+        <h2 className="flex justify-start min-w-[300px] w-[95%] text-sm">LINKS</h2>
         <hr className="border-[0.5px] border-secondary min-w-[300px] w-[95%] " />
         <div className="flex gap-3 flex-wrap w-full justify-center">
           <Link href="mailto:zachflentgewong@gmail.com">
@@ -52,12 +49,22 @@ export default function Links() {
             target="_blank"
             href="https://discord.com/users/615693931509972993"
           >
-            {" "}
             <LinkCard
               title="Discord"
               bg="bg-indigo-500"
               color="text-indigo-500"
               icon={<FaDiscord />}
+            />
+          </Link>
+          <Link
+            target="_blank"
+            href="https://open.spotify.com/user/4djpn5qmz682f8zitccyfljde?si=1d3752df943d4e60"
+          >
+            <LinkCard
+              title="Spotify"
+              bg="bg-green-500"
+              color="text-green-500"
+              icon={<FaSpotify />}
             />
           </Link>
         </div>
