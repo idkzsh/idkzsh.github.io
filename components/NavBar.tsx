@@ -1,6 +1,5 @@
 import React from "react";
 import { Toggle } from "./Toggle";
-import Head from "next/head";
 
 const NavBar = () => {
   return (

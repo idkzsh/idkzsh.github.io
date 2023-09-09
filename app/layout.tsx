@@ -3,14 +3,10 @@ import "./globals.css";
 import { ThemeProvider } from "@/components/ThemeProvider";
 import Spacer from "@/components/Spacer";
 import Footer from "@/components/Footer";
-import Meta from '@/components/Meta'
-
-
 
 export const metadata = {
   title: "idkz"
 };
-
 
 export default function RootLayout({
   children,
