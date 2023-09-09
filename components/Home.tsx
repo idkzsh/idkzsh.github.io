@@ -1,7 +1,7 @@
-const Hero = () => {
+const Home = () => {
   return (
     <div className="flex h-[40vh] items-center">Under Construction</div>
   )
 }
 
-export default Hero
+export default Home
