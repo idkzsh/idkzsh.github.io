@@ -14,15 +14,12 @@ export default function RootLayout({
   children: React.ReactNode;
   pageTitle?: string; // Optional page title prop
 }) {
-
-
   return (
     <html lang="en">
       
       <body className="flex fixed w-full justify-center">
         <main className="min-h-screen bg-background flex flex-col items-center w-full">
           <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
-        
             <NavBar />
             <Spacer />
             {children}
