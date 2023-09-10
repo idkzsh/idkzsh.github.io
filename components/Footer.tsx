@@ -10,18 +10,18 @@ const Footer = () => {
   const path = usePathname();
 
   return (
-    <div className="fixed bottom-0 flex w-full h-[7vh] items-center justify-evenly border-t-[0.5px] border-secondary bg-background z-10">
-      <div className="flex justify-evenly items-center max-w-[800px] w-full ">
+    <div className="fixed bottom-0 flex w-full h-[7vh] items-center justify-evenly border-t-[0.5px] border-secondary ">
+      <div className="flex justify-evenly items-center max-w-[800px] w-full  bg-custom-background">
         <Link href="/#">
           {path === "/" ? (
-            <div className="flex flex-col justify-center items-center">
-              <div className="text-3xl text-teal-600">
+            <div className="flex flex-col items-center justify-center">
+              <div className="z-10 text-3xl text-teal-600">
                 <RiHome5Fill />
               </div>
             </div>
           ) : (
-            <div className="flex flex-col justify-center items-center">
-              <div className="text-xl">
+            <div className="flex flex-col items-center justify-center">
+              <div className="z-10 text-xl">
                 <RiHome5Fill />
               </div>
             </div>
@@ -30,14 +30,14 @@ const Footer = () => {
 
         <Link href="/tech">
           {path === "/tech" ? (
-            <div className="flex flex-col justify-center items-center">
-              <div className="text-3xl text-teal-600">
+            <div className="flex flex-col items-center justify-center">
+              <div className="z-10 text-3xl text-teal-600">
                 <FaTools />
               </div>
             </div>
           ) : (
-            <div className="flex flex-col justify-center items-center">
-              <div className="text-xl">
+            <div className="flex flex-col items-center justify-center">
+              <div className="z-10 text-xl">
                 <FaTools />
               </div>
             </div>
@@ -46,14 +46,14 @@ const Footer = () => {
 
         <Link href="/links">
           {path === "/links" ? (
-            <div className="flex flex-col justify-center items-center">
-              <div className="text-3xl text-teal-600">
+            <div className="flex flex-col items-center justify-center">
+              <div className="z-10 text-3xl text-teal-600">
                 <FaLink />
               </div>
             </div>
           ) : (
-            <div className="flex flex-col justify-center items-center">
-              <div className="text-xl">
+            <div className="flex flex-col items-center justify-center">
+              <div className="z-10 text-xl">
                 <FaLink />
               </div>
             </div>
@@ -61,14 +61,14 @@ const Footer = () => {
         </Link>
         <Link href="/projects">
           {path === "/projects" ? (
-            <div className="flex flex-col justify-center items-center">
-              <div className="text-3xl text-teal-600">
+            <div className="flex flex-col items-center justify-center">
+              <div className="z-10 text-3xl text-teal-600">
                 <FaDiagramProject />
               </div>
             </div>
           ) : (
-            <div className="flex flex-col justify-center items-center">
-              <div className="text-xl">
+            <div className="flex flex-col items-center justify-center">
+              <div className="z-10 text-xl">
                 <FaDiagramProject />
               </div>
             </div>

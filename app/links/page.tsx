@@ -8,10 +8,10 @@ import Link from "next/link";
 export default function Links() {
   return (
     <>
-      <div className="gap-4 flex flex-col items-center justify-center w-[80vw] max-w-[800px] h-[70vh] mb-11">
+      <div className="z-10 gap-4 flex flex-col items-center justify-center w-[80vw] max-w-[800px] h-[70vh] mb-11">
         <h2 className="flex justify-start min-w-[300px] w-[95%] text-sm">LINKS</h2>
         <hr className="border-[0.5px] border-secondary min-w-[300px] w-[95%] " />
-        <div className="flex gap-3 flex-wrap w-full justify-center">
+        <div className="flex flex-wrap justify-center w-full gap-3">
           <Link href="mailto:zachflentgewong@gmail.com">
             <LinkCard
               bg="bg-card-foreground"
