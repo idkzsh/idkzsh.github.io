@@ -3,13 +3,16 @@ import { FaLinkedin, FaGithub, FaDiscord, FaSpotify } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 import { MdOutlineAlternateEmail } from "react-icons/md";
 import Link from "next/link";
-
+import Spacer from "@/components/Spacer";
 
 export default function Links() {
   return (
     <>
+      <Spacer />
       <div className="z-10 gap-4 flex flex-col items-center justify-center w-[80vw] max-w-[800px] h-[70vh] mb-11">
-        <h2 className="flex justify-start min-w-[300px] w-[95%] text-sm">LINKS</h2>
+        <h2 className="flex justify-start min-w-[300px] w-[95%] text-sm">
+          LINKS
+        </h2>
         <hr className="border-[0.5px] border-secondary min-w-[300px] w-[95%] " />
         <div className="flex flex-wrap justify-center w-full gap-3">
           <Link href="mailto:zachflentgewong@gmail.com">

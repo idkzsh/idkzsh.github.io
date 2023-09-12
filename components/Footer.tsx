@@ -3,6 +3,7 @@ import React from "react";
 import { FaTools, FaLink } from "react-icons/fa";
 import { FaDiagramProject } from "react-icons/fa6";
 import { RiHome5Fill } from "react-icons/ri";
+import {PiFilmStripFill} from 'react-icons/pi'
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 
@@ -12,7 +13,7 @@ const Footer = () => {
   return (
     <div className="fixed bottom-0 flex w-full h-[7vh] items-center justify-evenly border-t-[0.5px] border-secondary ">
       <div className="flex justify-center w-full h-full bg-custom-background">
-        <div className="flex justify-evenly items-center max-w-[800px] w-full  ">
+        <div className="flex justify-between items-center max-w-[800px] w-full p-4 ">
           <Link href="/#">
             {path === "/" ? (
               <div className="flex flex-col items-center justify-center">
@@ -22,7 +23,7 @@ const Footer = () => {
               </div>
             ) : (
               <div className="flex flex-col items-center justify-center">
-                <div className="z-10 text-xl">
+                <div className="z-10 text-2xl">
                   <RiHome5Fill />
                 </div>
               </div>
@@ -37,7 +38,7 @@ const Footer = () => {
               </div>
             ) : (
               <div className="flex flex-col items-center justify-center">
-                <div className="z-10 text-xl">
+                <div className="z-10 text-2xl">
                   <FaTools />
                 </div>
               </div>
@@ -52,7 +53,7 @@ const Footer = () => {
               </div>
             ) : (
               <div className="flex flex-col items-center justify-center">
-                <div className="z-10 text-xl">
+                <div className="z-10 text-2xl">
                   <FaLink />
                 </div>
               </div>
@@ -67,8 +68,23 @@ const Footer = () => {
               </div>
             ) : (
               <div className="flex flex-col items-center justify-center">
-                <div className="z-10 text-xl">
+                <div className="z-10 text-2xl">
                   <FaDiagramProject />
+                </div>
+              </div>
+            )}
+          </Link>
+          <Link href="/film">
+            {path === "/film" ? (
+              <div className="flex flex-col items-center justify-center">
+                <div className="z-10 text-xl text-teal-600">
+                  <PiFilmStripFill />
+                </div>
+              </div>
+            ) : (
+              <div className="flex flex-col items-center justify-center">
+                <div className="z-10 text-2xl">
+                  <PiFilmStripFill />
                 </div>
               </div>
             )}

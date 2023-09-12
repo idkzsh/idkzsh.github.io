@@ -20,7 +20,6 @@ export default function RootLayout({
         <main className="flex flex-col items-center w-full min-h-screen z-1 bg-custom-background">
           <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
             <NavBar />
-            <Spacer />
             {children}
             <span className="fixed bottom-[4.2rem] flex w-full items-center justify-center text-xs">
               Powered by Vercel, Next.js and Supabase
