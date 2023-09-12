@@ -11,69 +11,69 @@ const Footer = () => {
 
   return (
     <div className="fixed bottom-0 flex w-full h-[7vh] items-center justify-evenly border-t-[0.5px] border-secondary ">
-      <div className="flex justify-evenly items-center max-w-[800px] w-full  bg-custom-background">
-        <Link href="/#">
-          {path === "/" ? (
-            <div className="flex flex-col items-center justify-center">
-              <div className="z-10 text-3xl text-teal-600">
-                <RiHome5Fill />
+      <div className="flex justify-center w-full h-full bg-custom-background">
+        <div className="flex justify-evenly items-center max-w-[800px] w-full  ">
+          <Link href="/#">
+            {path === "/" ? (
+              <div className="flex flex-col items-center justify-center">
+                <div className="z-10 text-3xl text-teal-600">
+                  <RiHome5Fill />
+                </div>
               </div>
-            </div>
-          ) : (
-            <div className="flex flex-col items-center justify-center">
-              <div className="z-10 text-xl">
-                <RiHome5Fill />
+            ) : (
+              <div className="flex flex-col items-center justify-center">
+                <div className="z-10 text-xl">
+                  <RiHome5Fill />
+                </div>
               </div>
-            </div>
-          )}
-        </Link>
-
-        <Link href="/tech">
-          {path === "/tech" ? (
-            <div className="flex flex-col items-center justify-center">
-              <div className="z-10 text-3xl text-teal-600">
-                <FaTools />
+            )}
+          </Link>
+          <Link href="/tech">
+            {path === "/tech" ? (
+              <div className="flex flex-col items-center justify-center">
+                <div className="z-10 text-3xl text-teal-600">
+                  <FaTools />
+                </div>
               </div>
-            </div>
-          ) : (
-            <div className="flex flex-col items-center justify-center">
-              <div className="z-10 text-xl">
-                <FaTools />
+            ) : (
+              <div className="flex flex-col items-center justify-center">
+                <div className="z-10 text-xl">
+                  <FaTools />
+                </div>
               </div>
-            </div>
-          )}
-        </Link>
-
-        <Link href="/links">
-          {path === "/links" ? (
-            <div className="flex flex-col items-center justify-center">
-              <div className="z-10 text-3xl text-teal-600">
-                <FaLink />
+            )}
+          </Link>
+          <Link href="/links">
+            {path === "/links" ? (
+              <div className="flex flex-col items-center justify-center">
+                <div className="z-10 text-3xl text-teal-600">
+                  <FaLink />
+                </div>
               </div>
-            </div>
-          ) : (
-            <div className="flex flex-col items-center justify-center">
-              <div className="z-10 text-xl">
-                <FaLink />
+            ) : (
+              <div className="flex flex-col items-center justify-center">
+                <div className="z-10 text-xl">
+                  <FaLink />
+                </div>
               </div>
-            </div>
-          )}
-        </Link>
-        <Link href="/projects">
-          {path === "/projects" ? (
-            <div className="flex flex-col items-center justify-center">
-              <div className="z-10 text-3xl text-teal-600">
-                <FaDiagramProject />
+            )}
+          </Link>
+          <Link href="/projects">
+            {path === "/projects" ? (
+              <div className="flex flex-col items-center justify-center">
+                <div className="z-10 text-3xl text-teal-600">
+                  <FaDiagramProject />
+                </div>
               </div>
-            </div>
-          ) : (
-            <div className="flex flex-col items-center justify-center">
-              <div className="z-10 text-xl">
-                <FaDiagramProject />
+            ) : (
+              <div className="flex flex-col items-center justify-center">
+                <div className="z-10 text-xl">
+                  <FaDiagramProject />
+                </div>
               </div>
-            </div>
-          )}
-        </Link>
+            )}
+          </Link>
+        </div>
       </div>
     </div>
   );

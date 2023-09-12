@@ -84,6 +84,7 @@
 .bg-custom-background {
   position: relative;
   background-image: var(--custom-background-image);
+
 }
 
 /* Apply the opacity to ::before pseudo-element */
