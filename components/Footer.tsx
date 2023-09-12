@@ -77,7 +77,7 @@ const Footer = () => {
           <Link href="/film">
             {path === "/film" ? (
               <div className="flex flex-col items-center justify-center">
-                <div className="z-10 text-xl text-teal-600">
+                <div className="z-10 text-3xl text-teal-600">
                   <PiFilmStripFill />
                 </div>
               </div>
