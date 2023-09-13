@@ -29,8 +29,8 @@ const Footer = () => {
               </div>
             )}
           </Link>
-          <Link href="/tech">
-            {path === "/tech" ? (
+          <Link href="/tech-stack">
+            {path === "/tech-stack" ? (
               <div className="flex flex-col items-center justify-center">
                 <div className="z-10 text-3xl text-teal-600">
                   <FaTools />

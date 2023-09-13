@@ -8,7 +8,7 @@ import { RiSupabaseFill } from "react-icons/ri";
 import { BsGit } from "react-icons/bs";
 import Spacer from "@/components/Spacer";
 
-export default function Tech() {
+export default function TechStack() {
   return (
     <>
       <Spacer />
