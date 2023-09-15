@@ -13,7 +13,7 @@ const Home = () => {
           I like to <span className="text-teal-600 ">build</span> cool stuff
         </div>
       </div>
-      <img src="memoji.png" className="w-[150px]" />
+      <img src="memoji.png" className="w-[150px] hover:rotate-180 duration-200" />
     </div>
   );
 };
