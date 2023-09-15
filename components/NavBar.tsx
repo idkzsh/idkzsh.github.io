@@ -10,7 +10,7 @@ const NavBar = () => {
   return (
     <>
       <div className="z-20 fixed backdrop-blur-lg flex w-full h-[7vh] justify-evenly items-center border-b-[0.5px] border-secondary ">
-        <div className="flex items-center max-w-[800px] w-[70%] justify-between">
+        <div className="flex items-center max-w-[1000px] w-[70%] justify-between">
           <Logo />
           {path === "/" ? (
             ""

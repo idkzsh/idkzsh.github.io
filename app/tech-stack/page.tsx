@@ -15,11 +15,11 @@ export default function TechStack() {
   return (
     <>
       <Spacer />
-      <div className="z-10 gap-4 flex flex-col items-center justify-center w-[90vw] max-w-[800px] mb-20">
-        <h2 className="flex justify-start min-w-[300px] w-[95%] text-sm">
+      <div className="z-10 gap-4 flex flex-col items-center justify-center w-[90vw] max-w-[1000px] mb-20">
+        <h2 className="flex justify-start min-w-[300px] w-[98%] text-sm">
           FRONTEND
         </h2>
-        <hr className="border-[0.5px] border-secondary min-w-[300px] w-[95%] " />
+        <hr className="border-[0.5px] border-secondary min-w-[300px] w-[98%] " />
         <div className="flex flex-wrap justify-center w-full gap-3">
           <TechCard
             title="React.js"
@@ -71,10 +71,10 @@ export default function TechStack() {
             icon={<SiChakraui />}
           />
         </div>
-        <h2 className="flex justify-start min-w-[300px] w-[95%] text-sm">
+        <h2 className="flex justify-start min-w-[300px] w-[100%] text-sm">
           BACKEND
         </h2>
-        <hr className="border-[0.5px] border-secondary min-w-[300px] w-[95%] " />
+        <hr className="border-[0.5px] border-secondary min-w-[300px] w-[100%] " />
         <div className="flex flex-wrap justify-center w-full gap-3">
           <TechCard
             title="Python"

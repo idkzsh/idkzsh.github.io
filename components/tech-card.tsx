@@ -11,7 +11,7 @@ interface Props {
 const TechCard = ({ icon, title, color, bg, iconAlt }: Props) => {
   return (
     <div
-      className={`text-2xl flex justify-center gap-2 items-center w-[30%] min-w-[170px] h-[60px] bg-card rounded-lg`}
+      className={`text-2xl flex justify-center gap-2 items-center w-[24%] min-w-[170px] h-[60px] bg-card rounded-lg`}
     > 
       <div
         className={`z-10 flex items-center justify-center ${color} ${bg} w-8 h-8 rounded-lg bg-opacity-10`}

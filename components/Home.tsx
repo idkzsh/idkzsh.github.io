@@ -1,6 +1,6 @@
 const Home = () => {
   return (
-    <div className="flex flex-wrap h-[40vh] max-w-[850px] w-full justify-evenly items-center gap-3 z-10">
+    <div className="flex flex-wrap max-w-[850px] w-full justify-evenly items-center gap-3 z-10">
       <div>
         <div className="flex w-[350px] items-center justify-start">
           <div className="p-2 text-4xl font-bold text-teal-600">Zach</div>
