@@ -1,19 +1,21 @@
 import React from "react";
 import TechCard from "@/components/tech-card";
+import {CgVercel} from 'react-icons/cg'
 import { TbBrandNextjs, TbBrandTailwind, TbBrandDjango } from "react-icons/tb";
-import { FaReact, FaHtml5, FaBootstrap } from "react-icons/fa";
-import { RiJavascriptFill } from "react-icons/ri";
-import { BiLogoCss3, BiLogoTypescript } from "react-icons/bi";
-import { RiSupabaseFill } from "react-icons/ri";
+import { FaReact, FaHtml5, FaBootstrap, FaDocker } from "react-icons/fa";
+import {LiaJava} from 'react-icons/lia'
+import { RiJavascriptFill, RiSupabaseFill } from "react-icons/ri";
+import { BiLogoCss3, BiLogoNodejs, BiLogoTypescript } from "react-icons/bi";
+
 import { BsGit } from "react-icons/bs";
-import { SiChakraui } from "react-icons/si";
+import { SiChakraui, SiVisualstudiocode } from "react-icons/si";
 import Spacer from "@/components/Spacer";
 
 export default function TechStack() {
   return (
     <>
       <Spacer />
-      <div className="z-10 gap-4 flex flex-col items-center justify-center w-[90vw] max-w-[800px] h-[800px] max-h-[70vh] mb-11">
+      <div className="z-10 gap-4 flex flex-col items-center justify-center w-[90vw] max-w-[800px] mb-20">
         <h2 className="flex justify-start min-w-[300px] w-[95%] text-sm">
           FRONTEND
         </h2>
@@ -68,12 +70,6 @@ export default function TechStack() {
             color="text-teal-500"
             icon={<SiChakraui />}
           />
-          <TechCard
-            title="Git"
-            color="text-orange-600"
-            bg="bg-orange-600"
-            icon={<BsGit />}
-          />
         </div>
         <h2 className="flex justify-start min-w-[300px] w-[95%] text-sm">
           BACKEND
@@ -98,6 +94,12 @@ export default function TechStack() {
             icon={<TbBrandNextjs />}
           />
           <TechCard
+            title="Node.js"
+            bg="bg-green-500"
+            color="text-green-500"
+            icon={<BiLogoNodejs />}
+          />
+          <TechCard
             title="PostgreSQL"
             bg="bg-card-foreground"
             iconAlt="/postgre.png"
@@ -108,6 +110,43 @@ export default function TechStack() {
             bg="bg-green-800"
             icon={<TbBrandDjango />}
           />
+          <TechCard
+            title="Java"
+            color="text-red-800"
+            bg="bg-red-800"
+            icon={<LiaJava />}
+          />
+        </div>
+        <h2 className="flex justify-start min-w-[300px] w-[95%] text-sm">
+          TOOLS
+        </h2>
+        <hr className="border-[0.5px] border-secondary min-w-[300px] w-[95%] " />
+        <div className="flex flex-wrap justify-center w-full gap-3">
+          <TechCard
+            title="Git"
+            color="text-orange-600"
+            bg="bg-orange-600"
+            icon={<BsGit />}
+          />
+          <TechCard
+            title="Docker"
+            color="text-blue-600"
+            bg="bg-blue-600"
+            icon={<FaDocker />}
+          />
+          <TechCard
+            title="VSCode"
+            color="text-blue-400"
+            bg="bg-blue-400"
+            icon={<SiVisualstudiocode />}
+          />
+          <TechCard
+            title="Vercel"
+            color="text-primary"
+            bg="bg-secondary"
+            icon={<CgVercel />}
+          />
+
         </div>
       </div>
     </>
