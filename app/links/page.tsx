@@ -17,6 +17,7 @@ export default function Links() {
               bg="bg-card-foreground"
               title="Email"
               icon={<MdOutlineAlternateEmail />}
+              opacity={10}
             />
           </Link>
           <Link
@@ -28,6 +29,7 @@ export default function Links() {
               icon={<FaLinkedin />}
               color="text-blue-500"
               bg="bg-blue-500"
+              opacity={10}
             />
           </Link>
           <Link target="_blank" href="https://github.com/i-dkz">
@@ -35,6 +37,7 @@ export default function Links() {
               title="Github"
               bg="bg-card-foreground"
               icon={<FaGithub />}
+              opacity={10}
             />
           </Link>
           <Link target="_blank" href="https://x.com/_idkzzz">
@@ -43,6 +46,7 @@ export default function Links() {
               bg="bg-card-foreground"
               color="text-primary"
               icon={<FaXTwitter />}
+              opacity={10}
             />
           </Link>
           <Link
@@ -54,6 +58,7 @@ export default function Links() {
               bg="bg-indigo-500"
               color="text-indigo-500"
               icon={<FaDiscord />}
+              opacity={10}
             />
           </Link>
           <Link
@@ -65,6 +70,7 @@ export default function Links() {
               bg="bg-green-500"
               color="text-green-500"
               icon={<FaSpotify />}
+              opacity={10}
             />
           </Link>
         </div>
