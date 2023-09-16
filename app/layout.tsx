@@ -17,7 +17,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className="flex justify-center w-full">
-        <main className="flex flex-col items-center w-full min-h-screen z-1 bg-custom-background">
+        <main className="flex flex-col items-center w-full min-h-screen z-1 bg-custom-gradient">
           <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
             <NavBar />
             <Spacer height="h-[80px]" />

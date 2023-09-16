@@ -19,8 +19,8 @@ export default function TechStack() {
         <h2 className="flex justify-start min-w-[300px] w-[98%] text-sm">
           FRONTEND
         </h2>
-        <hr className="border-[0.5px] border-secondary min-w-[300px] w-[98%] " />
-        <div className="flex flex-wrap justify-center w-full gap-3">
+
+        <div className="flex flex-wrap justify-center w-full gap-3 border-t-[0.5px] border-secondary pt-4 pb-4">
           <TechCard
             title="React.js"
             bg="bg-blue-500"
@@ -74,8 +74,8 @@ export default function TechStack() {
         <h2 className="flex justify-start min-w-[300px] w-[100%] text-sm">
           BACKEND
         </h2>
-        <hr className="border-[0.5px] border-secondary min-w-[300px] w-[100%] " />
-        <div className="flex flex-wrap justify-center w-full gap-3">
+
+        <div className="flex flex-wrap justify-center w-full gap-3 border-t-[0.5px] border-secondary pt-4 pb-4">
           <TechCard
             title="Python"
             bg="bg-card-foreground"
@@ -120,9 +120,9 @@ export default function TechStack() {
         <h2 className="flex justify-start min-w-[300px] w-[95%] text-sm">
           TOOLS
         </h2>
-        <hr className="border-[0.5px] border-secondary min-w-[300px] w-[95%] " />
-        <div className="flex flex-wrap justify-center w-full gap-3">
-          <TechCard
+        
+        <div className="flex flex-wrap justify-center w-full gap-3 border-t-[0.5px] border-secondary pt-4 pb-4">
+          <TechCard 
             title="Git"
             color="text-orange-600"
             bg="bg-orange-600"
