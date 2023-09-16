@@ -1,8 +1,12 @@
 import React from 'react'
 
-const Spacer = () => {
+interface Props {
+  height: string;
+}
+
+const Spacer = ({height}:Props) => {
   return (
-    <div className='w-full h-[50px]'></div>
+    <div className={`w-full ${height}`}></div>
   )
 }
 

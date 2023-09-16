@@ -6,7 +6,8 @@ import Spacer from "./Spacer";
 const Home = () => {
   return (
     <>
-    <Spacer />
+
+
       <div className="flex flex-wrap max-w-[850px] w-full justify-evenly items-center gap-3 z-10 mb-10">
         <div>
           <div className="flex w-[350px] items-center justify-start">

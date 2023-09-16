@@ -14,7 +14,7 @@ import Spacer from "@/components/Spacer";
 export default function TechStack() {
   return (
     <>
-      <Spacer />
+
       <div className="z-10 gap-4 flex flex-col items-center justify-center w-[90vw] max-w-[1000px] mb-20">
         <h2 className="flex justify-start min-w-[300px] w-[98%] text-sm">
           FRONTEND
