@@ -27,7 +27,7 @@ const Home = () => {
         />
       </div>
       <div className="z-10">
-        <span className="text-sm">Currently @</span>
+        <span className="text-sm">Currently: DIMS @</span>
         <Link href="https://www.bestbuy.ca/en-ca" target="_blank">
           <LinkCard
             icon={<CgTag className="rotate-180" />}
