@@ -15,7 +15,7 @@ export default function TechStack() {
   return (
     <>
 
-      <div className="z-10 gap-4 flex flex-col items-center justify-center w-[90vw] max-w-[1000px] mb-20">
+      <div className="z-10 gap-4 flex flex-col items-center justify-center w-[90vw] max-w-[1000px] mb-20 mt-10">
         <h2 className="flex justify-start min-w-[300px] w-[98%] text-sm">
           FRONTEND
         </h2>
@@ -117,7 +117,7 @@ export default function TechStack() {
             icon={<LiaJava />}
           />
         </div>
-        <h2 className="flex justify-start min-w-[300px] w-[95%] text-sm">
+        <h2 className="flex justify-start min-w-[300px] w-[100%] text-sm">
           TOOLS
         </h2>
         
