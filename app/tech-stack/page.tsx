@@ -9,7 +9,6 @@ import { BiLogoCss3, BiLogoNodejs, BiLogoTypescript } from "react-icons/bi";
 
 import { BsGit } from "react-icons/bs";
 import { SiChakraui, SiVisualstudiocode } from "react-icons/si";
-import Spacer from "@/components/Spacer";
 
 export default function TechStack() {
   return (
@@ -121,7 +120,7 @@ export default function TechStack() {
           TOOLS
         </h2>
         
-        <div className="flex flex-wrap justify-center w-full gap-3 border-t-[0.5px] border-secondary p-4">
+        <div className="flex flex-wrap justify-center w-full gap-3 border-t-[0.5px] border-secondary pt-4">
           <TechCard 
             title="Git"
             color="text-orange-600"
