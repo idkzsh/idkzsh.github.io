@@ -40,7 +40,7 @@ export default function Links() {
               opacity={10}
             />
           </Link>
-          <Link target="_blank" href="https://x.com/_idkzzz">
+          <Link target="_blank" href="https://x.com/idkzca">
             <LinkCard
               title="X"
               bg="bg-card-foreground"
