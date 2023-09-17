@@ -10,7 +10,7 @@
     --foreground: 222.2 84% 4.9%;
     --custom-background-opacity: 252,252,252,0.87;
 
-    --card: 0 0% 95%;
+    --card: 230, 230, 230, 0.5;
     --card-foreground: 0 0% 80%;
  
     --popover: 0 0% 100%;
@@ -45,7 +45,7 @@
 
     --foreground: 210 40% 98%;
  
-    --card: 0 0% 11%;
+    --card: 220, 220, 220, 0.1;
     --card-foreground: 0 0% 20%;
  
     --popover: 222.2 84% 4.9%;
@@ -80,24 +80,6 @@
     @apply bg-background text-foreground;
   }
 }
-
-
-/* .bg-custom-background {
-  position: relative;
-  background-image: var(--custom-background-image);
-
-}
-
-
-.bg-custom-background::before {
-  content: "";
-  position: absolute; 
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(var(--custom-background-opacity)); 
-} */
 
 .bg-custom-gradient {
   position: relative;
