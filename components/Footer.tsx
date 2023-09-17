@@ -11,7 +11,7 @@ const Footer = () => {
   const path = usePathname();
 
   return (
-    <div className="z-10 fixed bottom-0 flex w-full h-[7vh] items-center justify-evenly border-t-[0.5px] border-secondary ">
+    <div className="z-10 fixed bottom-0 flex w-full h-[7vh] items-center justify-evenly">
       <div className="flex justify-center w-full h-full backdrop-blur-lg">
         <div className="flex justify-between items-center max-w-[1000px] w-full p-4 ">
           <Link href="/#">

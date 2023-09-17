@@ -121,7 +121,7 @@ export default function TechStack() {
           TOOLS
         </h2>
         
-        <div className="flex flex-wrap justify-center w-full gap-3 border-t-[0.5px] border-secondary pt-4 pb-4">
+        <div className="flex flex-wrap justify-center w-full gap-3 border-t-[0.5px] border-secondary p-4">
           <TechCard 
             title="Git"
             color="text-orange-600"
