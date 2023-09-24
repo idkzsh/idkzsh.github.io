@@ -1,9 +1,49 @@
+'use client'
 import { CgTag } from "react-icons/cg";
 import LinkCard from "./link-card";
 import Link from "next/link";
 import Spacer from "./Spacer";
+import { useEffect } from "react";
+
+function addHoverAnimation(element: HTMLElement) {
+  element.addEventListener('mouseover', () => {
+    element.style.transform = 'rotate(180deg) scale(1.2)';
+  });
+
+  element.addEventListener('mouseout', () => {
+    element.style.transform = 'rotate(0deg)';
+    setTimeout(() => {
+      element.style.transform = 'rotate(-35deg)';
+    }, 50);
+    setTimeout(() => {
+      element.style.transform = 'rotate(35deg)';
+    }, 100);
+    setTimeout(() => {
+      element.style.transform = 'rotate(-15deg)';
+    }, 150);
+    setTimeout(() => {
+      element.style.transform = 'rotate(15deg)';
+    }, 200);
+    setTimeout(() => {
+      element.style.transform = 'rotate(-5deg)';
+    }, 250);
+    setTimeout(() => {
+      element.style.transform = 'rotate(5deg)';
+    }, 300);
+    setTimeout(() => {
+      element.style.transform = 'rotate(0deg)';
+    }, 350);
+  });
+}
 
 const Home = () => {
+  useEffect(() => {
+    const memoji = document.getElementById('memoji') as HTMLElement;
+    if (memoji) {
+      addHoverAnimation(memoji);
+    }
+  }, []);
+  
   return (
     <>
 
@@ -23,7 +63,9 @@ const Home = () => {
         </div>
         <img
           src="memoji.png"
-          className="w-[150px] hover:rotate-180 duration-200"
+          className="w-[150px] transition-transform duration-100 ease-in-out transition-margin-left 
+          "
+          id="memoji"
         />
       </div>
       <div className="z-10">
