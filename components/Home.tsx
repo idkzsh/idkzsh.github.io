@@ -2,12 +2,12 @@
 import { CgTag } from "react-icons/cg";
 import LinkCard from "./link-card";
 import Link from "next/link";
-import Spacer from "./Spacer";
 import { useEffect } from "react";
 
 function addHoverAnimation(element: HTMLElement) {
   element.addEventListener('mouseover', () => {
     element.style.transform = 'rotate(180deg) scale(1.2)';
+    
   });
 
   element.addEventListener('mouseout', () => {
@@ -37,12 +37,12 @@ function addHoverAnimation(element: HTMLElement) {
 }
 
 const Home = () => {
-  useEffect(() => {
-    const memoji = document.getElementById('memoji') as HTMLElement;
-    if (memoji) {
-      addHoverAnimation(memoji);
-    }
-  }, []);
+    useEffect(() => {
+      const memoji = document.getElementById('memoji') as HTMLElement;
+      if (memoji) {
+        addHoverAnimation(memoji);
+      }
+    }, []);
   
   return (
     <>
@@ -62,7 +62,7 @@ const Home = () => {
           </div>
         </div>
         <img
-          src="memoji.png"
+          src="../memoji.png"
           className="w-[150px] transition-transform duration-100 ease-in-out transition-margin-left 
           "
           id="memoji"

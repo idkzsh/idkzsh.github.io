@@ -18,7 +18,7 @@ const TechCard = ({ icon, title, color, bg, iconAlt }: Props) => {
       >
         {icon ? icon : <img className="w-6 h-6" src={iconAlt}></img>}
       </div>
-      <span className="z-30 text-sm">{title}</span>
+      <span className="z-30 text-sm text-primary">{title}</span>
     </div>
   );
 };
