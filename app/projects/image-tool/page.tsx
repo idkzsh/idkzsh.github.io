@@ -57,6 +57,7 @@ const ImageTool = () => {
                 <li>Identifying a problem and coming up with a solution</li>
                 <li>Adapting to a new, unfamiliar language</li>
                 <li>Collaborating with team to develop solution in area that I'm not trained in</li>
+                <li>Receiving feedback and performing updates and maintenance</li>
             </ul>
       </div>
     </>
