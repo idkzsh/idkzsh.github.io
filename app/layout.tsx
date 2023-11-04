@@ -4,6 +4,8 @@ import { ThemeProvider } from "@/components/ThemeProvider";
 import Spacer from "@/components/Spacer";
 import Footer from "@/components/Footer";
 
+import { GeistSans, GeistMono } from 'geist/font'
+
 export const metadata = {
   title: "idkz",
 };
@@ -15,7 +17,7 @@ export default function RootLayout({
   pageTitle?: string; // Optional page title prop
 }) {
   return (
-    <html lang="en">
+    <html lang="en" className={GeistSans.className}>
       <body className="flex justify-center w-full">
         <main className="flex flex-col items-center w-full min-h-screen z-1 bg-custom-gradient">
           <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
