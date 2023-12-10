@@ -16,6 +16,14 @@ const Projects = () => {
               color="text-black"
             />
           </Link>
+          <Link href="./projects/game-plus">
+            <LinkCard
+              title="GamePlus"
+              icon={<CgTag className="rotate-180" />}
+              bg="bg-yellow-300"
+              color="text-black"
+            />
+          </Link>
         </div>
       </div>
     </>
