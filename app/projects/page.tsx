@@ -2,6 +2,7 @@ import LinkCard from "@/components/link-card";
 import Link from "next/link";
 import React from "react";
 import { CgTag } from "react-icons/cg";
+import { FaReact } from "react-icons/fa";
 
 const Projects = () => {
   return (
@@ -19,9 +20,10 @@ const Projects = () => {
           <Link href="./projects/game-plus">
             <LinkCard
               title="GamePlus"
-              icon={<CgTag className="rotate-180" />}
-              bg="bg-yellow-300"
-              color="text-black"
+              icon={<FaReact />}
+              bg="bg-blue-500"
+              opacity={10}
+              color="text-blue-500"
             />
           </Link>
         </div>
