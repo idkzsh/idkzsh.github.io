@@ -3,12 +3,21 @@ import Link from "next/link";
 import React from "react";
 import { CgTag } from "react-icons/cg";
 import { FaReact } from "react-icons/fa";
+import { SiEventstore } from "react-icons/si";
 
 const Projects = () => {
   return (
     <>
       <div className="gap-4 flex flex-col items-center justify-center w-[80vw] max-w-[800px] h-[70vh] mb-11 z-10">
         <div className="flex flex-wrap justify-center w-full gap-3">
+          <Link href="./projects/nxtStore">
+            <LinkCard
+              title="nxtStore e-commerce app"
+              icon={<SiEventstore />}
+              bg="bg-card-foreground"
+              color="text-primary"
+            />
+          </Link>
           <Link href="./projects/image-tool">
             <LinkCard
               title="Image Renaming Tool"
