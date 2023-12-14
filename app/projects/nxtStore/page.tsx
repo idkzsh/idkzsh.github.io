@@ -20,7 +20,7 @@ const NxtStore = () => {
           </Link>
           <Link
             target="_blank"
-            href="https://nxt-store.vercel.app/"
+            href="https://github.com/i-dkz/nxtStore"
           >
             <LinkCard title="View Git Repo" 
             icon={<BsGit />}
