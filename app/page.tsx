@@ -1,11 +1,11 @@
 "use client";
 import Home from "@/components/Home";
+import { useCountStore } from "@/store/CountStore";
 import { useRouter } from "next/navigation";
-import { useState } from "react";
 
 export default function Index() {
-  const [count, setCount] = useState(0);
   const router = useRouter();
+  const {count, setCount} = useCountStore();
 
   const reRoute = () => {
     if (count > 0) {
