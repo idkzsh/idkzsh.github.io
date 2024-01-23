@@ -5,9 +5,11 @@ const Logo = () => {
   return (
     <>
       <Link href="/#" className="z-10">
-        <div className="flex items-center justify-center w-8 h-8 text-2xl font-bold duration-300 rounded-sm hover:-rotate-6 hover:scale-90 bg-primary text-background">
-          ?
-        </div>
+      <div
+        className="flex justify-center items-center w-[30px] h-[30px] bg-primary rounded-lg duration-300 text-background font-bold text-xl cursor-pointer hover:-rotate-12 hover:scale-90 z-100"
+      >
+        ?
+      </div>
       </Link>
     </>
   );
