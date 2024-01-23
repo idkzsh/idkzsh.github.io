@@ -10,7 +10,9 @@
     --custom-background-opacity: 225,235,235,0.9;
 
     --bg-grid-line-bg: hsla(0, 0%, 86%, 0.2);
-    --bg-tint: #ebefea;
+    --bg-tint: #eff7ec;
+    --bg-plus-corners: #d7d7d7;
+    --bg-grid: #f2f2f2;
 
     --card: 200, 200, 200, 0.2;
     --card-foreground: 0 0% 80%;
@@ -43,6 +45,11 @@
   .dark {
     --background: 0 0% 9%;
     --custom-background-opacity: 23,23,23,.99;
+
+    --bg-grid-line-bg: hsla(0, 0%, 15%, 0.2);
+    --bg-tint: #181818;
+    --bg-plus-corners: #2a2929;
+    --bg-grid: #151414;
 
     --foreground: 210 40% 98%;
  
@@ -92,10 +99,10 @@ body {
     linear-gradient(-90deg, var(--bg-grid-line-bg) 1px, transparent 1px),
     linear-gradient(var(--bg-grid-line-bg) 1px, transparent 1px),
     linear-gradient(transparent 3px, var(--bg-tint) 3px, var(--bg-tint) 78px, transparent 78px),
-    linear-gradient(-90deg, #d7d7d7 1px, transparent 1px),
+    linear-gradient(-90deg, var(--bg-plus-corners) 1px, transparent 1px),
     linear-gradient(-90deg, transparent 3px, var(--bg-tint) 3px, var(--bg-tint) 78px, transparent 78px),
-    linear-gradient(#d7d7d7 1px, transparent 1px), 
-    #f2f2f2;
+    linear-gradient(var(--bg-plus-corners) 1px, transparent 1px), 
+    var(--bg-grid);
   background-size:
     10px 10px,
     10px 10px,
