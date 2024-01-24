@@ -29,7 +29,7 @@ const LinkCard = ({
         {icon ? icon : <img className="w-6 h-6" src={iconAlt}></img>}
       </div>
 
-      <span className="text-base">{title}</span>
+      <span className="text-base font-medium">{title}</span>
     </div>
   );
 };

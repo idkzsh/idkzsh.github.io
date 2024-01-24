@@ -22,7 +22,7 @@ export default function RootLayout({
         <main className="flex flex-col items-center w-full min-h-screen z-1">
           <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
             <NavBar />
-            <Spacer height="h-[80px]" />
+            <Spacer height="h-[20px]" />
             {children}
             <Footer />
           </ThemeProvider>
