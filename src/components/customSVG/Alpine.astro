@@ -1,0 +1,27 @@
+---
+const { responsiveWidth, height, bg, title } = Astro.props;
+---
+
+<div
+  class={`text-2xl flex justify-center gap-2 items-center ${responsiveWidth} ${height} bg-card rounded-lg `}
+>
+  <div
+    class={`z-20 flex items-center justify-center  ${bg} w-8 h-8 rounded-lg bg-opacity-20`}
+  >
+    <svg
+      fill="none"
+      height="50"
+      viewBox="1.069 54 198.26 91.221"
+      width="50"
+      xmlns="http://www.w3.org/2000/svg"
+      ><g clip-rule="evenodd" fill-rule="evenodd"
+        ><path
+          d="m155.271 54 44.058 44.002-44.058 44.001-44.057-44.001z"
+          fill="#77c1d2"></path><path
+          d="m45.127 54 91.337 91.221h-88.115l-47.28-47.22z"
+          fill="#2d3441"></path></g
+      ></svg
+    >
+  </div>
+  <span class="z-30 text-sm font-medium text-black">{title}</span>
+</div>
