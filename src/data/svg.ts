@@ -98,7 +98,7 @@ const data = [
   {
     path: undefined,
     viewbox: undefined,
-    title: "Astrojs",
+    title: "Astro.js",
     color: undefined,
     bg: "bg-slate-900",
     manual: true,
@@ -106,7 +106,7 @@ const data = [
   {
     path: undefined,
     viewbox: undefined,
-    title: "Nextjs",
+    title: "Next.js",
     color: undefined,
     bg: "bg-slate-900",
     manual: true,
