@@ -3,7 +3,7 @@
 ---
 
 <div
-  class="flex items-center text-primary w-20 gap-6"
+  class="flex items-center text-primary w-20 gap-6 relative"
   x-data="{ switchOn: $persist(false) }"
 >
   <svg
@@ -35,9 +35,9 @@
     stroke-linecap="round"
     stroke-linejoin="round"
     @click="switchOn = !switchOn; document.body.classList.toggle('dark', switchOn)"
-    class=`lucide lucide-moon cursor-pointer`
+    class=`lucide lucide-moon cursor-pointer absolute right-0`
     x-show="!switchOn"
-    x-transition:enter="transition duration-500"
+    x-transition:enter="transition delay-200 duration-500"
     x-transition:enter-start="-rotate-90 scale-0"
     x-transition:leave-end="rotate-0 scale-100"
     x-cloak
@@ -56,9 +56,9 @@
     stroke-linecap="round"
     stroke-linejoin="round"
     @click="switchOn = !switchOn; document.body.classList.toggle('dark', switchOn)"
-    class="lucide lucide-sun cursor-pointer"
+    class="lucide lucide-sun cursor-pointer absolute right-0"
     x-show="switchOn"
-    x-transition:enter="transition duration-500"
+    x-transition:enter="transition delay-200 duration-500"
     x-transition:enter-start="rotate-90 scale-0"
     x-transition:leave-start="rotate-0 scale-100"
     x-cloak
