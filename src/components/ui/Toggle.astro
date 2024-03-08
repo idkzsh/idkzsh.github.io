@@ -16,7 +16,8 @@
     stroke-width="2"
     stroke-linecap="round"
     stroke-linejoin="round"
-    class="lucide lucide-menu"
+    @click="clicked = !clicked"
+    class="lucide lucide-menu cursor-pointer"
     ><line x1="4" x2="20" y1="12" y2="12"></line><line
       x1="4"
       x2="20"
@@ -38,6 +39,7 @@
     class=`lucide lucide-moon cursor-pointer absolute right-0`
     x-show="!switchOn"
     x-transition:enter="transition delay-200 duration-500"
+
     x-transition:enter-start="-rotate-90 scale-0"
     x-transition:leave-end="rotate-0 scale-100"
     x-cloak
