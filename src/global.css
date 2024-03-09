@@ -7,6 +7,7 @@
 @layer base {
   :root {
     --background: rgba(233, 255, 251, 0.508);
+    --modal-content-bg:  222.2, 0%, 100%, .6;
     --foreground: 222.2 84% 4.9%;
     
     --table: 210 40% 96.1%;
@@ -49,7 +50,8 @@
   }
  
   .dark {
-    --background: rgba(0, 0, 0, 0.91);
+    --background: rgba(9, 9, 9, 0.91);
+    --modal-content-bg:  0, 0%, 10%, .6;
     --foreground: 210 40% 98%;
 
     --table: 222.2 84% 4.9%;

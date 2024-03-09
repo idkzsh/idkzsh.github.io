@@ -20,7 +20,7 @@ export default {
 		  ring: "hsl(var(--ring))",
 		  background: "var(--background)",
 		  foreground: "hsl(var(--foreground))",
-		  
+		  "modal-content-bg": "hsla(var(--modal-content-bg))",
 		  primary: {
 			DEFAULT: "hsl(var(--primary))",
 			foreground: "hsl(var(--primary-foreground))",
