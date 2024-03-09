@@ -2,6 +2,7 @@
 import Twitter from "../components/customSVG/Twitter.astro";
 import Github from "../components/customSVG/Github.astro";
 import Spotify from "../components/customSVG/Spotify.astro";
+import LinkedIn from "./customSVG/LinkedIn.astro";
 ---
 
 <style>
@@ -49,13 +50,13 @@ import Spotify from "../components/customSVG/Spotify.astro";
     hx-swap="innerHTML swap:.3s transition:true"
   >
     <span class="font-medium w-full p-4">Projects</span>
-    <span class="w-full p-4">Stuff i've built</span>
+    <span class="w-full p-4 font-light">Stuff i've built</span>
   </div>
   <div
     class="flex flex-col bg-modal-content-bg justify-center items-center w-[350px] h-[22%] md:h-[135px] shadow-lg rounded-md text-primary"
   >
-    <span class="font-medium w-full p-4">Projects</span>
-    <span class="font-medium w-full p-4">Projects</span>
+    <span class="font-medium w-full p-4">Blog</span>
+    <span class="font-light w-full p-4">I talk about stuff</span>
   </div>
   <div
     class="flex flex-col bg-modal-content-bg justify-center items-center w-[350px] h-[22%] md:h-[135px] shadow-lg rounded-md text-primary"
@@ -70,6 +71,6 @@ import Spotify from "../components/customSVG/Spotify.astro";
     <span class="font-medium w-full p-4">Projects</span>
   </div>
   <div class="mt-10 md:mt-4 w-48 h-12 flex justify-evenly items-center">
-    <Twitter /><Github /><Spotify />
+    <Twitter /><Github /><Spotify /><LinkedIn />
   </div>
 </div>
