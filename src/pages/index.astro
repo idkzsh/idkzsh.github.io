@@ -6,35 +6,37 @@ import Modal from "../components/Modal.astro"
 
 <Layout>
   
-  <main class="w-full flex flex-col justify-evenly items-center mt-8 sm:mt-8 min-h-screen"
+  <main class="w-full flex flex-col justify-evenly items-center mt-8 sm:mt-8 min-h-screen" id="target"
    >
    
-    <div
-      class="flex w-full items-center flex-wrap justify-center sm:justify-between"
-    >
-    
-      <div class="flex flex-col gap-4 w-[380px] lg:w-[560px]">
-        
-        <div class="flex flex-col">
-          <h1 class="flex text-primary gap-2 text-4xl sm:text-[4rem]">
-            Zach <span class="flex text-gradient h-[4.4rem]">Wong</span>
-          </h1>
-          <span class="text-2xl bg-transparent">Full-Stack Developer</span>
-          <p>I'm a developer based out of Vancouver, BC. Canada</p>
-          <p>
-            I like exploring new technologies and building fast, reliable
-            experiences for web/mobile
-          </p>
+    <div class="w-full flex flex-col justify-evenly items-center mt-8 sm:mt-8 min-h-screen">
+      <div
+        class="flex w-full items-center flex-wrap justify-center sm:justify-between"
+      >
+      
+        <div class="flex flex-col gap-4 w-[380px] lg:w-[560px]">
+      
+          <div class="flex flex-col">
+            <h1 class="flex text-primary gap-2 text-4xl sm:text-[4rem]">
+              Zach <span class="flex text-gradient h-[4.4rem]">Wong</span>
+            </h1>
+            <span class="text-2xl bg-transparent">Full-Stack Developer</span>
+            <p>I'm a developer based out of Vancouver, BC. Canada</p>
+            <p>
+              I like exploring new technologies and building fast, reliable
+              experiences for web/mobile
+            </p>
+          </div>
+          <p>Currently DIMS @ BestBuy</p>
+          <p>***UNDER RECONSTRUCTION***</p>
         </div>
-        <p>Currently DIMS @ BestBuy</p>
-        <p>***UNDER RECONSTRUCTION***</p>
+        <img
+          src="/memoji.png"
+          class="w-[110px] h-[145px] sm:w-[150px] sm:h-[195px] mt-8 sm:mt-0"
+        />
       </div>
-      <img
-        src="/memoji.png"
-        class="w-[110px] h-[145px] sm:w-[150px] sm:h-[195px] mt-8 sm:mt-0"
-      />
+      
+      <TechStack />
     </div>
-    
-    <TechStack />
   </main>
 </Layout>
