@@ -5,7 +5,7 @@ import Django from "./customSVG/Django.astro";
 import AstroIcon from "./customSVG/AstroIcon.astro";
 import Next from "./customSVG/Next.astro";
 import Postgres from "./customSVG/Postgres.astro";
-import Alpine from "./customSVG/Alpine.astro";
+import Go from "./customSVG/Go.astro";
 
 interface Props {
   icon?: string;
@@ -58,8 +58,8 @@ const { icon, title, color, bg, viewbox, manual } = Astro.props;
   )
 } 
 {
-    title === "Alpine.js" && (
-    <Alpine
+    title === "Golang" && (
+    <Go
       bg={bg}
       title={title}
       responsiveWidth={responsiveWidth}

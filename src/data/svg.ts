@@ -58,9 +58,9 @@ const data = [
   {
     path: undefined,
     viewbox: undefined,
-    title: "Alpine.js",
+    title: "Astro.js",
     color: undefined,
-    bg: undefined,
+    bg: "bg-slate-900",
     manual: true,
   },
   {
@@ -98,9 +98,9 @@ const data = [
   {
     path: undefined,
     viewbox: undefined,
-    title: "Astro.js",
-    color: undefined,
-    bg: "bg-slate-900",
+    title: "Golang",
+    color: "text-blue-500",
+    bg: "bg-blue-500",
     manual: true,
   },
   {
