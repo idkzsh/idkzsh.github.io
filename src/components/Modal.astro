@@ -53,7 +53,12 @@ import LinkedIn from "./customSVG/LinkedIn.astro";
     <span class="w-full p-4 font-light">Stuff i've built</span>
   </div>
   <div
-    class="flex flex-col bg-modal-content-bg justify-center items-center w-[350px] h-[22%] md:h-[135px] shadow-lg rounded-md text-primary"
+    class="flex flex-col bg-modal-content-bg justify-center items-center w-[350px] h-[22%] md:h-[135px] shadow-lg rounded-md text-primary cursor-pointer"
+    @click="clicked = !clicked"
+    hx-get="/api/blog"
+    hx-trigger="click"
+    hx-target="#target"
+    hx-swap="innerHTML swap:.3s transition:true"
   >
     <span class="font-medium w-full p-4">Blog</span>
     <span class="font-light w-full p-4">I talk about stuff</span>
