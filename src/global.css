@@ -14,6 +14,8 @@
 
     --card: rgb(232, 232, 232);
     --card-foreground: rgb(0,0,0);
+
+    --mid-card: rgb(232,232,232);
  
     --popover: 0 0% 100%;
     --popover-foreground: 222.2 84% 4.9%;
@@ -58,6 +60,8 @@
  
     --card: rgb(232, 232, 232);
     --card-foreground: rgb(0,0,0);
+
+    --mid-card: rgb(42, 42, 42);
  
     --popover: 222.2 84% 4.9%;
     --popover-foreground: 210 40% 98%;

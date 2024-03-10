@@ -21,6 +21,7 @@ export default {
 		  background: "var(--background)",
 		  foreground: "hsl(var(--foreground))",
 		  "modal-content-bg": "hsla(var(--modal-content-bg))",
+		  "mid-card": "var(--mid-card)",
 		  primary: {
 			DEFAULT: "hsl(var(--primary))",
 			foreground: "hsl(var(--primary-foreground))",
