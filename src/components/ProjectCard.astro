@@ -1,5 +1,10 @@
 ---
-const { title } = Astro.props;
+import Loader from "../components/ui/Loader.astro"
+const { title, img } = Astro.props;
 ---
 
-<div class="w-[406px] h-60 shadow rounded-md bg-mid-card">{title}</div>
+<div class="w-[406px] h-80 shadow rounded-md bg-mid-card overflow-hidden">
+    <div class="w-full h-[70%] flex justify-center items-center ">{img? <img src={img} class="w-full h-full object-cover"/> : <Loader />}</div>
+    <h2 class="text-lg font-medium p-4">{title}</h2>
+  </div>
+  
