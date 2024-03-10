@@ -38,10 +38,9 @@
     @click="switchOn = !switchOn; document.body.classList.toggle('dark', switchOn)"
     class=`lucide lucide-moon cursor-pointer absolute right-0`
     x-show="!switchOn"
-    x-transition:enter="transition delay-200 duration-500"
-
+    x-transition:enter="transition duration-700"
     x-transition:enter-start="-rotate-90 scale-0"
-    x-transition:leave-end="rotate-0 scale-100"
+    
     x-cloak
   >
     <path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"></path>
@@ -60,9 +59,9 @@
     @click="switchOn = !switchOn; document.body.classList.toggle('dark', switchOn)"
     class="lucide lucide-sun cursor-pointer absolute right-0"
     x-show="switchOn"
-    x-transition:enter="transition delay-200 duration-500"
+    x-transition:enter="transition duration-700"
     x-transition:enter-start="rotate-90 scale-0"
-    x-transition:leave-start="rotate-0 scale-100"
+
     x-cloak
   >
     <>
