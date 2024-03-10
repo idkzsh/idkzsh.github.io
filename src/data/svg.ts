@@ -99,7 +99,7 @@ const data = [
     path: undefined,
     viewbox: undefined,
     title: "Golang",
-    color: "text-blue-500",
+    color: undefined,
     bg: "bg-blue-500",
     manual: true,
   },
