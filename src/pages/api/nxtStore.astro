@@ -1,0 +1,35 @@
+---
+import Tag from "../../components/ui/Tag.astro";
+
+
+---
+
+<div class="flex flex-col gap-12">
+  <div class="flex gap-4">
+    <h1 class="text-4xl font-bold">nxtStore</h1>
+    <button class="p-2 border rounded-md bg-card text-card-foreground"
+      ><a href="https://nxt-store.vercel.app/" target="_blank">View Project</a>
+    </button>
+    <button class="p-2 border rounded-md bg-card text-card-foreground"
+      ><a href="https://github.com/i-dkz/nxtStore" target="_blank">View Git Repo</a></button
+    >
+  </div>
+  <div class="flex gap-8">
+      <img src="/nxtstore.png" alt="" class="rounded-md w-[50%] shadow-lg" />
+      <div class="flex flex-col w-full gap-6">
+          <p class="">
+            The aim of this project was to demonstrate my ability to create a nice, modern
+            storefront, capable of requesting data from an API and displaying the data
+            to the user.
+          </p>
+          <div class="w-full flex gap-2 flex-wrap">
+              <Tag title="Next.js"/>
+              <Tag title="React.js"/>
+              <Tag title="Zustand"/>
+              <Tag title="Tailwind"/>
+              <Tag title="Axios"/>
+              <Tag title="Shadcn/UI"/>
+          </div>
+      </div>
+  </div>
+</div>
