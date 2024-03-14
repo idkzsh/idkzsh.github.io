@@ -3,14 +3,14 @@ import Loader from "../components/ui/Loader.astro";
 const { title, img, route } = Astro.props;
 ---
 
-<div
-  class="w-[406px] h-80 shadow rounded-md bg-mid-card overflow-hidden"
-  hx-get={`/api/${route}`}
-  hx-trigger="click"
-  hx-target="#target"
-  hx-swap="innerHTML swap:.1s transition:true"
->
-  <div class="w-full h-[70%] flex justify-center items-center">
+<div class="w-[406px] h-80 shadow rounded-md bg-mid-card overflow-hidden">
+  <div
+    class="w-full h-[70%] flex justify-center items-center"
+    hx-get={`/api/${route}`}
+    hx-trigger="click"
+    hx-target="#target"
+    hx-swap="innerHTML swap:.1s transition:true"
+  >
     {img ? <img src={img} class="w-full h-full object-cover" /> : <Loader />}
   </div>
   <h2 class="text-lg font-medium p-4">{title}</h2>
