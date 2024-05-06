@@ -192,7 +192,7 @@ var tags = map[string][]TagData{
 	},
 }
 
-func Main(w http.ResponseWriter, r *http.Request) {
+func Handler(w http.ResponseWriter, r *http.Request) {
 	router := http.NewServeMux()
 
 	router.HandleFunc("GET /", HandleIndex)
