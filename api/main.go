@@ -193,13 +193,13 @@ var tags = map[string][]TagData{
 	},
 }
 
-func main() {
+func Main() {
 	router := http.NewServeMux()
 
-	router.HandleFunc("GET /", handleIndex)
-	router.HandleFunc("GET /projects", handleProjects)
-	router.HandleFunc("GET /main", handleMain)
-	router.HandleFunc("GET /blog", handleBlog)
+	router.HandleFunc("GET /", HandleIndex)
+	router.HandleFunc("GET /projects", HandleProjects)
+	router.HandleFunc("GET /main", HandleMain)
+	router.HandleFunc("GET /blog", HandleBlog)
 
 	fs := http.FileServer(http.Dir("src"))
 	router.Handle("GET /src/", http.StripPrefix("/src/", fs))
@@ -214,35 +214,35 @@ func main() {
 
 }
 
-func handleIndex(w http.ResponseWriter, r *http.Request) {
-	renderTemplate(w, "index", techStack)
+func HandleIndex(w http.ResponseWriter, r *http.Request) {
+	RenderTemplate(w, "index", techStack)
 }
 
-func handleMain(w http.ResponseWriter, r *http.Request) {
+func HandleMain(w http.ResponseWriter, r *http.Request) {
 	if r.Header.Get("HX-Request") == "true" {
-		renderTemplate(w, "main-htmx", techStack)
+		RenderTemplate(w, "main-htmx", techStack)
 	} else {
 		http.Redirect(w, r, "/", http.StatusFound)
 	}
 }
 
-func handleProjects(w http.ResponseWriter, r *http.Request) {
+func HandleProjects(w http.ResponseWriter, r *http.Request) {
 	if r.Header.Get("HX-Request") == "true" {
-		renderTemplate(w, "projects", tags)
+		RenderTemplate(w, "projects", tags)
 	} else {
 		http.Redirect(w, r, "/", http.StatusFound)
 	}
 }
 
-func handleBlog(w http.ResponseWriter, r *http.Request) {
+func HandleBlog(w http.ResponseWriter, r *http.Request) {
 	if r.Header.Get("HX-Request") == "true" {
-		renderTemplate(w, "blog", tags)
+		RenderTemplate(w, "blog", tags)
 	} else {
 		http.Redirect(w, r, "/", http.StatusFound)
 	}
 }
 
-func renderTemplate(w http.ResponseWriter, tmpl string, data interface{}) {
+func RenderTemplate(w http.ResponseWriter, tmpl string, data interface{}) {
 	err := templates.ExecuteTemplate(w, tmpl+".html", data)
 	if err != nil {
 		http.Error(w, err.Error(), http.StatusInternalServerError)
