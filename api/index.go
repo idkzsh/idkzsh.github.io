@@ -3,7 +3,6 @@ package handler
 import (
 	"fmt"
 	"html/template"
-	"log"
 	"net/http"
 )
 
@@ -197,22 +196,23 @@ var tags = map[string][]TagData{
 func Main() {
 	router := http.NewServeMux()
 
-	router.HandleFunc("GET /api/", Handler)
+	router.HandleFunc("GET /", Handler)
 	// router.HandleFunc("GET /projects", HandleProjects)
-	router.HandleFunc("GET /api/main", HandleMain)
+	router.HandleFunc("GET /main", Handler)
 	// router.HandleFunc("GET /blog", HandleBlog)
 
 	fs := http.FileServer(http.Dir("src"))
 	router.Handle("GET /src/", http.StripPrefix("/src/", fs))
 
-	// local server for testing
-	server := http.Server{
-		Addr:    ":6969",
-		Handler: router,
-	}
+	// // local server for testing
+	// server := http.Server{
+	// 	Addr:    ":6969",
+	// 	Handler: router,
+	// }
 
-	log.Println("Now listening on port http://localhost:6969")
-	log.Fatal(server.ListenAndServe())
+	// log.Println("Now listening on port http://localhost:6969")
+	// log.Fatal(server.ListenAndServe())
+	http.ListenAndServe(":8080", router)
 }
 
 func Handler(w http.ResponseWriter, r *http.Request) {
