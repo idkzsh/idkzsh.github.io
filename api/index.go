@@ -203,7 +203,7 @@ func Handler(w http.ResponseWriter, r *http.Request) {
 	fs := http.FileServer(http.Dir("src"))
 	router.Handle("GET /src/", http.StripPrefix("/src/", fs))
 
-	router.ServeHTTP(w, r)
+	// router.ServeHTTP(w, r)
 
 	// local server for testing
 	// server := http.Server{
