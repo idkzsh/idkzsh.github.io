@@ -197,9 +197,9 @@ var tags = map[string][]TagData{
 func Main() {
 	router := http.NewServeMux()
 
-	router.HandleFunc("GET /", Handler)
+	router.HandleFunc("GET /api/", Handler)
 	// router.HandleFunc("GET /projects", HandleProjects)
-	// router.HandleFunc("GET /main", HandleMain)
+	router.HandleFunc("GET /api/main", HandleMain)
 	// router.HandleFunc("GET /blog", HandleBlog)
 
 	fs := http.FileServer(http.Dir("src"))
