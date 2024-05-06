@@ -198,7 +198,7 @@ func Main() {
 
 	router.HandleFunc("GET /", Handler)
 	// router.HandleFunc("GET /projects", HandleProjects)
-	router.HandleFunc("GET /main", Handler)
+	router.HandleFunc("GET /index", Handler)
 	// router.HandleFunc("GET /blog", HandleBlog)
 
 	fs := http.FileServer(http.Dir("src"))
