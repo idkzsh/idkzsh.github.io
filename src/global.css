@@ -40,7 +40,7 @@
  
     --radius: 0.5rem;
 
-    --accent: 96, 58, 234;
+    --accent: 9, 17, 92, 0.573;
     --accent-light: 53, 243, 208;
     --accent-dark: 49, 10, 101;
     --accent-gradient: linear-gradient(
@@ -84,7 +84,7 @@
     --input: 217.2 32.6% 17.5%;
     --ring: 212.7 26.8% 83.9%;
 
-    --accent: 136, 58, 234;
+    --accent: 9, 17, 92, 0.573;
     --accent-light: 53, 243, 208;
     --accent-dark: 49, 10, 101;
     --accent-gradient: linear-gradient(
