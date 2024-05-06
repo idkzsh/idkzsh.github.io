@@ -6,7 +6,9 @@
 .pnp.js
 
 # testing
-/coverage
+tailwindcss
+
+/tmp
 
 # next.js
 /.next/
@@ -30,6 +32,4 @@ yarn-error.log*
 # vercel
 .vercel
 
-# typescript
-*.tsbuildinfo
-next-env.d.ts
+
