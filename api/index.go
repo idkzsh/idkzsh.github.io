@@ -3,6 +3,7 @@ package handler
 import (
 	"fmt"
 	"html/template"
+	"log"
 	"net/http"
 )
 
@@ -204,15 +205,15 @@ func Main() {
 	fs := http.FileServer(http.Dir("src"))
 	router.Handle("GET /src/", http.StripPrefix("/src/", fs))
 
-	// // local server for testing
-	// server := http.Server{
-	// 	Addr:    ":6969",
-	// 	Handler: router,
-	// }
+	// local server for testing
+	server := http.Server{
+		Addr:    ":6969",
+		Handler: router,
+	}
 
-	// log.Println("Now listening on port http://localhost:6969")
-	// log.Fatal(server.ListenAndServe())
-	http.ListenAndServe(":8080", router)
+	log.Println("Now listening on port http://localhost:6969")
+	log.Fatal(server.ListenAndServe())
+	// http.ListenAndServe(":8080", router)
 }
 
 func Handler(w http.ResponseWriter, r *http.Request) {
