@@ -1,0 +1,17 @@
+---
+import "../global.css";
+import Toggle from "../components/ui/Toggle.astro"
+---
+
+<header class="flex w-full justify-between items-center h-16">
+  <div
+    class="flex justify-center items-center w-[40px] h-[40px] rounded-lg font-bold bg-card text-card-foreground text-xl duration-300 hover:-rotate-12 hover:scale-90 cursor-pointer"
+    hx-get="/main"
+    hx-trigger="click"
+    hx-target="#target"
+    hx-swap="innerHTML swap:.1s transition:true"
+  >
+    ?
+  </div>
+  <Toggle />
+</header>

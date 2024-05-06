@@ -1,0 +1,119 @@
+---
+import HTMX from "../components/customSVG/HTMX.astro";
+import Python from "./customSVG/Python.astro";
+import Django from "./customSVG/Django.astro";
+import AstroIcon from "./customSVG/AstroIcon.astro";
+import Next from "./customSVG/Next.astro";
+import Postgres from "./customSVG/Postgres.astro";
+import Golang from "./customSVG/Golang.astro";
+
+interface Props {
+  icon?: string;
+  iconAlt?: string;
+  title: string;
+  color?: string;
+  bg?: string;
+  viewbox?: string;
+  manual: boolean;
+}
+
+const responsiveWidth =
+  "w-[165px] sm:w-[184px] md:w-[177px] lg:w-[19.2%] min-w-[150px]";
+const height = "h-12";
+const { icon, title, color, bg, viewbox, manual } = Astro.props;
+---
+
+{
+  !manual && (
+    <div
+      class={`text-2xl flex justify-center items-center ${responsiveWidth} ${height} h-[50px] bg-card rounded-lg`}
+    >
+      <div
+        class={`z-20 flex items-center justify-center w-8 h-8 rounded-lg bg-opacity-20`}
+      >
+        <svg
+          role="img"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox={viewbox}
+          class={`w-6 fill-current ${color}`}
+        >
+          <path d={icon} />
+        </svg>
+      </div>
+      <span class="z-30 text-sm font-medium text-black">{title}</span>
+    </div>
+  )
+}
+
+<!-- Custom Icons -->
+
+{
+  title === "HTMX" && (
+    <HTMX
+      bg={bg}
+      title={title}
+      responsiveWidth={responsiveWidth}
+      height={height}
+    />
+  )
+} 
+{
+    title === "Golang" && (
+    <Golang
+      bg={bg}
+      title={title}
+      responsiveWidth={responsiveWidth}
+      height={height}
+    />
+  )
+}
+{
+  title === "Python" && (
+    <Python
+      bg={bg}
+      title={title}
+      responsiveWidth={responsiveWidth}
+      height={height}
+    />
+  )
+}
+{
+  title === "Django" && (
+    <Django
+      bg={bg}
+      title={title}
+      responsiveWidth={responsiveWidth}
+      height={height}
+    />
+  )
+}
+{
+  title === "Astro.js" && (
+    <AstroIcon
+      bg={bg}
+      title={title}
+      responsiveWidth={responsiveWidth}
+      height={height}
+    />
+  )
+}
+{
+  title === "Next.js" && (
+    <Next
+      bg={bg}
+      title={title}
+      responsiveWidth={responsiveWidth}
+      height={height}
+    />
+  )
+}
+{
+  title === "Postgres" && (
+    <Postgres
+      bg={bg}
+      title={title}
+      responsiveWidth={responsiveWidth}
+      height={height}
+    />
+  )
+}
