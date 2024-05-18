@@ -1,0 +1,26 @@
+---
+import Twitter from "../components/customSVG/twitter.svg";
+import Tag from "../components/ui/Tag.astro";
+export const partial = true;
+
+const socials = {
+  linkedin: "https://www.linkedin.com/in/zach-flentge-wong/",
+  github: "https://github.com/i-dkz",
+  twitter: "https://x.com/idkzca",
+  instagram: "https://instagram.com/idkzca",
+  spotify: "https://open.spotify.com/user/4djpn5qmz682f8zitccyfljde",
+};
+---
+
+<div class="flex flex-col justify-center items-center w-full h-[70vh] gap-4">
+  {
+    Object.entries(socials).map(([platform, url]) => (
+      <a href={url} target="_blank">
+        <div class="flex justify-center items-center w-[350px] h-14 bg-card rounded-md text-black gap-2">
+          <img src={"/" + platform + ".svg"} alt="" />
+          {platform}
+        </div>
+      </a>
+    ))
+  }
+</div>
