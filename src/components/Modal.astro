@@ -64,13 +64,21 @@ import LinkedIn from "./customSVG/LinkedIn.astro";
     <span class="font-light w-full p-4">I talk about stuff</span>
   </div>
   <div
-    class="flex flex-col bg-modal-content-bg justify-center items-center w-[350px] h-[22%] md:h-[135px] shadow-lg rounded-md text-primary"
+    class="flex flex-col bg-modal-content-bg justify-center items-center w-[350px] h-[22%] md:h-[135px] shadow-lg rounded-md text-primary cursor-pointer"
+    @click="clicked = !clicked"
+    hx-get="/links"
+    hx-trigger="click"
+    hx-target="#target"
   >
     <span class="font-medium w-full p-4">Links</span>
     <span class="font-light w-full p-4">Where to find me</span>
   </div>
   <div
-    class="flex flex-col bg-modal-content-bg justify-center items-center w-[350px] h-[22%] md:h-[135px] shadow-lg rounded-md text-primary"
+    class="flex flex-col bg-modal-content-bg justify-center items-center w-[350px] h-[22%] md:h-[135px] shadow-lg rounded-md text-primary cursor-pointer"
+    @click="clicked = !clicked"
+    hx-get="/contact"
+    hx-trigger="click"
+    hx-target="#target"
   >
     <span class="font-medium w-full p-4">Contact</span>
     <span class="font-light w-full p-4">Leave a message</span>
