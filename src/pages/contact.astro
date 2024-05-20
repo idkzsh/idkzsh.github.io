@@ -5,20 +5,20 @@ export const partial = true;
 <div class="flex flex-col justify-center items-center w-full h-[70vh] gap-4">
   <form
     action=""
-    class="flex flex-col rounded-md h-auto w-full bg-card py-4"
+    class="flex flex-col rounded-md h-auto w-full py-4 border shadow-lg"
   >
     <div class="flex flex-col rounded-md pb-4 px-4 w-full gap-1">
-      <label class="text-black" for="email">email</label>
-      <input class="w-full h-10 rounded-lg p-2 outline-none" type="email" name="email" />
+      <label class="text-primary" for="email">email</label>
+      <input class="w-full h-10 rounded-lg p-2 outline-none bg-card" type="email" name="email" />
     </div>
     <div class="flex flex-col rounded-md pb-4 px-4 w-full gap-1">
-      <label class="text-black" for="message">message</label>
+      <label class="text-primary" for="message">message</label>
       <textarea
-        class="flex justify-start w-full h-60 rounded-lg p-2 resize-none outline-none"
+        class="flex justify-start w-full h-60 rounded-lg p-2 resize-none outline-none bg-card"
         name="message"
         placeholder="this form is disabled right now i have to setup the smtp server lemme cook"
       />
     </div>
-    <button type="submit" class="rounded-md bg-black px-4 py-2 text-white mx-4" disabled>submit</button>
+    <button type="submit" class="rounded-md bg-btn px-4 py-2 text-btntext mx-4" disabled>submit</button>
   </form>
 </div>
