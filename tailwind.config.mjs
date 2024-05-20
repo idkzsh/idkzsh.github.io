@@ -22,6 +22,7 @@ export default {
 		  foreground: "hsl(var(--foreground))",
 		  "modal-content-bg": "hsla(var(--modal-content-bg))",
 		  "mid-card": "var(--mid-card)",
+		  largecard: "var(--largecard)",
 		  btn: "var(--btn)",
 		  btntext: "var(--btntext)",
 		  primary: {

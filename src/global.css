@@ -6,7 +6,7 @@
 
 @layer base {
   :root {
-    --background: rgba(233, 255, 251, 0.508);
+    --background: rgba(255, 255, 255, 0.508);
     --modal-content-bg:  222.2, 0%, 100%, .6;
     --foreground: 222.2 84% 4.9%;
     
@@ -14,6 +14,8 @@
     --btntext: white;
 
     --table: 210 40% 96.1%;
+
+    --largecard: rgba(255, 255, 255, 0.508);
 
     --card: rgb(232, 232, 232);
     --card-foreground: rgb(0,0,0);
@@ -63,6 +65,8 @@
     --btntext: black;
 
     --table: 222.2 84% 4.9%;
+
+    --largecard: rgba(26, 26, 26, 0.508);
  
     --card: rgb(232, 232, 232);
     --card-foreground: rgb(0,0,0);
