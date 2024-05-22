@@ -16,7 +16,7 @@ const socials = {
     {
       Object.entries(socials).map(([platform, url]) => (
         <a href={url} target="_blank">
-          <div class="flex justify-center items-center sm:w-[350px] h-14 bg-card rounded-md text-black gap-2">
+          <div class="flex justify-center items-center sm:w-[350px] h-14 bg-card rounded-md text-black gap-2 hover:opacity-110">
             <img src={"/" + platform + ".svg"} alt="" />
             {platform}
           </div>
