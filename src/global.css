@@ -39,7 +39,7 @@
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 210 40% 98%;
 
-    --border: 214.3 31.8% 91.4%;
+    --border: rgb(240, 240, 240);
     --input: 214.3 31.8% 91.4%;
     --ring: 222.2 84% 4.9%;
  
@@ -57,7 +57,7 @@
   }
  
   .dark {
-    --background: rgba(9, 9, 9, 0.91);
+    --background: rgba(6, 6, 6, 0.91);
     --modal-content-bg:  0, 0%, 10%, .6;
     --foreground: 210 40% 98%;
 
@@ -66,7 +66,8 @@
 
     --table: 222.2 84% 4.9%;
 
-    --largecard: rgba(26, 26, 26, 0.508);
+    --largecard: rgb(37, 37, 37);
+    --inputbox: rgb(68, 68, 68);
  
     --card: rgb(232, 232, 232);
     --card-foreground: rgb(0,0,0);
@@ -90,7 +91,7 @@
     --destructive: 0 62.8% 30.6%;
     --destructive-foreground: 210 40% 98%;
  
-    --border: 217.2 32.6% 17.5%;
+    --border: rgb(38, 38, 38);
     --input: 217.2 32.6% 17.5%;
     --ring: 212.7 26.8% 83.9%;
 
