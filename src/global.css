@@ -7,9 +7,9 @@
 @layer base {
   :root {
     --background: rgba(255, 255, 255, 0.508);
-    --modal-content-bg:  222.2, 0%, 100%, .6;
+    --modal-content-bg: 222.2, 0%, 100%, 0.6;
     --foreground: 222.2 84% 4.9%;
-    
+
     --btn: black;
     --btntext: white;
 
@@ -18,31 +18,31 @@
     --largecard: rgba(255, 255, 255, 0.508);
 
     --card: rgb(232, 232, 232);
-    --card-foreground: rgb(0,0,0);
+    --card-foreground: rgb(0, 0, 0);
 
-    --mid-card: rgb(232,232,232);
- 
+    --mid-card: rgb(232, 232, 232);
+
     --popover: 0 0% 100%;
     --popover-foreground: 222.2 84% 4.9%;
- 
+
     --primary: 222.2 47.4% 11.2%;
     --primary-foreground: 210 40% 98%;
- 
+
     --secondary: white;
     --secondary-foreground: 222.2 47.4% 11.2%;
- 
+
     --muted: 210 40% 96.1%;
     --muted-foreground: 215.4 16.3% 46.9%;
 
     --accent-foreground: 222.2 47.4% 11.2%;
- 
+
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 210 40% 98%;
 
     --border: rgb(240, 240, 240);
     --input: 214.3 31.8% 91.4%;
     --ring: 222.2 84% 4.9%;
- 
+
     --radius: 0.5rem;
 
     --accent: 9, 17, 92, 0.573;
@@ -55,10 +55,10 @@
       white 60%
     );
   }
- 
+
   .dark {
     --background: rgba(6, 6, 6, 0.91);
-    --modal-content-bg:  0, 0%, 10%, .6;
+    --modal-content-bg: 0, 0%, 10%, 0.6;
     --foreground: 210 40% 98%;
 
     --btn: white;
@@ -68,29 +68,29 @@
 
     --largecard: rgb(37, 37, 37);
     --inputbox: rgb(68, 68, 68);
- 
+
     --card: rgb(232, 232, 232);
-    --card-foreground: rgb(0,0,0);
+    --card-foreground: rgb(0, 0, 0);
 
     --mid-card: rgb(42, 42, 42);
- 
+
     --popover: 222.2 84% 4.9%;
     --popover-foreground: 210 40% 98%;
- 
+
     --primary: 210 40% 98%;
     --primary-foreground: 222.2 47.4% 11.2%;
- 
+
     --secondary: 217.2 32.6% 17.5%;
     --secondary-foreground: 210 40% 98%;
- 
+
     --muted: 217.2 32.6% 17.5%;
     --muted-foreground: 215 20.2% 65.1%;
- 
+
     --accent-foreground: 222.2 84% 4.9%;
- 
+
     --destructive: 0 62.8% 30.6%;
     --destructive-foreground: 210 40% 98%;
- 
+
     --border: rgb(38, 38, 38);
     --input: 217.2 32.6% 17.5%;
     --ring: 212.7 26.8% 83.9%;
@@ -106,7 +106,7 @@
     );
   }
 }
- 
+
 @layer base {
   * {
     @apply border-border;
@@ -121,11 +121,8 @@ html {
 }
 
 h1 {
-
   font-weight: 700;
   line-height: 1;
-
-
 }
 
 .text-gradient {
@@ -141,10 +138,9 @@ h1 {
 }
 
 .svg {
-
-    width: 100px;
-    height: 100px;
-    margin: 20px;
-    display:inline-block;
-
+  width: 100px;
+  height: 100px;
+  margin: 20px;
+  display: inline-block;
 }
+
