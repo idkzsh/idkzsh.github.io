@@ -48,12 +48,10 @@
     --accent: 9, 17, 92, 0.573;
     --accent-light: 53, 243, 208;
     --accent-dark: 49, 10, 101;
-    --accent-gradient: linear-gradient(
-      45deg,
-      rgb(var(--accent)),
-      rgb(var(--accent-light)) 30%,
-      white 60%
-    );
+    --accent-gradient: linear-gradient(45deg,
+        rgb(var(--accent)),
+        rgb(var(--accent-light)) 30%,
+        white 60%);
   }
 
   .dark {
@@ -98,12 +96,10 @@
     --accent: 9, 17, 92, 0.573;
     --accent-light: 53, 243, 208;
     --accent-dark: 49, 10, 101;
-    --accent-gradient: linear-gradient(
-      45deg,
-      rgb(var(--accent)),
-      rgb(var(--accent-light)) 30%,
-      white 60%
-    );
+    --accent-gradient: linear-gradient(45deg,
+        rgb(var(--accent)),
+        rgb(var(--accent-light)) 30%,
+        white 60%);
   }
 }
 
@@ -111,9 +107,17 @@
   * {
     @apply border-border;
   }
+
   body {
     @apply bg-background text-foreground;
   }
+}
+
+@font-face {
+  font-family: 'MesloLGS NF';
+  src: url('/MesloLGSDZNerdFont-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
 }
 
 html {
@@ -144,3 +148,6 @@ h1 {
   display: inline-block;
 }
 
+.nerdfont {
+  font-family: 'MesloLGS NF', monospace;
+}

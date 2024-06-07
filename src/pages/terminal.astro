@@ -1,0 +1,50 @@
+---
+import Layout from "../layouts/Layout.astro";
+
+---
+<Layout>
+  <title>terminal</title>
+  <div class="flex flex-col w-full border-gray-900 border h-80 rounded-md bg-gray-900 text-xs text-white overflow-hidden">
+
+    <div class="w-full items-center flex h-6 justify-between px-2 text-white">
+      <div class="flex items-center h-full gap-2">
+        <div class="rounded-full h-[12px] w-[12px] bg-red-400 border-red-900 "></div>
+        <div class="rounded-full h-[12px] w-[12px] bg-yellow-500 border-yellow-900"></div> 
+        <div class="rounded-full h-[12px] w-[12px] bg-green-500 border-green-900"></div>
+      </div>
+      <div>idkzsh</div>
+
+     <div class="flex items-center h-full gap-2"></div> 
+    </div>
+    <form id="terminalForm" class="nerdfont p-1 w-full">
+      <span class="text-teal-400">$ ~ </span>
+      <input type="text" id="terminalInput" name="terminalInput" autofocus class="bg-transparent w-[90%]" autocomplete="off">
+    </form>  </div>
+</Layout>
+
+<style>
+
+
+input {
+    border: none;
+    color: white;
+
+    caret-color: white;
+    outline: none;
+}
+
+input::placeholder {
+    color: #555;
+}
+</style>
+
+//ts-ignore
+<script>
+const x = document.getElementById('terminalForm');
+
+  if (x) {
+    x.addEventListener('submit', function(event) {
+    event.preventDefault();
+
+  }
+  )};</script>
