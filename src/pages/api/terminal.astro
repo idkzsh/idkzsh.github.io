@@ -1,4 +1,6 @@
 ---
+const messages: Record<int, string> = {
+}
 
 const responses: Record<string, string> = {
   "Hi": "Hello there"
@@ -16,20 +18,39 @@ data = await Astro.request.formData();
 
 let count = Number(data?.get('count'))
 let lastInput = String(data?.get(`terminalInput${count}`))
-console.log(data?.get(`terminalInput${count}`), data?.get('count'))
+
+messages[count] = lastInput;
+// console.log(data?.get(`terminalInput${count}`), data?.get('count'))
+console.log(messages)
+const items = Array.from({ length: count }, (_, index) => index + 1);
 count++;
 ---
-<form hx-post="/api/terminal" hx-target="#terminal" hx-trigger="submit" hx-swap="innerHTML">
-  {(count == 2) && (
+<form hx-post="/api/terminal" hx-target="#terminal" hx-trigger="submit" hx-swap="afterend" class="nerdfont">
+  {items.map(item => (
+  <>
+    {(count == 2) && (
       <div class="flex">
         <span class="text-teal-400 pr-2">$ ~ </span>
         <span class="w-[90%]">{lastInput}</span>
       </div>
-      <span class="w-full">{responses[lastInput]}</span>
+      <span class="w-[90%]">{responses[lastInput] ? responses[lastInput] : "invalid command"}</span>
       <div class="flex">
         <span class="text-teal-400 pr-2">$ ~ </span>
         <input type="text" id=`terminalInput${count}` name=`terminalInput${count}` autofocus class="bg-transparent w-[90%] border-none outline-none caret-white" autocomplete="off">
       </div>
       <input type="hidden" name="count" value={count++}>
     )}
+    {(item == count-1 &&       <div class="flex">
+        <span class="text-teal-400 pr-2">$ ~ </span>
+        <span class="w-[90%]">{lastInput}</span>
+      </div>
+      <span class="w-[90%]">{responses[lastInput] ? responses[lastInput] : "invalid command"}</span>
+      <div class="flex">
+        <span class="text-teal-400 pr-2">$ ~ </span>
+        <input type="text" id=`terminalInput${count}` name=`terminalInput${count}` autofocus class="bg-transparent w-[90%] border-none outline-none caret-white" autocomplete="off">
+      </div>
+  <input type="hidden" name="count" value={count++}>)}
+  
+  </>
+  ))}
 </form>
