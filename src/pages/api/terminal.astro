@@ -1,0 +1,35 @@
+---
+
+const responses: Record<string, string> = {
+  "Hi": "Hello there"
+};
+
+export const partial = true;
+
+let data;
+try {
+data = await Astro.request.formData();
+ } catch {
+  console.log("error")
+}
+
+
+let count = Number(data?.get('count'))
+let lastInput = String(data?.get(`terminalInput${count}`))
+console.log(data?.get(`terminalInput${count}`), data?.get('count'))
+count++;
+---
+<form hx-post="/api/terminal" hx-target="#terminal" hx-trigger="submit" hx-swap="innerHTML">
+  {(count == 2) && (
+      <div class="flex">
+        <span class="text-teal-400 pr-2">$ ~ </span>
+        <span class="w-[90%]">{lastInput}</span>
+      </div>
+      <span class="w-full">{responses[lastInput]}</span>
+      <div class="flex">
+        <span class="text-teal-400 pr-2">$ ~ </span>
+        <input type="text" id=`terminalInput${count}` name=`terminalInput${count}` autofocus class="bg-transparent w-[90%] border-none outline-none caret-white" autocomplete="off">
+      </div>
+      <input type="hidden" name="count" value={count++}>
+    )}
+</form>
