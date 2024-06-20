@@ -12,7 +12,6 @@ data = await Astro.request.formData();
   console.log("error")
 }
 
-
 let count = Number(data?.get('count'))
 let lastInput = String(data?.get(`terminalInput${count}`))
 console.log(lastInput, count)
@@ -23,4 +22,4 @@ count++;
   <span class="w-[90%]">{lastInput}</span>
 </div>
 <span class="w-[90%]">{responses[lastInput] ? responses[lastInput] : "invalid command"}</span>
- <input type="hidden" name="count" value={count}>
+<input type="hidden" name="count" value={count}>
