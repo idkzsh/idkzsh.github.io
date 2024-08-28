@@ -12,11 +12,23 @@ const socials = {
 
 <title>idkz - links</title>
 <div class="flex justify-center items-center w-full h-[70vh] gap-4">
-  <div class="flex flex-col gap-3 p-4 w-full sm:w-auto rounded-md border shadow-lg bg-largecard">
+  <div
+    class="flex flex-col gap-3 p-4 w-full sm:w-auto rounded-md border shadow-lg bg-largecard"
+  >
+    <div
+      class="flex justify-center items-center sm:w-[350px] h-14 bg-gray-50 border rounded-md text-black gap-2 hover:opacity-80"
+      hx-get="/main"
+      hx-trigger="click"
+      hx-target="#target"
+      hx-swap="innerHTML swap:.3s transition:true"
+    >
+    <img src={"/globe.svg"} alt="" />
+      Website
+    </div>
     {
       Object.entries(socials).map(([platform, url]) => (
         <a href={url} target="_blank">
-          <div class="flex justify-center items-center sm:w-[350px] h-14 bg-card rounded-md text-black gap-2 hover:opacity-110">
+          <div class="flex justify-center items-center sm:w-[350px] h-14 bg-gray-50 border rounded-md text-black gap-2 hover:opacity-80">
             <img src={"/" + platform + ".svg"} alt="" />
             {platform}
           </div>

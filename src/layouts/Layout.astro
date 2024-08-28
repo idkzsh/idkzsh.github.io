@@ -4,6 +4,14 @@ import Header from "../components/Header.astro";
 import Footer from "../components/Footer.astro";
 import Modal from "../components/Modal.astro";
 
+
+const userAgent = Astro.request.headers.get('user-agent') || '';
+const isMobile = /mobile|android|iphone|ipad|ipod/i.test(userAgent);
+
+
+console.log(isMobile ? "You're on mobile" : "You're on desktop")
+
+
 let {title} = Astro.props;
 
 ---
@@ -29,6 +37,7 @@ let {title} = Astro.props;
       defer
       src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"
     ></script>
+
   </head>
 
   <body
