@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -116,16 +116,15 @@
 @font-face {
   font-family: 'MesloLGS NF';
   src: url('/MesloLGSDZNerdFont-Regular.ttf') format('truetype');
-  font-weight: normal;
-  font-style: normal;
 }
 
 html {
-  font-family: "Inter", system-ui, sans-serif;
+  font-family: 'MesloLGS NF';
+  src: url('/MesloLGSDZNerdFont-Regular.ttf') format('truetype');
 }
 
 h1 {
-  font-weight: 700;
+  font-weight: 900;
   line-height: 1;
 }
 
@@ -146,8 +145,4 @@ h1 {
   height: 100px;
   margin: 20px;
   display: inline-block;
-}
-
-.nerdfont {
-  font-family: 'MesloLGS NF', monospace;
 }
