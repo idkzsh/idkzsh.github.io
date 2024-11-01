@@ -1,89 +1,129 @@
 ---
-import Twitter from "./customSVG/twitter.svg";
-import Github from "../../public/github.svg";
-import Spotify from "./customSVG/spotify.svg";
-import LinkedIn from "./customSVG/LinkedIn.astro";
 ---
 
 <style>
-  .modal-overlay {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5); /* Adjust the opacity for darkness */
-    backdrop-filter: blur(10px); /* Adjust the blur intensity */
-    z-index: 40; /* Ensure the overlay is behind the modal */
+  dialog::backdrop {
+    @apply bg-black/50 backdrop-blur-md;
+  }
+
+  dialog[open] {
+    @apply animate-[modal-pop-in_0.15s_ease-out];
+  }
+
+  dialog[closing] {
+    @apply animate-[modal-pop-out_0.15s_ease-in];
+  }
+
+  @keyframes modal-pop-in {
+    from {
+      opacity: 0;
+      transform: scale(0);
+    }
+    to {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+
+  @keyframes modal-pop-out {
+    from {
+      opacity: 1;
+      transform: scale(1);
+    }
+    to {
+      opacity: 0;
+      transform: scale(0);
+    }
   }
 </style>
 
-<div
-  class="modal-overlay"
-  x-show="clicked"
-  x-transition:enter="transition-opacity ease-linear duration-200"
-  x-transition:enter-end="opacity-100"
-  x-transition:leave="transition-opacity ease-linear duration-200"
-  x-transition:leave-start="opacity-0"
-  x-cloak
-  @click="clicked = !clicked"
+<dialog 
+  id="modal-dialog" 
+  class="w-[360px] sm:w-[360px] md:w-[765px] h-[75%] sm:h-[75%] md:h-80 lg:h-80 rounded-md bg-background p-4 outline-none"
+  hx-on="click: if(event.target === this) {
+    this.setAttribute('closing', '');
+    this.addEventListener('animationend', () => {
+      this.removeAttribute('closing');
+      this.close();
+    }, {once: true});
+  }"
 >
-</div>
-
-<div
-  class="w-[360px] sm:w-[360px] md:w-[765px] h-[75%] sm:h-[75%] md:h-80 lg:h-80 shadow-lg absolute top-[-100px] md:top-0 rounded-md bg-background z-50 mt-40 flex flex-wrap justify-center gap-4 p-4"
-  x-show="clicked"
-  x-transition:enter="transition transform ease-out duration-200"
-  x-transition:enter-start="translate-y-10 scale-50"
-  x-transition:enter-end="translate-y-0"
-  x-transition:leave="transition transform ease-in duration-200"
-  x-transition:leave-start="translate-y-0"
-  x-transition:leave-end="translate-y-10 scale-0"
-  x-cloak
->
-  <div
-    class="flex flex-col bg-modal-content-bg justify-center items-center w-[350px] h-[22%] md:h-[135px] shadow-lg rounded-md text-primary cursor-pointer"
-    @click="clicked = !clicked"
-    hx-get="/projects"
-    hx-trigger="click"
-    hx-target="#target"
-    hx-swap="innerHTML swap:.3s transition:true"
-  >
-    <span class="font-medium w-full p-4">Projects</span>
-    <span class="w-full p-4 font-light">Stuff i've built</span>
+  <div class="flex flex-wrap justify-center gap-4">
+    <div
+      class="flex flex-col bg-modal-content-bg justify-center items-center w-[350px] h-[22%] md:h-[135px] shadow-lg rounded-md text-primary cursor-pointer"
+      hx-get="/projects"
+      hx-target="#target"
+      hx-swap="innerHTML swap:.3s transition:true"
+      hx-on="click: {
+        const dialog = event.target.closest('dialog');
+        if (dialog) {
+          dialog.setAttribute('closing', '');
+          dialog.addEventListener('animationend', () => {
+            dialog.removeAttribute('closing');
+            dialog.close();
+          }, {once: true});
+        }
+      }"
+    >
+      <span class="font-medium w-full p-4">Projects</span>
+      <span class="w-full p-4 font-light">Stuff i've built</span>
+    </div>
+    <div
+      class="flex flex-col bg-modal-content-bg justify-center items-center w-[350px] h-[22%] md:h-[135px] shadow-lg rounded-md text-primary cursor-pointer"
+      hx-get="/blog"
+      hx-target="#target"
+      hx-swap="innerHTML swap:.3s transition:true"
+      hx-on="click: {
+        const dialog = event.target.closest('dialog');
+        if (dialog) {
+          dialog.setAttribute('closing', '');
+          dialog.addEventListener('animationend', () => {
+            dialog.removeAttribute('closing');
+            dialog.close();
+          }, {once: true});
+        }
+      }"
+    >
+      <span class="font-medium w-full p-4">Blog</span>
+      <span class="font-light w-full p-4">I talk about stuff</span>
+    </div>
+    <div
+      class="flex flex-col bg-modal-content-bg justify-center items-center w-[350px] h-[22%] md:h-[135px] shadow-lg rounded-md text-primary cursor-pointer"
+      hx-get="/links"
+      hx-target="#target"
+      hx-swap="innerHTML swap:.3s transition:true"
+      hx-on="click: {
+        const dialog = event.target.closest('dialog');
+        if (dialog) {
+          dialog.setAttribute('closing', '');
+          dialog.addEventListener('animationend', () => {
+            dialog.removeAttribute('closing');
+            dialog.close();
+          }, {once: true});
+        }
+      }"
+    >
+      <span class="font-medium w-full p-4">Links</span>
+      <span class="font-light w-full p-4">Where to find me</span>
+    </div>
+    <div
+      class="flex flex-col bg-modal-content-bg justify-center items-center w-[350px] h-[22%] md:h-[135px] shadow-lg rounded-md text-primary cursor-pointer"
+      hx-get="/contact"
+      hx-target="#target"
+      hx-swap="innerHTML swap:.3s transition:true"
+      hx-on="click: {
+        const dialog = event.target.closest('dialog');
+        if (dialog) {
+          dialog.setAttribute('closing', '');
+          dialog.addEventListener('animationend', () => {
+            dialog.removeAttribute('closing');
+            dialog.close();
+          }, {once: true});
+        }
+      }"
+    >
+      <span class="font-medium w-full p-4">Contact</span>
+      <span class="font-light w-full p-4">Leave a message</span>
+    </div>
   </div>
-  <div
-    class="flex flex-col bg-modal-content-bg justify-center items-center w-[350px] h-[22%] md:h-[135px] shadow-lg rounded-md text-primary cursor-pointer"
-    @click="clicked = !clicked"
-    hx-get="/blog"
-    hx-trigger="click"
-    hx-target="#target"
-    hx-swap="innerHTML swap:.3s transition:true"
-  >
-    <span class="font-medium w-full p-4">Blog</span>
-    <span class="font-light w-full p-4">I talk about stuff</span>
-  </div>
-  <div
-    class="flex flex-col bg-modal-content-bg justify-center items-center w-[350px] h-[22%] md:h-[135px] shadow-lg rounded-md text-primary cursor-pointer"
-    @click="clicked = !clicked"
-    hx-get="/links"
-    hx-trigger="click"
-    hx-target="#target"
-    hx-swap="innerHTML swap:.3s transition:true"
-  >
-    <span class="font-medium w-full p-4">Links</span>
-    <span class="font-light w-full p-4">Where to find me</span>
-  </div>
-  <div
-    class="flex flex-col bg-modal-content-bg justify-center items-center w-[350px] h-[22%] md:h-[135px] shadow-lg rounded-md text-primary cursor-pointer"
-    @click="clicked = !clicked"
-    hx-get="/contact"
-    hx-trigger="click"
-    hx-target="#target"
-    hx-swap="innerHTML swap:.3s transition:true"
-  >
-    <span class="font-medium w-full p-4">Contact</span>
-    <span class="font-light w-full p-4">Leave a message</span>
-  </div>
-
-</div>
+</dialog>
