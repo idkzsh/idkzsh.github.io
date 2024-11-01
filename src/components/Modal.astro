@@ -40,7 +40,7 @@
 <dialog 
   id="modal-dialog" 
   class="w-[360px] sm:w-[360px] md:w-[765px] h-[75%] sm:h-[75%] md:h-80 lg:h-80 rounded-md bg-background p-4 outline-none"
-  hx-on="click: if(event.target === this) { this.setAttribute('closing', ''); this.addEventListener('animationend', function() { this.removeAttribute('closing'); this.close(); }, {once: true}); }"
+  hx-on:click="if(event.target === this) { this.setAttribute('closing', ''); this.addEventListener('animationend', function() { this.removeAttribute('closing'); this.close(); }, {once: true}); }"
 >
   <div class="flex flex-wrap justify-center gap-4">
     <div
@@ -48,7 +48,7 @@
       hx-get="/projects"
       hx-target="#target"
       hx-swap="innerHTML swap:.3s transition:true"
-      hx-on="click: {
+      hx-on:click="
         const dialog = event.target.closest('dialog');
         if (dialog) {
           dialog.setAttribute('closing', '');
@@ -57,7 +57,7 @@
             dialog.close();
           }, {once: true});
         }
-      }"
+      "
     >
       <span class="font-medium w-full p-4">Projects</span>
       <span class="w-full p-4 font-light">Stuff i've built</span>
@@ -67,7 +67,16 @@
       hx-get="/blog"
       hx-target="#target"
       hx-swap="innerHTML swap:.3s transition:true"
-      hx-on="click: if(event.target.closest('dialog')) { const dialog = event.target.closest('dialog'); dialog.setAttribute('closing', ''); dialog.addEventListener('animationend', () => { dialog.removeAttribute('closing'); dialog.close(); }, {once: true}); }"
+      hx-on:click="
+        const dialog = event.target.closest('dialog');
+        if (dialog) {
+          dialog.setAttribute('closing', '');
+          dialog.addEventListener('animationend', () => {
+            dialog.removeAttribute('closing');
+            dialog.close();
+          }, {once: true});
+        }
+      "
     >
       <span class="font-medium w-full p-4">Blog</span>
       <span class="font-light w-full p-4">I talk about stuff</span>
@@ -77,7 +86,16 @@
       hx-get="/links"
       hx-target="#target"
       hx-swap="innerHTML swap:.3s transition:true"
-      hx-on="click: if(event.target.closest('dialog')) { const dialog = event.target.closest('dialog'); dialog.setAttribute('closing', ''); dialog.addEventListener('animationend', () => { dialog.removeAttribute('closing'); dialog.close(); }, {once: true}); }"
+      hx-on:click="
+        const dialog = event.target.closest('dialog');
+        if (dialog) {
+          dialog.setAttribute('closing', '');
+          dialog.addEventListener('animationend', () => {
+            dialog.removeAttribute('closing');
+            dialog.close();
+          }, {once: true});
+        }
+      "
     >
       <span class="font-medium w-full p-4">Links</span>
       <span class="font-light w-full p-4">Where to find me</span>
@@ -87,7 +105,16 @@
       hx-get="/contact"
       hx-target="#target"
       hx-swap="innerHTML swap:.3s transition:true"
-      hx-on="click: if(event.target.closest('dialog')) { const dialog = event.target.closest('dialog'); dialog.setAttribute('closing', ''); dialog.addEventListener('animationend', () => { dialog.removeAttribute('closing'); dialog.close(); }, {once: true}); }"
+      hx-on:click="
+        const dialog = event.target.closest('dialog');
+        if (dialog) {
+          dialog.setAttribute('closing', '');
+          dialog.addEventListener('animationend', () => {
+            dialog.removeAttribute('closing');
+            dialog.close();
+          }, {once: true});
+        }
+      "
     >
       <span class="font-medium w-full p-4">Contact</span>
       <span class="font-light w-full p-4">Leave a message</span>
