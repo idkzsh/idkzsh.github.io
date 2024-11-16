@@ -88,8 +88,15 @@
 </dialog>
 
 <script>
-    // @ts-ignore
-    function closeWithAnimation(dialog) {
+  // Add type declaration for the custom method
+  declare global {
+    interface HTMLDialogElement {
+      closeWithAnimation(): void;
+    }
+  }
+
+  // @ts-ignore
+  function closeWithAnimation(dialog) {
     dialog.setAttribute('closing', '');
     dialog.addEventListener('animationend', () => {
       dialog.removeAttribute('closing');
