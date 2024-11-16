@@ -6,6 +6,7 @@ import AstroIcon from "./customSVG/AstroIcon.astro";
 import Next from "./customSVG/Next.astro";
 import Postgres from "./customSVG/Postgres.astro";
 import Golang from "./customSVG/Golang.astro";
+import Neovim from "./customSVG/Neovim.astro";
 
 interface Props {
   icon?: string;
@@ -110,6 +111,16 @@ const { icon, title, color, bg, viewbox, manual } = Astro.props;
 {
   title === "Postgres" && (
     <Postgres
+      bg={bg}
+      title={title}
+      responsiveWidth={responsiveWidth}
+      height={height}
+    />
+  )
+}
+{
+  title === "Neovim" && (
+    <Neovim
       bg={bg}
       title={title}
       responsiveWidth={responsiveWidth}

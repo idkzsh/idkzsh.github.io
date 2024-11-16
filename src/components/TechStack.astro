@@ -1,9 +1,23 @@
 ---
 import TechCard from "./TechCard.astro";
-import { data } from ".././data/svg.ts";
+import { data, goToStack } from ".././data/svg.ts";
 ---
 
-<div class="mt-8 ">
+<div class="flex flex-col gap-4 mt-8 ">
+  <h4 class="w-full text-sm px-1">My Go-To Stack</h4>
+  <div class="flex w-full gap-2 flex-wrap justify-center">
+    {
+      goToStack.map((item) => (
+        <TechCard
+          icon={item.path}
+          viewbox={item.viewbox}
+          title={item.title}
+          color={item.color}
+          manual={item.manual}
+        />
+      ))
+    }
+  </div>
   <h4 class="w-full text-sm px-1">My Tech Stack</h4>
   <div class="flex w-full gap-2 flex-wrap justify-center">
     {
