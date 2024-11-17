@@ -36,16 +36,17 @@ const socials = {
         </a>
       ))
     }
-    <details class="flex justify-center items-center sm:w-[350px] bg-gray-50 border rounded-md text-black gap-2 hover:opacity-80 cursor-pointer">
-      <summary class="flex justify-center items-center gap-2 h-14">
+    <details class="flex justify-center items-center sm:w-[350px] bg-gray-50 dark:bg-gray-800 border rounded-md text-black dark:text-white">
+      <summary class="flex justify-center items-center gap-2 h-14 w-full hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors duration-200 cursor-pointer rounded-md">
         <img src={"/bitcoin.svg"} alt="" />
         send me bitcoins
       </summary>
-      <div class="flex flex-col justify-center items-center p-4 gap-2">
-        <div class="relative group w-[300px]">
-          <code class="bg-gray-800 text-white p-2 mt-2 rounded text-sm break-all text-center block">bc1qgqqp02hggxeqrwuwcs4dvjadheyrujj8lmnwxy</code>
+      <div class="flex flex-col justify-center items-center p-4">
+        <img src={"/btc_wallet.png"} alt="" class="rounded-md w-[280px] h-[280px]" />
+        <div class="relative group w-[280px]">
+          <code class="bg-gray-600 text-white p-4 mt-2 rounded text-xs break-all text-center block">bc1qgqqp02hggxeqrwuwcs4dvjadheyrujj8lmnwxy</code>
           <button 
-            class="absolute bottom-1 right-1 opacity-0 group-hover:opacity-100 transition-opacity p-1 hover:bg-gray-700 rounded"
+            class="absolute bottom-2 right-2 p-1 hover:bg-gray-700 rounded"
             onclick="navigator.clipboard.writeText(this.previousElementSibling.textContent.trim()); this.querySelector('svg').style.display='none'; this.querySelector('span').style.display='block'; setTimeout(() => {this.querySelector('svg').style.display='block'; this.querySelector('span').style.display='none'}, 2000)"
           >
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5 text-white">
@@ -54,8 +55,6 @@ const socials = {
             <span class="hidden text-white text-sm">Copied!</span>
           </button>
         </div>
-        <img src={"/btc_wallet.png"} alt="" class="rounded-md w-[300px] h-[300px]" />
-
       </div>
     </details>
   </div>
