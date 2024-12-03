@@ -6,7 +6,7 @@ import AstroIcon from "./customSVG/AstroIcon.astro";
 import Next from "./customSVG/Next.astro";
 import Postgres from "./customSVG/Postgres.astro";
 import Golang from "./customSVG/Golang.astro";
-import Neovim from "./customSVG/Neovim.astro";
+import Cursor from "./customSVG/Cursor.astro";
 
 interface Props {
   icon?: string;
@@ -119,8 +119,8 @@ const { icon, title, color, bg, viewbox, manual } = Astro.props;
   )
 }
 {
-  title === "Neovim" && (
-    <Neovim
+  title === "Cursor AI" && (
+    <Cursor
       bg={bg}
       title={title}
       responsiveWidth={responsiveWidth}

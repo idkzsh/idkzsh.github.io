@@ -157,7 +157,7 @@ const goToStack = [
   {
     path: "",
     viewbox: "0 0 24 24",
-    title: "Neovim",
+    title: "Cursor AI",
     color: "text-green-900",
     bg: "bg-slate-500",
     manual: true,
