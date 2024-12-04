@@ -29,7 +29,7 @@ const updateIcon = (theme) => {
                 sunIcon.style.display = 'block';
                 sunIcon.style.transform = 'rotate(0) scale(0)';
                 setTimeout(() => {
-                    sunIcon.style.transform = 'rotate(-180deg) scale(1)';
+                    sunIcon.style.transform = 'rotate(-135deg) scale(1)';
                 }, 50);
             }, 200);
         } else {
@@ -39,7 +39,7 @@ const updateIcon = (theme) => {
                 sunIcon.style.display = 'none';
                 // Animate moon in
                 moonIcon.style.display = 'block';
-                moonIcon.style.transform = 'rotate(-180deg) scale(0)';
+                moonIcon.style.transform = 'rotate(-135deg) scale(0)';
                 setTimeout(() => {
                     moonIcon.style.transform = 'rotate(0) scale(1)';
                 }, 50);
