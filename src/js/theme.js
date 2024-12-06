@@ -34,7 +34,7 @@ const updateIcon = (theme) => {
             }, 200);
         } else {
             // Animate sun out
-            sunIcon.style.transform = 'rotate(90deg) scale(0)';
+            sunIcon.style.transform = 'rotate(-90deg) scale(0)';
             setTimeout(() => {
                 sunIcon.style.display = 'none';
                 // Animate moon in
