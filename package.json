@@ -1,26 +1,20 @@
 {
-  "name": "idkz",
-  "type": "module",
-  "version": "0.0.1",
-  "scripts": {
-    "dev": "astro dev",
-    "start": "astro dev",
-    "build": "astro check && astro build",
-    "preview": "astro preview",
-    "astro": "astro"
-  },
+  "name": "bun_hono_htmx",
+  "module": "index.ts",
   "dependencies": {
-    "@astrojs/check": "^0.5.3",
-    "@astrojs/node": "^8.2.0",
-    "@astrojs/tailwind": "^5.1.0",
-    "@astrojs/vercel": "^7.3.5",
-    "astro": "^4.3.6",
-    "astro-htmx": "^1.0.5",
-    "htmx.org": "^1.9.10",
-    "tailwindcss": "^3.4.1",
-    "typescript": "^5.3.3"
+    "@tailwindcss/cli": "^4.0.6",
+    "hono": "^4.7.1"
   },
+  "peerDependencies": {
+    "typescript": "^5.7.3"
+  },
+  "scripts": {
+    "dev": "bun run --watch src/server.ts & bun run tailwindcss -i ./src/styles/main.css -o ./dist/styles.css --watch",
+    "build:css": "bun run tailwindcss -i ./src/styles/main.css -o ./dist/styles.css",
+    "start": "bun run build:css && bun run src/server.ts"
+  },
+  "type": "module",
   "devDependencies": {
-    "@types/node": "^20.11.17"
+    "tailwindcss": "^4.0.6"
   }
 }
