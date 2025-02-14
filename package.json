@@ -10,6 +10,7 @@
   },
   "scripts": {
     "dev": "bun run --watch src/server.ts & bun run tailwindcss -i ./src/styles/main.css -o ./dist/styles.css --watch",
+    "build": "bun run build:css && bun build ./src/server.ts --outdir ./dist",
     "build:css": "bun run tailwindcss -i ./src/styles/main.css -o ./dist/styles.css",
     "start": "bun run build:css && bun run src/server.ts"
   },
