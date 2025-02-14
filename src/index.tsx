@@ -10,7 +10,7 @@ const app = new Hono()
 
 // Middleware
 app.use('*', logger())
-app.use('/dist/*', serveStatic({ root: './' }))
+app.use('/dist/*', serveStatic({ path: './dist' }))
 app.use('*', jsxRenderer(({ children }) => {
   return <Layout>{children}</Layout>
 }))
