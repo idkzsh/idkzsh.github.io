@@ -52,6 +52,7 @@
       let sphere, plane;
 
       const start = Date.now();
+      let lastTime = Date.now();
 
       init();
 
@@ -108,14 +109,18 @@
       }
 
       function animate() {
-        const timer = Date.now() - start;
+        const currentTime = Date.now();
+        const deltaTime = (currentTime - lastTime) / 1000; // Convert to seconds
+        lastTime = currentTime;
+        
+        const timer = currentTime - start;
 
-        sphere.rotation.x += 0.01;
-        sphere.rotation.y += 0.02;
-        sphere.rotation.z += 0.01;
+        // Multiply by deltaTime to make rotation speed consistent across browsers
+        sphere.rotation.x += 0.01 * Math.sin(timer * 0.001) * deltaTime * 60;
+        sphere.rotation.y += 0.01 * Math.cos(timer * 0.0015) * deltaTime * 60;
+        sphere.rotation.z += 0.03 * Math.sin(timer * 0.0012) * deltaTime * 60;
 
         controls.update();
-
         effect.render(scene, camera);
       }
     </script>
