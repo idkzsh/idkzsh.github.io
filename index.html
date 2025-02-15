@@ -16,17 +16,27 @@
       body {
         font-family: "IBM Plex Mono", "SF Mono", "Roboto Mono", Consolas, Menlo,
           monospace;
+          background-color: black;
       }
       .container {
         position: fixed;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
+        top: 0;
+        left: 0;
+        width: 100vw;    /* Full viewport width */
+        height: 100vh;   /* Full viewport height */
         color: white;
         z-index: 1000;
         font-size: 16px;
       }
 
+      .title {
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 1000;
+        pointer-events: none; /* Allows clicking through the text */
+      }
     </style>
     <link type="text/css" rel="stylesheet" href="main.css" />
   </head>
@@ -57,8 +67,9 @@
       init();
 
       function init() {
-        const width = window.innerWidth;
-        const height = window.innerHeight;
+        const container = document.querySelector('.container');
+        const width = container.offsetWidth;
+        const height = container.offsetHeight;
 
         camera = new THREE.PerspectiveCamera(80, width / height, 1, 1000);
         camera.position.set(0, 0, 300); 
@@ -96,7 +107,7 @@
         effect.domElement.style.margin = "auto";
         effect.domElement.classList.add("ascii-effect");
 
-        document.body.appendChild(effect.domElement);
+        container.appendChild(effect.domElement);
 
         controls = new TrackballControls(camera, effect.domElement);
         controls.noZoom = true;
@@ -106,6 +117,9 @@
         effect.domElement.addEventListener("contextmenu", (e) =>
           e.stopPropagation()
         );
+
+        // Add resize handler
+        window.addEventListener('resize', onWindowResize);
       }
 
       function animate() {
@@ -123,7 +137,22 @@
         controls.update();
         effect.render(scene, camera);
       }
+
+      // Add resize handler function
+      function onWindowResize() {
+        const container = document.querySelector('.container');
+        const width = container.offsetWidth;
+        const height = container.offsetHeight;
+
+        camera.aspect = width / height;
+        camera.updateProjectionMatrix();
+
+        renderer.setSize(width, height);
+        effect.setSize(width, height);
+      }
     </script>
-    <div class="container">IDKZ </div>
+    <div class="container">
+        <div class="title">IDKZ</div>
+    </div>
   </body>
 </html>
