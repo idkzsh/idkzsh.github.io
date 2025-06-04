@@ -185,10 +185,16 @@
 
                 const timer = currentTime - start;
 
-                // Multiply by deltaTime to make rotation speed consistent across browsers
-                sphere.rotation.x += 0.01 * Math.sin(timer * 0.001) * deltaTime * 60;
-                sphere.rotation.y += 0.01 * Math.cos(timer * 0.0015) * deltaTime * 60;
-                sphere.rotation.z += 0.03 * Math.sin(timer * 0.0012) * deltaTime * 60;
+                // Constant rotation speed with constant leftward spin
+                const baseSpeed = 0.5; // Constant rotation speed
+                
+                // Only modulate the y-axis rotation (left spin with slight variation)
+                const yModulation = 1 + 0.3 * Math.sin(timer * 0.001); // Slight modulation between 0.7 and 1.3
+                
+                // Minimal rotation on x and z for stability, constant left rotation on y
+                sphere.rotation.x += baseSpeed * 0.1 * deltaTime; // Very slow x rotation
+                sphere.rotation.y -= baseSpeed * yModulation * deltaTime; // Constant left spin with modulation
+                sphere.rotation.z += baseSpeed * 0.05 * deltaTime; // Very slow z rotation
 
                 controls.update();
                 effect.render(scene, camera);
